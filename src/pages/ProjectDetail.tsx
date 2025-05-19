@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect } from "react";
 
-// Sample project data - In a real app, this would be fetched from a CMS or API
+// Updated project data to ensure all entries have url property (can be optional)
 const projects = {
   "devfinder": {
     title: "DevFinder",
@@ -40,7 +40,7 @@ const projects = {
       "https://via.placeholder.com/800x600?text=Screenshot+3"
     ],
     github: "https://github.com",
-    url: "https://demo.com"
+    url: "https://demo.com"  // Ensuring url exists for this project
   },
   "markdown-editor": {
     title: "Markdown Editor",
@@ -73,7 +73,8 @@ const projects = {
       "https://via.placeholder.com/800x600?text=Screenshot+1",
       "https://via.placeholder.com/800x600?text=Screenshot+2"
     ],
-    github: "https://github.com"
+    github: "https://github.com",
+    url: ""  // Adding empty url property
   },
   // Add more project details in a similar format
 };
