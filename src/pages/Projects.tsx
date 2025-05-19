@@ -1,56 +1,44 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 
-// Sample data - in a real app this would come from a CMS or API
+// Sample data - in a real app this would be fetched from Netlify CMS
 const projects = [
   {
     slug: "devfinder",
     title: "DevFinder",
     description: "A developer search tool built with React, TypeScript and the GitHub API.",
-    tech: ["React", "TypeScript", "GitHub API"],
+    tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS", "Context API"],
     image: "https://via.placeholder.com/600x400",
-    github: "https://github.com",
-    url: "https://demo.com"
+    github: "https://github.com/yosephdev/DevFinder",
+    url: "https://devfinder-yosephdev.vercel.app"
   },
   {
     slug: "markdown-editor",
     title: "Markdown Editor",
     description: "A real-time markdown editor with preview and export functionality.",
-    tech: ["JavaScript", "React", "Node.js"],
+    tech: ["JavaScript", "React", "CodeMirror", "marked.js", "Node.js"],
     image: "https://via.placeholder.com/600x400",
-    github: "https://github.com"
+    github: "https://github.com/yosephdev/markdown-editor",
+    url: "https://markdown-editor-yosephdev.netlify.app"
   },
   {
-    slug: "task-manager",
-    title: "Task Manager API",
-    description: "A RESTful API for task management built with Node.js, Express and MongoDB.",
-    tech: ["Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com"
-  },
-  {
-    slug: "weather-app",
-    title: "Weather Dashboard",
-    description: "A weather application with location search and 5-day forecast.",
-    tech: ["JavaScript", "React", "OpenWeather API"],
+    slug: "portfolio-website",
+    title: "Portfolio Website",
+    description: "A modern portfolio website built with React, TypeScript, and Tailwind CSS.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Netlify CMS"],
     image: "https://via.placeholder.com/600x400",
-    url: "https://demo.com"
+    github: "https://github.com/yosephdev/portfolio",
+    url: "https://yoseph.dev"
   },
   {
-    slug: "ecommerce-store",
-    title: "E-commerce Store",
-    description: "A full-featured e-commerce platform with product catalog and shopping cart.",
-    tech: ["Next.js", "TypeScript", "Stripe", "Prisma"],
+    slug: "react-notes-app",
+    title: "React Notes App",
+    description: "A feature-rich note-taking application built with React and Firebase.",
+    tech: ["React", "Firebase", "Redux", "Tailwind CSS"],
     image: "https://via.placeholder.com/600x400",
-    url: "https://demo.com"
-  },
-  {
-    slug: "chat-application",
-    title: "Real-time Chat App",
-    description: "A real-time chat application with private messaging and chat rooms.",
-    tech: ["React", "Socket.io", "Express", "MongoDB"],
-    github: "https://github.com"
+    github: "https://github.com/yosephdev/react-notes",
+    url: "https://react-notes-yosephdev.web.app"
   }
 ];
 

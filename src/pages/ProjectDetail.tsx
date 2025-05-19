@@ -1,12 +1,13 @@
-
 import { useParams, Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-// Updated project data to ensure all entries have url property (can be optional)
+// In a real implementation, this would be a fetch from the CMS or API
+// For now, we'll keep this structure but note this would be replaced
+// with a data fetching mechanism from Netlify CMS
 const projects = {
   "devfinder": {
     title: "DevFinder",
@@ -39,8 +40,8 @@ const projects = {
       "https://via.placeholder.com/800x600?text=Screenshot+2",
       "https://via.placeholder.com/800x600?text=Screenshot+3"
     ],
-    github: "https://github.com",
-    url: "https://demo.com"  // Ensuring url exists for this project
+    github: "https://github.com/yosephdev/DevFinder",
+    url: "https://devfinder-yosephdev.vercel.app"
   },
   "markdown-editor": {
     title: "Markdown Editor",
@@ -73,15 +74,86 @@ const projects = {
       "https://via.placeholder.com/800x600?text=Screenshot+1",
       "https://via.placeholder.com/800x600?text=Screenshot+2"
     ],
-    github: "https://github.com",
-    url: ""  // Adding empty url property
+    github: "https://github.com/yosephdev/markdown-editor",
+    url: "https://markdown-editor-yosephdev.netlify.app"
+  },
+  "portfolio-website": {
+    title: "Portfolio Website",
+    description: "A modern portfolio website built with React, TypeScript, and Tailwind CSS.",
+    longDescription: `
+      This project is a personal portfolio website built to showcase my projects, blog posts, and professional information. It features a clean, minimalist design with dark mode support and responsive layouts.
+      
+      ## Features
+      
+      - Responsive design that works on all devices
+      - Light and dark mode support
+      - Blog section with markdown support
+      - Projects showcase with detailed project pages
+      - Contact form integration
+      - Newsletter subscription
+      
+      ## Technical Details
+      
+      The portfolio is built using React with TypeScript for type safety. Styling is handled with Tailwind CSS for a utility-first approach. Content is managed through Markdown files, allowing for easy updates and additions.
+      
+      The website also features:
+      
+      - Optimized images and assets for fast loading
+      - SEO best practices implementation
+      - Accessibility considerations throughout the UI
+      - Analytics integration for visitor tracking
+    `,
+    tech: ["React", "TypeScript", "Tailwind CSS", "Netlify CMS"],
+    image: "https://via.placeholder.com/1200x800",
+    screenshots: [
+      "https://via.placeholder.com/800x600?text=Screenshot+1",
+      "https://via.placeholder.com/800x600?text=Screenshot+2"
+    ],
+    github: "https://github.com/yosephdev/portfolio",
+    url: "https://yoseph.dev"
+  },
+  "react-notes-app": {
+    title: "React Notes App",
+    description: "A feature-rich note-taking application built with React and Firebase.",
+    longDescription: `
+      A modern note-taking application built with React and Firebase. This app allows users to create, edit, and organize notes with rich text formatting, tags, and categories.
+      
+      ## Features
+      
+      - User authentication and account management
+      - Rich text editor with markdown support
+      - Note organization with tags and categories
+      - Search functionality
+      - Dark mode support
+      - Offline capability with sync when online
+      
+      ## Technical Details
+      
+      The application uses React for the frontend UI and Firebase for backend services including authentication, database, and storage. State management is handled with Redux, and the app implements a responsive design that works well on mobile devices.
+      
+      Key technical aspects include:
+      
+      - Firebase Firestore for real-time database
+      - Firebase Authentication for user management
+      - Redux for global state management
+      - Service workers for offline functionality
+      - Responsive design with Tailwind CSS
+    `,
+    tech: ["React", "Firebase", "Redux", "Tailwind CSS"],
+    image: "https://via.placeholder.com/1200x800",
+    screenshots: [
+      "https://via.placeholder.com/800x600?text=Screenshot+1",
+      "https://via.placeholder.com/800x600?text=Screenshot+2"
+    ],
+    github: "https://github.com/yosephdev/react-notes",
+    url: "https://react-notes-yosephdev.web.app"
   },
   // Add more project details in a similar format
 };
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const project = slug ? projects[slug as keyof typeof projects] : null;
+  const [project, setProject] = useState(slug ? projects[slug as keyof typeof projects] : null);
 
   useEffect(() => {
     if (!project) {
