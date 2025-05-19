@@ -5,8 +5,32 @@ import { BlogCard } from "@/components/BlogCard";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
-// Sample data - in a real app this would come from a CMS or API
+// Sample data from the CMS (would be fetched from API in production)
 const blogPosts = [
+  {
+    slug: "getting-started-with-django",
+    title: "Getting Started with Django: A Beginner's Guide",
+    excerpt: "Django is a powerful web framework for Python that encourages rapid development and clean, pragmatic design. Learn how to start building web applications with Django in this beginner's guide.",
+    date: "September 18, 2023",
+    readingTime: "8 min read",
+    tags: ["Python", "Django", "Web Development", "Backend"]
+  },
+  {
+    slug: "python-best-practices",
+    title: "Python Best Practices for Clean, Maintainable Code",
+    excerpt: "Learn essential Python best practices that will make your code more readable, maintainable, and less prone to bugs. These guidelines have helped me write better Python code throughout my career.",
+    date: "November 5, 2023",
+    readingTime: "7 min read",
+    tags: ["Python", "Best Practices", "Code Quality", "Development"]
+  },
+  {
+    slug: "building-ai-powered-web-apps",
+    title: "Building AI-Powered Web Applications with Python",
+    excerpt: "Learn how to integrate AI capabilities into web applications using Python. This post covers everything from simple ML model integration to deploying advanced AI features in production environments.",
+    date: "January 20, 2024",
+    readingTime: "10 min read",
+    tags: ["Python", "AI", "Machine Learning", "Web Development"]
+  },
   {
     slug: "modern-react-hooks",
     title: "Understanding Modern React Hooks",
@@ -22,30 +46,6 @@ const blogPosts = [
     date: "April 23, 2023",
     readingTime: "6 min read",
     tags: ["TypeScript", "Best Practices"]
-  },
-  {
-    slug: "tailwind-tricks",
-    title: "Advanced Tailwind CSS Techniques",
-    excerpt: "Take your Tailwind CSS skills to the next level with these advanced techniques.",
-    date: "March 18, 2023",
-    readingTime: "5 min read",
-    tags: ["CSS", "Tailwind", "Frontend"]
-  },
-  {
-    slug: "nextjs-vs-remix",
-    title: "Next.js vs Remix: A Practical Comparison",
-    excerpt: "Comparing two of the most popular React frameworks for building modern web applications.",
-    date: "February 5, 2023",
-    readingTime: "10 min read",
-    tags: ["React", "Next.js", "Remix", "Frameworks"]
-  },
-  {
-    slug: "state-management",
-    title: "Modern State Management in React",
-    excerpt: "An overview of current state management solutions in the React ecosystem.",
-    date: "January 20, 2023",
-    readingTime: "7 min read",
-    tags: ["React", "State Management", "Redux", "Zustand"]
   },
   {
     slug: "web-performance",
@@ -87,7 +87,7 @@ const Blog = () => {
             <div className="mx-auto max-w-[800px] text-center">
               <h1 className="text-4xl font-bold sm:text-5xl">Blog</h1>
               <p className="mt-4 text-xl text-muted-foreground">
-                Thoughts, tutorials and insights on web development.
+                Thoughts, tutorials and insights on web development, Python, AI, and more.
               </p>
             </div>
           </div>

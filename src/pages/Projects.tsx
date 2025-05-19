@@ -1,44 +1,63 @@
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 
-// Sample data - in a real app this would be fetched from Netlify CMS
+// Real project data from yoseph.dev and GitHub
 const projects = [
+  {
+    slug: "sero-global",
+    title: "Sero Global",
+    description: "A mental health platform built with Django, Python and AWS for a better access to mental health services.",
+    tech: ["Python", "Django", "AWS", "PostgreSQL", "Docker"],
+    image: "https://via.placeholder.com/600x400?text=Sero+Global",
+    github: "https://github.com/yosephdev/sero-global",
+    url: "https://seroglobal.org"
+  },
+  {
+    slug: "isana-facilitation",
+    title: "Isana Facilitation",
+    description: "A facilitation platform for therapists and counselors to manage their clients and sessions.",
+    tech: ["React", "Firebase", "Node.js", "Tailwind CSS"],
+    image: "https://via.placeholder.com/600x400?text=Isana+Facilitation",
+    github: "https://github.com/yosephdev/isana-facilitation",
+    url: "https://isanafacilitation.com"
+  },
+  {
+    slug: "revolutaging",
+    title: "Revolutaging",
+    description: "An AI-powered platform for elderly care and monitoring built with React, Python and TensorFlow.",
+    tech: ["React", "Python", "TensorFlow", "AWS", "MongoDB"],
+    image: "https://via.placeholder.com/600x400?text=Revolutaging",
+    github: "https://github.com/yosephdev/revolutaging",
+    url: "https://revolutaging.com"
+  },
   {
     slug: "devfinder",
     title: "DevFinder",
     description: "A developer search tool built with React, TypeScript and the GitHub API.",
-    tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS", "Context API"],
-    image: "https://via.placeholder.com/600x400",
-    github: "https://github.com/yosephdev/DevFinder",
+    tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS"],
+    image: "https://via.placeholder.com/600x400?text=DevFinder",
+    github: "https://github.com/yosephdev/devfinder",
     url: "https://devfinder-yosephdev.vercel.app"
   },
   {
-    slug: "markdown-editor",
-    title: "Markdown Editor",
-    description: "A real-time markdown editor with preview and export functionality.",
-    tech: ["JavaScript", "React", "CodeMirror", "marked.js", "Node.js"],
-    image: "https://via.placeholder.com/600x400",
-    github: "https://github.com/yosephdev/markdown-editor",
-    url: "https://markdown-editor-yosephdev.netlify.app"
+    slug: "countries-api",
+    title: "REST Countries API",
+    description: "A web application that displays information about countries using the REST Countries API.",
+    tech: ["JavaScript", "React", "REST API", "CSS"],
+    image: "https://via.placeholder.com/600x400?text=Countries+API",
+    github: "https://github.com/yosephdev/rest-countries-api",
+    url: "https://rest-countries-api-yosephdev.vercel.app"
   },
   {
-    slug: "portfolio-website",
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with React, TypeScript, and Tailwind CSS.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Netlify CMS"],
-    image: "https://via.placeholder.com/600x400",
-    github: "https://github.com/yosephdev/portfolio",
-    url: "https://yoseph.dev"
-  },
-  {
-    slug: "react-notes-app",
-    title: "React Notes App",
-    description: "A feature-rich note-taking application built with React and Firebase.",
-    tech: ["React", "Firebase", "Redux", "Tailwind CSS"],
-    image: "https://via.placeholder.com/600x400",
-    github: "https://github.com/yosephdev/react-notes",
-    url: "https://react-notes-yosephdev.web.app"
+    slug: "ip-address-tracker",
+    title: "IP Address Tracker",
+    description: "A web application that allows users to track IP addresses and view their location on a map.",
+    tech: ["JavaScript", "Leaflet.js", "IP Geolocation API", "HTML/CSS"],
+    image: "https://via.placeholder.com/600x400?text=IP+Address+Tracker",
+    github: "https://github.com/yosephdev/ip-address-tracker",
+    url: "https://ip-address-tracker-yosephdev.vercel.app"
   }
 ];
 
@@ -54,7 +73,7 @@ const Projects = () => {
             <div className="mx-auto max-w-[800px] text-center">
               <h1 className="text-4xl font-bold sm:text-5xl">Projects</h1>
               <p className="mt-4 text-xl text-muted-foreground">
-                A showcase of my web development work and side projects.
+                A showcase of my work in web development, AI, and Python applications.
               </p>
             </div>
           </div>

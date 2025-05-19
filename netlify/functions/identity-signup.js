@@ -2,8 +2,8 @@
 exports.handler = async function(event, context) {
   const { user } = JSON.parse(event.body);
   
-  // Only allow specific emails to sign up (modify this with your email)
-  const allowedEmails = ['your-email@example.com'];
+  // Only allow yoseph's email to sign up
+  const allowedEmails = ['yoseph.berhane@outlook.com'];
   
   if (!allowedEmails.includes(user.email)) {
     return {

@@ -2,11 +2,11 @@
 backend:
   name: git-gateway
   branch: main
-  repo: yosephdev/portfolio # Your GitHub username/repo
+  repo: yosephdev/portfolio-website # Your GitHub username/repo
 
 # When using a custom domain for the CMS
-# site_url: https://yoseph.dev
-# display_url: https://yoseph.dev
+site_url: https://yoseph.dev
+display_url: https://yoseph.dev
 
 media_folder: "public/images/uploads" # Media will be stored in the repo under public/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media
