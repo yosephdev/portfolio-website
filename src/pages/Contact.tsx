@@ -34,8 +34,8 @@ const Contact = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <a href="mailto:hello@yoseph.dev" className="text-primary hover:text-primary/80">
-                    hello@yoseph.dev
+                  <a href="mailto:contact@yoseph.dev" className="text-primary hover:text-primary/80">
+                    contact@yoseph.dev
                   </a>
                 </div>
                 
@@ -43,7 +43,7 @@ const Contact = () => {
                   <h3 className="font-medium">Social</h3>
                   <div className="flex gap-4 mt-2">
                     <a 
-                      href="https://twitter.com" 
+                      href="https://twitter.com/yosephbet" 
                       target="_blank" 
                       rel="noreferrer"
                       className="text-muted-foreground hover:text-primary"
@@ -51,7 +51,7 @@ const Contact = () => {
                       Twitter
                     </a>
                     <a 
-                      href="https://github.com" 
+                      href="https://github.com/yosephdev" 
                       target="_blank" 
                       rel="noreferrer"
                       className="text-muted-foreground hover:text-primary"
@@ -59,7 +59,7 @@ const Contact = () => {
                       GitHub
                     </a>
                     <a 
-                      href="https://linkedin.com" 
+                      href="https://linkedin.com/in/yoseph-berhane" 
                       target="_blank" 
                       rel="noreferrer"
                       className="text-muted-foreground hover:text-primary"
@@ -71,7 +71,7 @@ const Contact = () => {
                 
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Katrineholm, Sweden</p>
                 </div>
               </div>
               
