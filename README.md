@@ -1,73 +1,149 @@
-# Welcome to your Lovable project
+# Portfolio Website
 
-## Project info
+A modern, responsive portfolio website to showcase my projects, blog posts, and professional information. Built with React, TypeScript, Tailwind CSS, and shadcn-ui.
 
-**URL**: https://lovable.dev/projects/31426af0-21c0-44fa-b066-d12bc9599d9a
+![Check out how the Resume Website looks on different devices](public/images/portfolio-website.png)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- 🌐 **Responsive Design**: Looks great on desktop, tablet, and mobile devices.
+- 🌓 **Dark/Light Mode**: Toggle between light and dark themes.
+- 📝 **Blog Section**: Write and display blog posts with Markdown support.
+- 💼 **Projects Showcase**: Highlight featured and recent projects with details and screenshots.
+- 📬 **Contact Form**: Easy way for visitors to reach out.
+- 📰 **Newsletter Signup**: Collect emails for updates.
+- 🔍 **Search & Filter**: Quickly find projects or blog posts.
+- ⚡ **Fast & Optimized**: Built with Vite for instant reloads and optimized builds.
+- 🛠️ **Admin Integration**: Netlify CMS for easy content management (optional).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/31426af0-21c0-44fa-b066-d12bc9599d9a) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+- [React](https://react.dev/) & [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) (build tool)
+- [Tailwind CSS](https://tailwindcss.com/) (utility-first styling)
+- [shadcn/ui](https://ui.shadcn.com/) (UI components)
+- [React Router](https://reactrouter.com/) (routing)
+- [Netlify CMS](https://www.netlifycms.org/) (content management)
+- [Marked.js](https://marked.js.org/) (Markdown rendering)
+- [PostCSS](https://postcss.org/) (CSS processing)
+- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) (code quality)
+- [GitHub Actions](https://github.com/features/actions) (CI/CD)
+- [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) (deployment)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Installation
 
-Follow these steps:
+1. **Clone the repository:**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   ```sh
+   git clone https://github.com/YosephDev/yoseph-dev-central.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+   cd yoseph-dev-central
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Install dependencies:**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open in your browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+---
+
+## Usage
+
+- **Edit Content:**  
+  - Projects: Edit or add project data in `src/pages/Projects.tsx` or in Markdown files under `src/content/projects/`.
+  - Blog Posts: Add Markdown files to `src/content/blog/`.
+  - Site Settings: Update metadata and config in `src/config/` as needed.
+
+- **Customize Styles:**  
+  - Modify `tailwind.config.ts` and `src/index.css` for custom themes and styles.
+
+- **Deploy:**  
+  - Push to GitHub and connect to [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) for automatic deployment.
+
+---
+
+## Testing
+
+- **Linting:**  
+
+  ```sh
+  npm run lint
+
+  ```
+
+- **Unit/Integration Tests:**  
+
+  ```sh
+  npm run test
+
+---
+
+## Folder Structure
+
+```src/
+  components/      # Reusable UI components
+  content/         # Blog posts and project markdown files
+  hooks/           # Custom React hooks
+  lib/             # Utility libraries
+  pages/           # Page components (Home, Projects, Blog, etc.)
+  types/           # TypeScript type definitions
+  utils/           # Utility functions
+public/            # Static assets (images, favicon, etc.)
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Credits
 
-**Use GitHub Codespaces**
+- [shadcn/ui](https://ui.shadcn.com/) for UI components
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Netlify CMS](https://www.netlifycms.org/) for content management
+- [Marked.js](https://marked.js.org/) for Markdown parsing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Acknowledgments
 
-This project is built with:
+- Inspired by the open-source developer community.
+- Thanks to all contributors of the libraries and tools used in this project.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/31426af0-21c0-44fa-b066-d12bc9599d9a) and click on Share -> Publish.
+I welcome any feedback, suggestions, or contributions to this project.  
+If you are interested, please feel free to contact me or open an issue or a pull request on GitHub. Thank you! 😊
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+## Author
+
+This project was created by Yoseph Berhane. You can find more of my work on my GitHub profile: [YosephDev](https://github.com/YosephDev)
+
+---
