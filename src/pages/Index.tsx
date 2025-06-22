@@ -7,7 +7,7 @@ import { BlogCard } from "@/components/BlogCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { NewsletterForm } from "@/components/NewsletterForm";
 
-// Sample data - in a real app this would come from a CMS or API
+// Sample data
 const featuredPosts = [
   {
     slug: "modern-react-hooks",
@@ -41,17 +41,27 @@ const featuredProjects = [
     title: "DevFinder",
     description: "A developer search tool built with React, TypeScript and the GitHub API.",
     tech: ["React", "TypeScript", "GitHub API"],
-    image: "https://via.placeholder.com/600x400",
-    github: "https://github.com",
-    url: "https://demo.com"
+    image: "/images/devfinder.png",
+    github: "https://github.com/yosephdev/devfinder",
+    url: "https://devfinder-yosephdev.vercel.app"
   },
   {
     slug: "markdown-editor",
     title: "Markdown Editor",
     description: "A real-time markdown editor with preview and export functionality.",
-    tech: ["JavaScript", "React", "Node.js"],
-    image: "https://via.placeholder.com/600x400",
-    github: "https://github.com"
+    tech: ["JavaScript", "React", "CodeMirror"],
+    image: "/images/markdown-editor.png",
+    github: "https://github.com/yosephdev/markdown-editor",
+    url: "https://instant-markdown-canvas.vercel.app"
+  },
+  {
+    slug: "worldscope",
+    title: "Worldscope",
+    description: "A web application that displays information about countries using the REST Countries API.",
+    tech: ["JavaScript", "React", "REST API"],
+    image: "/images/worldscope.png",
+    github: "https://github.com/yosephdev/worldscope",
+    url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
   }
 ];
 
@@ -117,7 +127,7 @@ const Index = () => {
                 Some of my recent work and side projects.
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {featuredProjects.map((project) => (
                 <ProjectCard key={project.slug} {...project} />
               ))}
