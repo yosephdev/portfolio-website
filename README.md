@@ -32,7 +32,7 @@ A modern, responsive portfolio website to showcase my projects, blog posts, and 
 - [PostCSS](https://postcss.org/) (CSS processing)
 - [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) (code quality)
 - [GitHub Actions](https://github.com/features/actions) (CI/CD)
-- [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) (deployment)
+- [Netlify](https://www.netlify.com/) (deployment)
 
 ---
 
@@ -41,9 +41,9 @@ A modern, responsive portfolio website to showcase my projects, blog posts, and 
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/YosephDev/yoseph-dev-central.git
+   git clone https://github.com/YosephDev/portfolio-website.git
 
-   cd yoseph-dev-central
+   cd portfolio-website
    ```
 
 2. **Install dependencies:**
@@ -131,8 +131,7 @@ public/            # Static assets (images, favicon, etc.)
 
 ## Contributing
 
-I welcome any feedback, suggestions, or contributions to this project.  
-If you are interested, please feel free to contact me or open an issue or a pull request on GitHub. Thank you! 😊
+I welcome any feedback, suggestions, or contributions to this project. If you are interested, please feel free to contact me or open an issue or a pull request on GitHub. Thank you! 😊
 
 ---
 
