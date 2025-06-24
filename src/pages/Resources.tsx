@@ -7,43 +7,44 @@ import { Button } from "@/components/ui/button";
 
 // Sample data - in a real app this would come from a CMS or API
 const resources = [
-  {
-    title: "React Performance Cheatsheet",
-    description: "A comprehensive guide to optimizing React application performance.",
-    type: "PDF",
-    downloadUrl: "#"
-  },
-  {
-    title: "TypeScript Type Definitions",
-    description: "Common TypeScript type definitions for popular libraries and patterns.",
-    type: "Code Snippets",
-    downloadUrl: "#"
-  },
-  {
-    title: "CSS Grid Layout Guide",
-    description: "A visual guide to CSS Grid with examples and best practices.",
-    type: "PDF",
-    downloadUrl: "#"
-  },
-  {
-    title: "Git Workflow Templates",
-    description: "Templates for different Git workflows including GitHub Flow and GitFlow.",
-    type: "Markdown",
-    downloadUrl: "#"
-  },
-  {
-    title: "VS Code Setup for Web Development",
-    description: "My recommended VS Code extensions and settings for web development.",
-    type: "JSON",
-    downloadUrl: "#"
-  },
-  {
-    title: "Testing React Components",
-    description: "A guide to testing React components with Jest and React Testing Library.",
-    type: "PDF",
-    downloadUrl: "#"
-  }
+    {
+        title: "React Performance Cheatsheet",
+        description: "A comprehensive guide to optimizing React application performance.",
+        type: "PDF",
+        downloadUrl: "/downloads/react-performance-cheatsheet.pdf"
+    },
+    {
+        title: "TypeScript Type Definitions",
+        description: "Common TypeScript type definitions for popular libraries and patterns.",
+        type: "Code Snippets",
+        downloadUrl: "/downloads/typescript-type-definitions.js"
+    },
+    {
+        title: "CSS Grid Layout Guide",
+        description: "A visual guide to CSS Grid with examples and best practices.",
+        type: "PDF",
+        downloadUrl: "/downloads/css-grid-layout-guide.pdf"
+    },
+    {
+        title: "Git Workflow Templates",
+        description: "Templates for different Git workflows including GitHub Flow and GitFlow.",
+        type: "Markdown",
+        downloadUrl: "/downloads/git-workflow-templates.md"
+    },
+    {
+        title: "VS Code Setup for Web Development",
+        description: "My recommended VS Code extensions and settings for web development.",
+        type: "JSON",
+        downloadUrl: "/downloads/vscode-setup.json"
+    },
+    {
+        title: "Testing React Components",
+        description: "A guide to testing React components with Jest and React Testing Library.",
+        type: "PDF",
+        downloadUrl: "/downloads/testing-react-components.pdf"
+    }
 ];
+  
 
 const resourceTypes = Array.from(
   new Set(resources.map((resource) => resource.type))
