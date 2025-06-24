@@ -50,7 +50,7 @@ export const SEO: React.FC<SEOProps> = ({
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
-            <meta name="twitter:creator" content="@yosephdev" />
+            <meta name="twitter:creator" content="@yosephbet" />
 
             {/* Article specific */}
             {type === 'article' && publishedTime && (

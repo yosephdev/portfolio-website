@@ -46,17 +46,17 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitter.com"
+                  href="https://linkedin.com/in/yoseph-berhane"
                   className="hover:text-primary"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Twitter
+                  Linkedin
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/yosephdev"
                   className="hover:text-primary"
                   target="_blank"
                   rel="noreferrer"
