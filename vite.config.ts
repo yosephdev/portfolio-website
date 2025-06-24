@@ -1,101 +1,31 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import * as path from "path";
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        react(),
-        VitePWA({
-            registerType: 'autoUpdate',
-            workbox: {
-                globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}'],
-                runtimeCaching: [
-                    {
-                        urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-                        handler: 'CacheFirst',
-                        options: {
-                            cacheName: 'google-fonts-cache',
-                            expiration: {
-                                maxEntries: 10,
-                                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
-                            }
-                        }
-                    },
-                    {
-                        urlPattern: /^https:\/\/api\.*/i,
-                        handler: 'NetworkFirst',
-                        options: {
-                            cacheName: 'api-cache',
-                            networkTimeoutSeconds: 10,
-                            expiration: {
-                                maxEntries: 50,
-                                maxAgeSeconds: 60 * 60 * 24 // 1 day
-                            }
-                        }
-                    }
-                ]
-            },
-            includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
-            manifest: {
-                name: 'Yoseph Berhane - Full Stack Developer',
-                short_name: 'Yoseph Dev',
-                description: 'Full Stack Developer specializing in Python, Django, React, and AI-powered web applications',
-                theme_color: '#2563eb',
-                background_color: '#ffffff',
-                display: 'standalone',
-                icons: [
-                    {
-                        src: 'pwa-192x192.png',
-                        sizes: '192x192',
-                        type: 'image/png'
-                    },
-                    {
-                        src: 'pwa-512x512.png',
-                        sizes: '512x512',
-                        type: 'image/png'
-                    }
-                ]
-            }
-        })
-    ],
+    plugins: [react()],
     resolve: {
-        alias: {
-            '@': path.resolve(__dirname, './src'),
-            '@components': path.resolve(__dirname, './src/components'),
-            '@pages': path.resolve(__dirname, './src/pages'),
-            '@utils': path.resolve(__dirname, './src/utils'),
-            '@hooks': path.resolve(__dirname, './src/hooks'),
-            '@types': path.resolve(__dirname, './src/types'),
-            '@config': path.resolve(__dirname, './src/config')
-        }
-    },
-    build: {
-        rollupOptions: {
-            output: {
-                manualChunks: {
-                    vendor: ['react', 'react-dom'],
-                    router: ['react-router-dom'],
-                    ui: ['lucide-react', 'framer-motion'],
-                    forms: ['react-hook-form', '@hookform/resolvers', 'zod']
-                }
-            }
-        },
-        sourcemap: true,
-        minify: 'terser',
-        terserOptions: {
-            compress: {
-                drop_console: true,
-                drop_debugger: true
-            }
-        }
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
     },
     server: {
-        port: 3000,
-        open: true
-    },
-    preview: {
-        port: 4173,
-        open: true
+      port: 5173,
+      host: true,
+      proxy: {
+        '/api/subscribe': {
+          target: 'https://api.beehiiv.com',
+          changeOrigin: true,
+          rewrite: (path) => '/v2/publications/812c37bf-5f3d-46c3-8b13-bc4ab8b18043/subscriptions',
+          configure: (proxy, options) => {
+            proxy.on('proxyReq', (proxyReq, req, res) => {
+              // Add the API key to the request
+              proxyReq.setHeader('Authorization', 'Bearer aR3LJgQ52IZQL7e7sLhP4GCCGCl6g1RgP38g5Z8sWhcWi9rBO9dZdcCFFqy73BSU')
+              proxyReq.setHeader('Content-Type', 'application/json')
+            })
+          }
+        }
+      }
     }
-});
+})
