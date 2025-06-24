@@ -634,7 +634,63 @@ The platform ensures high performance, security, and accessibility — suitable 
         "github": "https://github.com/yosephdev/isana-facilitation",
         "url": ""
     },
+    "worldscope": {
+        title: "Worldscope",
+        description: "A web application that displays information about countries using the REST Countries API.",
+        longDescription: `
+This project is a web application that allows users to explore information about countries around the world. It uses the REST Countries API to fetch data about countries, including their flags, population, languages, currencies, and more.<br>
 
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Country search and filtering
+- 🌍 Detailed country information
+- 📊 Visualizations of country data
+- 🌙 Light and dark mode toggle
+- 🔍 Search functionality
+- 📱 Responsive design
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · TypeScript · Tailwind CSS
+**Backend:** REST Countries API
+**DevOps:** GitHub Actions (CI/CD)
+**Infrastructure:** AWS (EC2, S3, RDS, CloudFront)
+**Additional Tools:** Cloudinary (for media)
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Type-safe, component-driven UI with TypeScript and React
+- Lazy-loaded routes and components for performance
+- Full mobile responsiveness and accessibility compliance
+- Dockerized environment for scalability and portability
+- Continuous deployment pipeline via GitHub Actions
+- Hosted on AWS with scalable cloud infrastructure
+        `,
+        tech: [
+            "React", "TypeScript", "Tailwind CSS",
+            "REST Countries API",
+            "GitHub Actions", "AWS (EC2, S3, RDS, CloudFront)",
+            "Docker", "Cloudinary"
+        ],
+        image: "/images/worldscope.png",
+        screenshots: [
+            "/images/worldscope.png"
+        ],
+        github: "https://github.com/yosephdev/worldscope",
+        url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
+    }
 };
 
 
