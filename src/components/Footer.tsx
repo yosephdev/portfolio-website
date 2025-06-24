@@ -1,5 +1,5 @@
-
 import { Link } from "react-router-dom";
+import { NewsletterSubscribe } from "@/components/NewsletterSubscribe";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -71,22 +71,9 @@ export function Footer() {
             <p className="mt-4 text-sm text-muted-foreground">
               Subscribe to get updates on new content and resources.
             </p>
-            <form className="mt-2" onSubmit={(e) => e.preventDefault()}>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  className="h-10 rounded-md border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="h-10 rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <div className="mt-2">
+              <NewsletterSubscribe compact />
+            </div>
           </div>
         </div>
         <div className="mt-8 border-t pt-6">
