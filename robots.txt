@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://yoseph.dev/sitemap.xml
