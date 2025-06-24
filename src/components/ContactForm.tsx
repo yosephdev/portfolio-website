@@ -176,7 +176,7 @@ export const ContactForm: React.FC = () => {
             className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
               isSubmitting || submitStatus === 'loading'
                 ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-blue-600 hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                : 'bg-primary hover:bg-primary/90 active:bg-primary/80 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
             } text-white`}
           >
             {submitStatus === 'loading' ? (
