@@ -1041,23 +1041,6 @@ const BlogPost = () => {
     return null;
   }
 
-  // Convert markdown content to HTML
-  // In a real app you would use a library like marked or remark
-  const formatContent = (content: string) => {
-    // Very basic markdown formatting
-    return content
-      .replace(/^# (.*$)/gm, '<h1 class="text-4xl font-bold mt-8 mb-4">$1</h1>')
-      .replace(/^## (.*$)/gm, '<h2 class="text-3xl font-bold mt-8 mb-4">$1</h2>')
-      .replace(/^### (.*$)/gm, '<h3 class="text-2xl font-bold mt-6 mb-3">$1</h3>')
-      .replace(/^#### (.*$)/gm, '<h4 class="text-xl font-bold mt-4 mb-2">$1</h4>')
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/\n/g, '<br />')
-      .replace(/```([^`]+)```/g, (_, code) => {
-        return `<pre class="bg-muted p-4 rounded-md overflow-x-auto my-4"><code>${code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>`;
-      });
-  };
-
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -1107,7 +1090,7 @@ const BlogPost = () => {
             {/* Post Content */}
             <div 
               className="prose dark:prose-invert prose-headings:font-bold prose-a:text-primary max-w-none"
-              dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
+              dangerouslySetInnerHTML={{ __html: post.content }}
             />
             
             {/* Post Footer */}
