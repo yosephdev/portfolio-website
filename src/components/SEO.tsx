@@ -14,7 +14,7 @@ interface SEOProps {
     tags?: string[];
 }
 
-export const SEO: React.FC<SEOProps> = ({
+const SEO: React.FC<SEOProps> = ({
     title = 'Yoseph Berhane - Full Stack Developer & AI Enthusiast',
     description = 'Full Stack Developer specializing in Python, Django, React, and AI-powered web applications. Building innovative solutions with modern technologies.',
     keywords = ['Full Stack Developer', 'Python', 'Django', 'React', 'AI', 'Machine Learning', 'Web Development'],
@@ -74,3 +74,5 @@ export const SEO: React.FC<SEOProps> = ({
         </Helmet>
     );
 };
+
+export default SEO;
