@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 interface ProjectCardProps {
   slug: string;
@@ -19,10 +20,11 @@ export function ProjectCard({ slug, title, description, tech, image, url, github
     <Card className="h-full card-hover overflow-hidden">
       {image && (
         <div className="aspect-video overflow-hidden">
-          <img 
+          <OptimizedImage 
             src={image} 
             alt={title} 
             className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+            lazy={true}
           />
         </div>
       )}
