@@ -1,7 +1,7 @@
 const CACHE_NAME = 'yoseph-dev-v1';
 const urlsToCache = [
   '/',
-  '/index-4e547000.js',
+  '/index-22c40578.js',
   '/static/js/bundle.js',
   '/static/css/main.css',
   '/manifest.json'
