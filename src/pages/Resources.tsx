@@ -42,6 +42,48 @@ const resources = [
         description: "A guide to testing React components with Jest and React Testing Library.",
         type: "PDF",
         downloadUrl: "/downloads/testing-react-components.pdf"
+    },
+    {
+        title: "Modern JavaScript Cheatsheet",
+        description: "Quick reference for ES6+ features, array methods, and asynchronous JavaScript.",
+        type: "PDF",
+        downloadUrl: "/downloads/modern-javascript-cheatsheet.pdf"
+    },
+    {
+        title: "Docker for Developers Guide",
+        description: "An introduction to Docker for web developers, covering containers, images, and Docker Compose.",
+        type: "PDF",
+        downloadUrl: "/downloads/docker-for-developers-guide.pdf"
+    },
+    {
+        title: "SQL Joins Explained",
+        description: "Visual explanations of different SQL JOIN types with examples.",
+        type: "PDF",
+        downloadUrl: "/downloads/sql-joins-explained.pdf"
+    },
+    {
+        title: "Frontend Interview Handbook",
+        description: "Common frontend interview questions and detailed answers.",
+        type: "PDF",
+        downloadUrl: "/downloads/frontend-interview-handbook.pdf"
+    },
+    {
+        title: "JSON Schema Reference",
+        description: "A quick reference guide for writing and understanding JSON Schemas.",
+        type: "JSON",
+        downloadUrl: "/downloads/json-schema-reference.json"
+    },
+    {
+        title: "Useful Git Commands",
+        description: "A collection of frequently used Git commands for daily development.",
+        type: "Code Snippets",
+        downloadUrl: "/downloads/useful-git-commands.txt"
+    },
+    {
+        title: "Markdown Cheatsheet",
+        description: "A comprehensive cheatsheet for Markdown syntax.",
+        type: "Markdown",
+        downloadUrl: "/downloads/markdown-cheatsheet.md"
     }
 ];
   

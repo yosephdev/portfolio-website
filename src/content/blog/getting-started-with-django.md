@@ -1,4 +1,3 @@
-
 ---
 title: "Getting Started with Django: A Beginner's Guide"
 date: "2023-09-18"
@@ -9,9 +8,9 @@ excerpt: "Django is a powerful web framework for Python that encourages rapid de
 relatedPosts: ["python-best-practices", "building-ai-powered-web-apps"]
 ---
 
-# Getting Started with Django: A Beginner's Guide
-
 Django continues to be one of the most popular web frameworks for Python, and for good reason. It's powerful, scalable, and comes with batteries included. In this guide, I'll walk through setting up your first Django project and explain the key concepts you need to understand.
+
+
 
 ## Why Choose Django?
 
@@ -22,9 +21,13 @@ As a Python developer, I've worked with several frameworks, but Django stands ou
 - **Security**: Protection against common vulnerabilities like CSRF, XSS, and SQL injection
 - **Scalability**: Powers sites like Instagram and Disqus
 
+
+
 ## Setting Up Your Environment
 
 Before we start with Django, let's create a virtual environment to keep our dependencies isolated:
+
+
 
 ```python
 # Create a virtual environment
@@ -40,16 +43,24 @@ source env/bin/activate
 pip install django
 ```
 
+
+
 ## Creating Your First Project
 
 Once Django is installed, you can create your first project:
+
+
 
 ```python
 django-admin startproject mysite
 cd mysite
 ```
 
+
+
 This creates a basic project structure:
+
+
 
 ```
 mysite/
@@ -62,6 +73,8 @@ mysite/
         wsgi.py
 ```
 
+
+
 Let's understand what each of these files does:
 
 - **manage.py**: A command-line utility that lets you interact with your project
@@ -69,15 +82,23 @@ Let's understand what each of these files does:
 - **urls.py**: URL declarations for your project
 - **asgi.py/wsgi.py**: Entry points for ASGI/WSGI compatible web servers
 
+
+
 ## Creating Your First App
 
 Django projects consist of one or more apps. Let's create one:
+
+
 
 ```python
 python manage.py startapp blog
 ```
 
+
+
 This creates an app structure:
+
+
 
 ```
 blog/
@@ -90,9 +111,13 @@ blog/
     views.py
 ```
 
+
+
 ## Defining Models
 
 Models are Python classes that define your database structure. Let's create a simple blog post model:
+
+
 
 ```python
 # blog/models.py
@@ -113,11 +138,15 @@ class Post(models.Model):
         return self.title
 ```
 
+
+
 After defining your model, you need to:
 
 1. Add your app to `INSTALLED_APPS` in `settings.py`
 2. Create migrations
 3. Apply those migrations
+
+
 
 ```python
 # Make migrations
@@ -127,9 +156,13 @@ python manage.py makemigrations blog
 python manage.py migrate
 ```
 
+
+
 ## Creating Views
 
 Views handle HTTP requests and return HTTP responses:
+
+
 
 ```python
 # blog/views.py
@@ -141,9 +174,13 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
+
+
 ## Setting Up URLs
 
 Create a urls.py file in your app and connect it to your project's urls.py:
+
+
 
 ```python
 # blog/urls.py
@@ -154,6 +191,8 @@ urlpatterns = [
     path('', views.post_list, name='post_list'),
 ]
 ```
+
+
 
 ```python
 # mysite/urls.py
@@ -166,9 +205,13 @@ urlpatterns = [
 ]
 ```
 
+
+
 ## Creating Templates
 
 Templates define how your data is presented:
+
+
 
 ```html
 <!-- blog/templates/blog/post_list.html -->
@@ -195,15 +238,23 @@ Templates define how your data is presented:
 </html>
 ```
 
+
+
 ## Running Your Server
 
 Now you can run your development server:
+
+
 
 ```python
 python manage.py runserver
 ```
 
+
+
 Visit http://127.0.0.1:8000/ to see your application in action!
+
+
 
 ## Conclusion
 

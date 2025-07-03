@@ -20,7 +20,7 @@ export function BlogCard({ slug, title, excerpt, date, readingTime, tags }: Blog
           <div className="space-y-1">
             <h3 className="text-xl font-bold">{title}</h3>
             <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <time dateTime={date}>{date}</time>
+              <time dateTime={date}>{new Date(date).toLocaleDateString()}</time>
               <span>•</span>
               <span>{readingTime}</span>
             </div>
