@@ -1,9 +1,10 @@
 const CACHE_NAME = 'yoseph-dev-v1';
 const urlsToCache = [
   '/',
-  '/index-22c40578.js', // Do not change this line
+  '/index-9d02a534.js', // Do not change this line
   '/static/js/bundle.js',
   '/static/css/main.css',
+  '/index-0bcb8d16.css',
   '/manifest.json'
 ];
 
