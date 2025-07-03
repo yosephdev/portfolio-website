@@ -1,6 +1,6 @@
 
-import type { Config } from "tailwindcss";
 import tailwindAnimate from "tailwindcss-animate";
+import typography from '@tailwindcss/typography';
 
 export default {
 	darkMode: ["class"],
@@ -198,7 +198,7 @@ export default {
               fontWeight: '700',
               fontSize: '1.5em',
               marginTop: '2em',
-              marginBottom: '1em',
+              marginBottom: '1.2em',
               lineHeight: '1.3333333',
             },
             'h2 strong': {
@@ -210,7 +210,7 @@ export default {
               fontWeight: '600',
               fontSize: '1.25em',
               marginTop: '1.6em',
-              marginBottom: '0.6em',
+              marginBottom: '0.8em',
               lineHeight: '1.6',
             },
             'h3 strong': {
@@ -260,7 +260,7 @@ export default {
               overflowX: 'auto',
               fontWeight: '400',
               fontSize: '0.875em',
-              lineHeight: '1.7142857',
+              lineHeight: '1.7142857em',
               marginTop: '1.7142857em',
               marginBottom: '1.7142857em',
               borderRadius: '0.375rem',
@@ -316,5 +316,5 @@ export default {
       },
 		}
 	},
-	plugins: [tailwindAnimate],
+	plugins: [tailwindAnimate, typography],
 } satisfies Config;

@@ -1,18 +1,24 @@
 ---
 title: "Advanced React Patterns for Scalable Applications"
 excerpt: "Dive into advanced React patterns like Compound Components, Render Props, and Higher-Order Components to build more robust and scalable applications."
-date: "July 5, 2024"
+date: "2024-07-05"
 readingTime: "12 min read"
+author: "Yoseph Berhane"
 tags: ["React", "Frontend", "Architecture", "JavaScript"]
+relatedPosts: ["modern-react-hooks", "react-performance-optimization"]
 ---
 
 ## Introduction to Advanced React Patterns
 
 As React applications grow in complexity, managing state, logic, and UI becomes challenging. Advanced React patterns provide elegant solutions to these problems, promoting reusability, maintainability, and scalability. This article explores some of the most powerful patterns that can elevate your React development.
 
+
+
 ## 1. Compound Components
 
 Compound components allow you to create flexible and expressive UI components where the parent and children implicitly share state and logic. This pattern is ideal for components like `Select`, `Tabs`, or `Accordion` where multiple sub-components work together.
+
+
 
 ```jsx
 // Example: A conceptual <Tabs> component using Compound Components
@@ -65,9 +71,13 @@ const TabPanel = ({ index, children }) => {
 // </Tabs>
 ```
 
+
+
 ## 2. Render Props
 
 Render props (a prop whose value is a function that returns a React element) enable sharing code between React components using a prop that is a function. This pattern is excellent for sharing non-visual logic, such as data fetching, state management, or event handling.
+
+
 
 ```jsx
 // Example: A conceptual <DataLoader> component using Render Props
@@ -98,9 +108,13 @@ const DataLoader = ({ render }) => {
 // />
 ```
 
+
+
 ## 3. Higher-Order Components (HOCs)
 
 HOCs are functions that take a component as an argument and return a new component with enhanced props or behavior. They are useful for cross-cutting concerns like authentication, logging, or data subscriptions.
+
+
 
 ```jsx
 // Example: A conceptual withAuth HOC
@@ -120,6 +134,8 @@ const withAuth = (WrappedComponent) => {
 // const MyProtectedComponent = withAuth(MyComponent);
 // <MyProtectedComponent />
 ```
+
+
 
 ## Conclusion
 

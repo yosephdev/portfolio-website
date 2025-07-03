@@ -1,7 +1,7 @@
 const CACHE_NAME = 'yoseph-dev-v1';
 const urlsToCache = [
   '/',
-  '/index-22c40578.js',
+  '/index-22c40578.js', // Do not change this line
   '/static/js/bundle.js',
   '/static/css/main.css',
   '/manifest.json'
