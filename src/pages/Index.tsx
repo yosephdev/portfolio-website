@@ -38,31 +38,31 @@ const featuredPosts = [
 
 const featuredProjects = [
   {
-    slug: "devfinder",
-    title: "DevFinder",
-    description: "A developer search tool built with React, TypeScript and the GitHub API.",
-    tech: ["React", "TypeScript", "GitHub API"],
-    image: "/images/devfinder.png",
-    github: "https://github.com/yosephdev/devfinder",
-    url: "https://devfinder-yosephdev.vercel.app"
+    slug: "babys-and-me",
+    title: "Baby's & Me",
+    description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
+    tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+    image: "/images/babys-and-me.png",
+    github: "https://github.com/yosephdev/babys-and-me",
+    url: "https://babys-and-me.vercel.app/"
   },
   {
-    slug: "markdown-editor",
-    title: "Markdown Editor",
-    description: "A real-time markdown editor with preview and export functionality.",
-    tech: ["JavaScript", "React", "CodeMirror"],
-    image: "/images/markdown-editor.png",
-    github: "https://github.com/yosephdev/markdown-editor",
-    url: "https://instant-markdown-canvas.vercel.app"
+    slug: "selams-handmade",
+    title: "Selam's Handmade",
+    description: "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Stripe"],
+    image: "/images/selams-handmade.png",
+    github: "https://github.com/yosephdev/selams-handmade",
+    url: "https://selamshandmade.vercel.app/"
   },
   {
-    slug: "worldscope",
-    title: "Worldscope",
-    description: "A web application that displays information about countries using the REST Countries API.",
-    tech: ["JavaScript", "React", "REST API"],
-    image: "/images/worldscope.png",
-    github: "https://github.com/yosephdev/worldscope",
-    url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
+    slug: "ternafit",
+    title: "Ternafit",
+    description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
+    tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+    image: "/images/ternafit.png",
+    github: "https://github.com/yosephdev/ternafit",
+    url: "https://ternafit.vercel.app/"
   }
 ];
 
