@@ -6,6 +6,60 @@ import { ProjectCard } from "@/components/ProjectCard";
 // Real project data from yoseph.dev and GitHub
 const projects = [
     {
+        slug: "babys-and-me",
+        title: "Baby's & Me",
+        description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
+        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+        image: "/images/babys-and-me.png",
+        github: "https://github.com/yosephdev/babys-and-me",
+        url: "https://babysme.com/"
+    },
+    {
+        slug: "anenitigray-development-services",
+        title: "Anenitigray Development Services (ADS)",
+        description: "A platform for an NGO committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives.",
+        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+        image: "/images/anenitigray-development-services.png",
+        github: "https://github.com/yosephdev/anenitigray-development-services",
+        url: "https://anenitigray.org/"
+    },
+    {
+        slug: "ternafit",
+        title: "Ternafit",
+        description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
+        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+        image: "/images/ternafit.png",
+        github: "https://github.com/yosephdev/ternafit",
+        url: "https://ternafit.org/"
+    },
+    {
+        slug: "le-menelik-saly-vibes",
+        title: "Le Menelik Saly Vibes",
+        description: "A modern restaurant and event venue website showcasing authentic cuisine and vibrant atmosphere.",
+        tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+        image: "/images/le-menelik-saly-vibes.png",
+        github: "https://github.com/yosephdev/le-menelik-saly-vibes",
+        url: "https://le-menelik-saly-vibes.vercel.app/"
+    },
+    {
+        slug: "selams-handmade",
+        title: "Selam's Handmade",
+        description: "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
+        tech: ["React", "Next.js", "Tailwind CSS", "Stripe"],
+        image: "/images/selams-handmade.png",
+        github: "https://github.com/yosephdev/selams-handmade",
+        url: "https://selamshandmade.vercel.app/"
+    },
+    {
+        slug: "supermerra",
+        title: "Supermerra",
+        description: "A modern, responsive website for Super Merra Frisör – a professional men’s hair salon in Katrineholm, Sweden.",
+        tech: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+        image: "/images/supermerra.png",
+        github: "https://github.com/yosephdev/supermerra",
+        url: "https://supermerra.se/"
+    },
+    {
         slug: "sero-global",
         title: "Sero Global",
         description: "A mental health platform built with Django, Python and AWS for a better access to mental health services.",

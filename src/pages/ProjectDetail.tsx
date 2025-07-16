@@ -8,6 +8,359 @@ import { marked } from 'marked';
 
 // Define the project details
 const projects = {
+    "babys-and-me": {
+        title: "Baby's & Me",
+        description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
+        longDescription: `
+Baby's & Me is a responsive eCommerce store offering handmade baby and toddler products. Built for scalability and modern UX, it emphasizes mobile-first design and smooth performance. The platform provides an accessible marketplace supporting local artisans and sustainable babywear.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Responsive product catalog with detailed descriptions
+- 🛒 Streamlined shopping cart and checkout experience
+- 💳 Secure payment processing integration
+- 📱 Mobile-first design approach
+- 🧶 Platform for local artisans to showcase handmade products
+- ♻️ Focus on sustainable and eco-friendly baby products
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS  
+**Deployment:** Vercel  
+**Features:** Modern eCommerce functionality with accessibility focus  
+**Design:** Clean UI with emphasis on product presentation
+
+<br>
+
+## Technical Details
+
+<br>
+
+The platform is built with Vite for fast development and optimized production builds. TypeScript ensures type safety throughout the codebase, while shadcn/ui components provide a consistent and accessible user interface.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- Vite for lightning-fast builds and hot module replacement
+- TypeScript for enhanced developer experience and code quality
+- Tailwind CSS for utility-first styling and responsive design
+- shadcn/ui for accessible, reusable UI components
+- Optimized image loading for product catalog performance
+        `,
+        tech: [
+            "Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"
+        ],
+        image: "/images/babys-and-me.png",
+        screenshots: [
+            "/images/babys-and-me.png"
+        ],
+        github: "https://github.com/yosephdev/babys-and-me",
+        url: "https://babys-and-me.vercel.app/"
+    },
+    "anenitigray-development-services": {
+        title: "Anenitigray Development Services (ADS)",
+        description: "A platform for an NGO committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives.",
+        longDescription: `
+Anenitigray Development Services (ADS) is a young Non-Governmental Organization (NGO) committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives. The website was built to support ADS's mission by offering clarity, accessibility, and scalability.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Clear presentation of the organization's mission and initiatives
+- 🌱 Project showcase highlighting community impact
+- 💰 Donation and support integration
+- 📱 Fully responsive design for all devices
+- 📊 Impact metrics and transparency reporting
+- 📰 News and updates section for ongoing projects
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS  
+**Deployment:** Vercel  
+**Features:** Optimized for NGO needs with donation capabilities  
+**Design:** Accessible interface with focus on information clarity
+
+<br>
+
+## Technical Details
+
+<br>
+
+The website is built with modern web technologies to ensure fast loading times, accessibility, and ease of maintenance. The use of TypeScript and component-based architecture allows for scalable development as the organization grows.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- Component-based architecture for maintainable codebase
+- TypeScript for type safety and better development experience
+- Tailwind CSS for responsive design implementation
+- shadcn/ui for consistent, accessible UI components
+- Optimized assets for performance in low-bandwidth environments
+        `,
+        tech: [
+            "Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"
+        ],
+        image: "/images/anenitigray-development-services.png",
+        screenshots: [
+            "/images/anenitigray-development-services.png"
+        ],
+        github: "https://github.com/yosephdev/anenitigray-development-services",
+        url: "https://anenitigray-development-services.vercel.app/"
+    },
+    "ternafit": {
+        title: "Ternafit",
+        description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
+        longDescription: `
+Ternafit is a Sweden-based NGO with a mission to empower the Tigrean people through initiatives in information sharing, raising awareness, and building connections for aid. The platform promotes digital solidarity, community engagement, and resource mobilization.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Comprehensive information about the organization's mission and work
+- 🔗 Resource hub for community support and aid coordination
+- 📣 Awareness campaigns and educational content
+- 📱 Responsive design optimized for global accessibility
+- 🌍 Multi-language support for broader reach
+- 📅 Events calendar for community engagement
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS  
+**Deployment:** Vercel  
+**Features:** Information sharing and community building tools  
+**Design:** Clean, accessible interface with focus on content clarity
+
+<br>
+
+## Technical Details
+
+<br>
+
+The website leverages modern web technologies to create a fast, accessible platform for information sharing and community building. The architecture is designed for easy content updates and future expansion of features.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- Vite for optimized build performance and development experience
+- TypeScript for code quality and maintainability
+- Tailwind CSS for responsive, consistent styling
+- shadcn/ui for accessible UI components
+- Content management system integration for easy updates
+        `,
+        tech: [
+            "Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"
+        ],
+        image: "/images/ternafit.png",
+        screenshots: [
+            "/images/ternafit.png"
+        ],
+        github: "https://github.com/yosephdev/ternafit",
+        url: "https://ternafit.vercel.app/"
+    },
+    "le-menelik-saly-vibes": {
+        title: "Le Menelik Saly Vibes",
+        description: "A modern restaurant and event venue website showcasing authentic cuisine and vibrant atmosphere.",
+        longDescription: `
+Le Menelik Saly Vibes is a sophisticated restaurant and event venue website that captures the essence of authentic cuisine and vibrant atmosphere. The site features elegant design, interactive menus, and seamless booking functionality.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Interactive menu with detailed dish descriptions
+- 🍽️ Online table reservation system
+- 🎉 Event booking and venue rental information
+- 📱 Fully responsive design for all devices
+- 🌍 Multi-language support
+- 📧 Contact forms and location mapping
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · Next.js · TypeScript · Tailwind CSS  
+**Deployment:** Vercel  
+**Features:** Server-side rendering for optimal performance  
+**Design:** Modern UI/UX with smooth animations
+
+<br>
+
+## Technical Details
+
+<br>
+
+The website is built with Next.js for optimal performance and SEO. It features a modern, responsive design that showcases the restaurant's atmosphere and cuisine effectively.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- Server-side rendering for fast loading times
+- Optimized images and assets for web performance
+- Interactive components for menu browsing
+- Responsive design that works across all devices
+- Clean, semantic HTML structure for accessibility
+        `,
+        tech: [
+            "React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"
+        ],
+        image: "/images/le-menelik-saly-vibes.png",
+        screenshots: [
+            "/images/le-menelik-saly-vibes.png"
+        ],
+        github: "https://github.com/yosephdev/le-menelik-saly-vibes",
+        url: "https://le-menelik-saly-vibes.vercel.app/"
+    },
+    "selams-handmade": {
+        title: "Selam's Handmade",
+        description: "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
+        longDescription: `
+Selam's Handmade is an elegant e-commerce platform dedicated to showcasing and selling beautiful handcrafted products. The site combines modern web technologies with thoughtful design to create an exceptional shopping experience.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Product catalog with detailed descriptions and images
+- 🛒 Shopping cart and checkout functionality
+- 💳 Secure payment processing with Stripe
+- 👤 User accounts and order history
+- 📱 Mobile-optimized shopping experience
+- 🔍 Product search and filtering capabilities
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · Next.js · Tailwind CSS  
+**Payment:** Stripe Integration  
+**Deployment:** Vercel  
+**Features:** E-commerce functionality with modern UI
+
+<br>
+
+## Technical Details
+
+<br>
+
+The platform is built with Next.js and React, providing a fast and responsive shopping experience. Stripe integration ensures secure payment processing for customers.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- Next.js for server-side rendering and optimal performance
+- Stripe integration for secure payment processing
+- Responsive design optimized for mobile commerce
+- Product management and inventory tracking
+- SEO optimization for better product discoverability
+        `,
+        tech: [
+            "React", "Next.js", "Tailwind CSS", "Stripe", "Vercel"
+        ],
+        image: "/images/selams-handmade.png",
+        screenshots: [
+            "/images/selams-handmade.png"
+        ],
+        github: "https://github.com/yosephdev/selams-handmade",
+        url: "https://selamshandmade.vercel.app/"
+    },
+    "supermerra": {
+        title: "Supermerra",
+        description: "A modern, responsive website for Super Merra Frisör – a professional men's hair salon in Katrineholm, Sweden.",
+        longDescription: `
+Supermerra is a professional website for Super Merra Frisör, a men's hair salon located in Katrineholm, Sweden. The site showcases the salon's services, team, and booking capabilities with a clean, modern design.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- ✅ Service showcase with pricing information
+- 👨‍💼 Team member profiles and specializations
+- 📅 Online booking system integration
+- 📱 Mobile-first responsive design
+- 🌍 Swedish language support
+- 📍 Location and contact information
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · TypeScript · Tailwind CSS · Next.js  
+**Deployment:** Custom hosting  
+**Features:** Professional business website with booking integration
+
+<br>
+
+## Technical Details
+
+<br>
+
+The website is built with modern web technologies to provide a professional online presence for the hair salon. It features clean design, fast loading times, and easy navigation.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- TypeScript for type safety and better development experience
+- Responsive design optimized for mobile users
+- Fast loading times with optimized assets
+- Professional design that reflects the salon's brand
+- Integration with booking systems for appointments
+        `,
+        tech: [
+            "React", "TypeScript", "Tailwind CSS", "Next.js"
+        ],
+        image: "/images/supermerra.png",
+        screenshots: [
+            "/images/supermerra.png"
+        ],
+        github: "https://github.com/yosephdev/supermerra",
+        url: "https://supermerra.se/"
+    },
     "devfinder": {
         title: "DevFinder",
         description: "A developer search tool built with React, TypeScript and the GitHub API.",
