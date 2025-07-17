@@ -8,6 +8,73 @@ import { marked } from 'marked';
 
 // Define the project details
 const projects = {
+    "habesha-smak-butik": {
+        title: "Habesha Smak Butik",
+        description: "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items.",
+        longDescription: `
+Habesha Smak Butik is a comprehensive multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items. The platform supports Swedish, Amharic, and Tigrinya languages, making Ethiopian products accessible to diverse communities.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🌍 **Multilingual Support**: Swedish, Amharic, and Tigrinya languages
+- 📱 **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- 🛍️ **Product Catalog**: Browse Ethiopian products by categories with search functionality
+- 🛒 **Shopping Cart**: Add products and manage your shopping cart with real-time updates
+- 👤 **User Authentication**: Create an account, login, and manage your profile
+- 💳 **Secure Checkout**: Multiple payment options including Stripe integration
+- ⭐ **Product Reviews**: Rate and review products
+- ❤️ **Wishlist**: Save favorite products for later
+- 🚚 **Delivery Information**: Comprehensive delivery options and tracking
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui  
+**Backend:** Node.js · Express.js · PostgreSQL (Neon Database)  
+**Payment:** Stripe Integration  
+**State Management:** React Context API · React Query  
+**Deployment:** Netlify  
+**Tools:** React Hook Form · Zod validation · Sonner notifications
+
+<br>
+
+## Technical Details
+
+<br>
+
+The platform is built with modern web technologies to provide a fast, scalable, and multilingual shopping experience. The architecture supports real-time updates, secure payments, and comprehensive user management.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- React 18 with TypeScript for type-safe development
+- Vite for fast development and optimized builds
+- PostgreSQL with Neon Database for reliable data storage
+- Stripe integration for secure payment processing
+- React Query for efficient data fetching and caching
+- Multi-language support with proper internationalization
+- Responsive design with Tailwind CSS and shadcn/ui components
+- Form validation with React Hook Form and Zod
+        `,
+        tech: [
+            "React", "TypeScript", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS", "Vite"
+        ],
+        image: "/images/habesha-smak-butik.png",
+        screenshots: [
+            "/images/habesha-smak-butik.png"
+        ],
+        github: "https://github.com/yosephdev/habesha-smak-butik",
+        url: "https://habesha-smak.netlify.app/"
+    },
     "babys-and-me": {
         title: "Baby's & Me",
         description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
