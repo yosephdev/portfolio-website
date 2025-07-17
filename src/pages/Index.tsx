@@ -53,7 +53,7 @@ const featuredProjects = [
     tech: ["React", "Next.js", "Tailwind CSS", "Stripe"],
     image: "/images/selams-handmade.png",
     github: "https://github.com/yosephdev/selams-handmade",
-    url: "https://selamshandmade.vercel.app/"
+    url: "https://selamshandmade.com/"
   },
   {
     slug: "ternafit",
