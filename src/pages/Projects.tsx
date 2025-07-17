@@ -6,40 +6,22 @@ import { ProjectCard } from "@/components/ProjectCard";
 // Real project data from yoseph.dev and GitHub
 const projects = [
     {
+        slug: "habesha-smak-butik",
+        title: "Habesha Smak Butik",
+        description: "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items with support for Swedish, Amharic, and Tigrinya languages.",
+        tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+        image: "/images/habesha-smak-butik.png",
+        github: "https://github.com/yosephdev/habesha-smak-butik",
+        url: "https://habesha-smak.netlify.app/"
+    },
+    {
         slug: "babys-and-me",
         title: "Baby's & Me",
         description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
         tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
         image: "/images/babys-and-me.png",
         github: "https://github.com/yosephdev/babys-and-me",
-        url: "https://babysme.com/"
-    },
-    {
-        slug: "anenitigray-development-services",
-        title: "Anenitigray Development Services (ADS)",
-        description: "A platform for an NGO committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives.",
-        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
-        image: "/images/anenitigray-development-services.png",
-        github: "https://github.com/yosephdev/anenitigray-development-services",
-        url: "https://anenitigray.org/"
-    },
-    {
-        slug: "ternafit",
-        title: "Ternafit",
-        description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
-        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
-        image: "/images/ternafit.png",
-        github: "https://github.com/yosephdev/ternafit",
-        url: "https://ternafit.org/"
-    },
-    {
-        slug: "le-menelik-saly-vibes",
-        title: "Le Menelik Saly Vibes",
-        description: "A modern restaurant and event venue website showcasing authentic cuisine and vibrant atmosphere.",
-        tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-        image: "/images/le-menelik-saly-vibes.png",
-        github: "https://github.com/yosephdev/le-menelik-saly-vibes",
-        url: "https://le-menelik-saly-vibes.vercel.app/"
+        url: "https://babys-and-me.vercel.app/"
     },
     {
         slug: "selams-handmade",
@@ -51,9 +33,36 @@ const projects = [
         url: "https://selamshandmade.vercel.app/"
     },
     {
+        slug: "le-menelik-saly-vibes",
+        title: "Le Menelik Saly Vibes",
+        description: "A modern restaurant and event venue website showcasing authentic cuisine and vibrant atmosphere.",
+        tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+        image: "/images/le-menelik-saly-vibes.png",
+        github: "https://github.com/yosephdev/le-menelik-saly-vibes",
+        url: "https://le-menelik-saly-vibes.vercel.app/"
+    },
+    {
+        slug: "ternafit",
+        title: "Ternafit",
+        description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
+        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+        image: "/images/ternafit.png",
+        github: "https://github.com/yosephdev/ternafit",
+        url: "https://ternafit.vercel.app/"
+    },
+    {
+        slug: "anenitigray-development-services",
+        title: "Anenitigray Development Services (ADS)",
+        description: "A platform for an NGO committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives.",
+        tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+        image: "/images/anenitigray-development-services.png",
+        github: "https://github.com/yosephdev/anenitigray-development-services",
+        url: "https://anenitigray-development-services.vercel.app/"
+    },
+    {
         slug: "supermerra",
         title: "Supermerra",
-        description: "A modern, responsive website for Super Merra Frisör – a professional men’s hair salon in Katrineholm, Sweden.",
+        description: "A modern, responsive website for Super Merra Frisör – a professional men's hair salon in Katrineholm, Sweden.",
         tech: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
         image: "/images/supermerra.png",
         github: "https://github.com/yosephdev/supermerra",
@@ -66,89 +75,27 @@ const projects = [
         tech: ["Python", "Django", "AWS", "PostgreSQL", "Docker"],
         image: "/images/sero-global.png",
         github: "https://github.com/yosephdev/sero-global",
-        url: "hhttps://sero-global-3fbd7256cc0a.herokuapp.com/"
-    },
-    {
-        slug: "isana-facilitation",
-        title: "Isana Facilitation",
-        description: "A facilitation platform for therapists and counselors to manage their clients and sessions.",
-        tech: ["React", "Firebase", "Node.js", "Tailwind CSS"],
-        image: "/images/isana-facilitation.png",
-        github: "https://github.com/yosephdev/isana-facilitation",
-        url: "https://isana-facilitation.vercel.app"
-    },
-    {
-        slug: "markdown-editor",
-        title: "Markdown Editor",
-        description: "A free writing environment with real-time preview for writing documentation and blog posts.",
-        tech: ["JavaScript", "React", "CodeMirror", "marked.js"],
-        image: "/images/markdown-editor.png",
-        github: "https://github.com/yosephdev/markdown-editor",
-        url: "https://instant-markdown-canvas.vercel.app"
+        url: "https://sero-global-3fbd7256cc0a.herokuapp.com/"
     },
     {
         slug: "devfinder",
         title: "DevFinder",
-        description: "A developer search tool built with React, TypeScript and the GitHub API.",
+        description: "A GitHub user search application built with React and TypeScript, featuring user profiles and repository browsing.",
         tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS"],
         image: "/images/devfinder.png",
-        github: "https://github.com/yosephdev/devfinder",
+        github: "https://github.com/yosephdev/DevFinder",
         url: "https://dev-finder-five-iota.vercel.app/"
     },
     {
         slug: "worldscope",
-        title: "Worldscope",
-        description: "A web application that displays information about countries using the REST Countries API.",
+        title: "WorldScope",
+        description: "A comprehensive country information app using the REST Countries API with search, filtering, and detailed country views.",
         tech: ["JavaScript", "React", "REST API", "CSS"],
         image: "/images/worldscope.png",
         github: "https://github.com/yosephdev/worldscope",
         url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
-    },
-    {
-        slug: "ip-address-tracker",
-        title: "IP Address Tracker",
-        description: "A web application that allows users to track IP addresses and view their location on a map.",
-        tech: ["JavaScript", "Leaflet.js", "IP Geolocation API", "HTML/CSS"],
-        image: "/images/ip-address-tracker.png",
-        github: "https://github.com/yosephdev/ip-address-tracker",
-        url: "https://ip-address-tracker-swart-rho.vercel.app/"
-    },
-    // {
-    //     slug: "react-notes-app",
-    //     title: "React Notes App",
-    //     description: "A feature-rich note-taking application built with React and Firebase.",
-    //     tech: ["React", "Firebase", "Redux", "Tailwind CSS"],
-    //     image: "/images/react-notes.png",
-    //     github: "https://github.com/yosephdev/react-notes",
-    //     url: "https://react-notes-five-phi.vercel.app/"
-    // },
-    {
-        slug: "book-dine",
-        title: "Book & Dine",
-        description: "A full-stack restaurant reservation system with real-time availability, booking logic, and a clean user interface.",
-        tech: ["React", "Node.js", "MongoDB", "Express"],
-        image: "/images/book-dine.png",
-        github: "https://github.com/yosephdev/book-dine",
-        url: "https://book-dine-c8d9fe1355da.herokuapp.com/"
-    },
-    {
-        slug: "mastery-hub",
-        title: "Mastery Hub",
-        description: "A platform that connects professionals for mentorship and skill-sharing with responsive design and intuitive navigation.",
-        tech: ["Python", "Django", "PostgreSQL", "HTML/CSS"],
-        image: "/images/mastery-hub.png",
-        github: "https://github.com/yosephdev/mastery-hub",
-        url: "https://skill-sharing-446c0336ffb5.herokuapp.com/"
-    },
-    {
-        slug: "boutique-ado",
-        title: "Boutique Ado",
-        description: "A Django web application for an online clothing store with e-commerce functionality.",
-        tech: ["Python", "Django", "PostgreSQL", "HTML/CSS"],
-        image: "/images/boutique-ado.png",
-        github: "https://github.com/yosephdev/boutique-ado",
-        url: "https://boutique-adey-61c58d87c08b.herokuapp.com/"
     }
+    // Removed: mastery-hub, boutique-ado, react-notes, markdown-editor to keep list focused
 ];
 
 const Projects = () => {
