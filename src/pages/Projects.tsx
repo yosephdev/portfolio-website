@@ -30,11 +30,11 @@ const projects = [
         tech: ["React", "Next.js", "Tailwind CSS", "Stripe"],
         image: "/images/selams-handmade.png",
         github: "https://github.com/yosephdev/selams-handmade",
-        url: "https://selamshandmade.vercel.app/"
+        url: "https://selamshandmade.com/"
     },
     {
         slug: "le-menelik-saly-vibes",
-        title: "Le Menelik Saly Vibes",
+        title: "Le Menelik Restaurant",
         description: "A modern restaurant and event venue website showcasing authentic cuisine and vibrant atmosphere.",
         tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
         image: "/images/le-menelik-saly-vibes.png",
@@ -86,15 +86,15 @@ const projects = [
         github: "https://github.com/yosephdev/DevFinder",
         url: "https://dev-finder-five-iota.vercel.app/"
     },
-    {
-        slug: "worldscope",
-        title: "WorldScope",
-        description: "A comprehensive country information app using the REST Countries API with search, filtering, and detailed country views.",
-        tech: ["JavaScript", "React", "REST API", "CSS"],
-        image: "/images/worldscope.png",
-        github: "https://github.com/yosephdev/worldscope",
-        url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
-    }
+    // {
+    //     slug: "worldscope",
+    //     title: "WorldScope",
+    //     description: "A comprehensive country information app using the REST Countries API with search, filtering, and detailed country views.",
+    //     tech: ["JavaScript", "React", "REST API", "CSS"],
+    //     image: "/images/worldscope.png",
+    //     github: "https://github.com/yosephdev/worldscope",
+    //     url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
+    // }
     // Removed: mastery-hub, boutique-ado, react-notes, markdown-editor to keep list focused
 ];
 

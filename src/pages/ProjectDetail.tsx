@@ -253,10 +253,10 @@ Key technical aspects:
         url: "https://ternafit.vercel.app/"
     },
     "le-menelik-saly-vibes": {
-        title: "Le Menelik Saly Vibes",
-        description: "A modern restaurant and event venue website showcasing authentic cuisine and vibrant atmosphere.",
+        title: "Le Menelik Restaurant",
+        description: "A modern restaurant website showcasing authentic cuisine and vibrant atmosphere.",
         longDescription: `
-Le Menelik Saly Vibes is a sophisticated restaurant and event venue website that captures the essence of authentic cuisine and vibrant atmosphere. The site features elegant design, interactive menus, and seamless booking functionality.
+Le Menelik Restaurant is a sophisticated restaurant website that captures the essence of authentic cuisine and vibrant atmosphere. The site features elegant design, interactive menus, and seamless booking functionality.
 
 <br>
 
@@ -368,7 +368,7 @@ Key technical aspects:
             "/images/selams-handmade.png"
         ],
         github: "https://github.com/yosephdev/selams-handmade",
-        url: "https://selamshandmade.vercel.app/"
+        url: "https://selamshandmade.com/"
     },
     "supermerra": {
         title: "Supermerra",
