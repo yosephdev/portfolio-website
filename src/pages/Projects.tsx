@@ -48,7 +48,7 @@ const projects = [
         tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
         image: "/images/ternafit.png",
         github: "https://github.com/yosephdev/ternafit",
-        url: "https://ternafit.vercel.app/"
+        url: "https://ternafit.org/"
     },
     {
         slug: "anenitigray-development-services",
@@ -57,7 +57,7 @@ const projects = [
         tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
         image: "/images/anenitigray-development-services.png",
         github: "https://github.com/yosephdev/anenitigray-development-services",
-        url: "https://anenitigray-development-services.vercel.app/"
+        url: "https://anenitigray.org"
     },
     {
         slug: "supermerra",
