@@ -38,6 +38,15 @@ const featuredPosts = [
 
 const featuredProjects = [
   {
+    slug: "mt-butik",
+    title: "MT Skrädderi & Butik",
+    description: "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna. A modern platform combining traditional craftsmanship with digital presence.",
+    tech: ["Vite", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
+    image: "/images/mt-butik.png",
+    github: "https://github.com/yosephdev/mt-butik",
+    url: "https://mt-butik.vercel.app/"
+  },
+  {
     slug: "babys-and-me",
     title: "Baby's & Me",
     description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
@@ -54,15 +63,6 @@ const featuredProjects = [
     image: "/images/selams-handmade.png",
     github: "https://github.com/yosephdev/selams-handmade",
     url: "https://selamshandmade.com/"
-  },
-  {
-    slug: "ternafit",
-    title: "Ternafit",
-    description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
-    tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
-    image: "/images/ternafit.png",
-    github: "https://github.com/yosephdev/ternafit",
-    url: "https://ternafit.vercel.app/"
   }
 ];
 
@@ -78,27 +78,46 @@ const Index = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="container py-20 md:py-32">
-          <div className="mx-auto flex max-w-[980px] flex-col items-center gap-4 text-center">
-            <h1 className="text-3xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              Hey, I'm <span className="text-primary">Yoseph</span>
-            </h1>
-            <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
-              Full Stack Developer & AI Enthusiast. With years of experience, I'm passionate about building innovative solutions and helping others navigate the world of web development and AI.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button asChild size="lg">
-                <a href="https://www.linkedin.com/in/yoseph-berhane/" target="_blank" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                  Connect on LinkedIn
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="https://github.com/yosephdev" target="_blank" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-2 1-1.2-0.34-2.4-0.34-3.6 0-1-1-2-1-2-1a4.8 4.8 0 0 0-1 3.5c-3 0-6 2-6 5.5s3 5.5 6 5.5c.39 0 .79-.06 1.2-.18 0 0 0 0 0 0V22"/><path d="M18.36 17.36A9 9 0 0 0 5.64 6.64L15 22Z"/></svg>
-                  View GitHub
-                </a>
-              </Button>
+        <section className="relative py-20 md:py-32 overflow-hidden">
+          {/* Video Background */}
+          <div className="absolute inset-0 w-full h-full">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/images/Hero_Video_Developer_Portfolio.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Dark overlay for better text readability */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+          
+          {/* Content */}
+          <div className="container relative z-10">
+            <div className="mx-auto flex max-w-[980px] flex-col items-center gap-4 text-center">
+              <h1 className="text-3xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl text-white">
+                Hey, I'm <span className="text-primary">Yoseph</span>
+              </h1>
+              <p className="max-w-[700px] text-lg sm:text-xl text-white/90">
+                Full Stack Developer & AI Enthusiast. With years of experience, I'm passionate about building innovative solutions and helping others navigate the world of web development and AI.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <Button asChild size="lg">
+                  <a href="https://www.linkedin.com/in/yoseph-berhane/" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    Connect on LinkedIn
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <a href="https://github.com/yosephdev" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-2 1-1.2-0.34-2.4-0.34-3.6 0-1-1-2-1-2-1a4.8 4.8 0 0 0-1 3.5c-3 0-6 2-6 5.5s3 5.5 6 5.5c.39 0 .79-.06 1.2-.18 0 0 0 0 0 0V22"/><path d="M18.36 17.36A9 9 0 0 0 5.64 6.64L15 22Z"/></svg>
+                    View GitHub
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>

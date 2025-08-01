@@ -8,6 +8,68 @@ import { marked } from 'marked';
 
 // Define the project details
 const projects = {
+    "mt-butik": {
+        title: "MT Skrädderi & Butik",
+        description: "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna.",
+        longDescription: `
+MT Skrädderi & Butik is a professional business combining traditional tailoring, men's barbering services, and authentic Habesha products. Located in the heart of Eskilstuna, the business offers high-quality services with a focus on personal service and cultural authenticity.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 👔 **Professional Tailoring**: Custom-made clothing and alterations
+- ✂️ **Men's Barbering**: Professional grooming services for men
+- 🛍️ **Habesha Products**: Authentic Ethiopian products and clothing
+- 📍 **Central Location**: Located in Eskilstuna city center
+- 🎨 **Modern Design**: Clean and user-friendly web platform
+- 📱 **Responsive Design**: Works perfectly on all devices
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Vite · React 18 · TypeScript · Tailwind CSS  
+**Icons:** Lucide React  
+**Development:** ESLint · PostCSS · Autoprefixer  
+**Build Tool:** Vite for fast development and optimized builds  
+**Performance:** Optimized assets and fast loading times
+
+<br>
+
+## Technical Details
+
+<br>
+
+The website is built with Vite as the build tool for lightning-fast development and optimized production builds. React 18 with TypeScript ensures type safety and modern development practices, while Tailwind CSS provides utility-first styling.
+
+<br>
+
+Key technical aspects:
+<br>
+
+- Vite for ultra-fast hot module replacement and optimized builds
+- React 18 with latest features and TypeScript for type safety
+- Tailwind CSS for utility-first styling and responsive design
+- Lucide React for consistent and scalable icon system
+- ESLint with modern configuration for code quality
+- PostCSS with Autoprefixer for cross-browser compatibility
+- Modular architecture for maintainable codebase
+        `,
+        tech: [
+            "Vite", "React", "TypeScript", "Tailwind CSS", "Lucide React"
+        ],
+        image: "/images/mt-butik.png",
+        screenshots: [
+            "/images/mt-butik.png"
+        ],
+        github: "https://github.com/yosephdev/mt-butik",
+        url: "https://mt-butik.vercel.app/"
+    },
     "habesha-smak-butik": {
         title: "Habesha Smak Butik",
         description: "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items.",
