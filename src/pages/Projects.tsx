@@ -6,6 +6,15 @@ import { ProjectCard } from "@/components/ProjectCard";
 // Real project data from yoseph.dev and GitHub
 const projects = [
     {
+        slug: "mt-butik",
+        title: "MT Skrädderi & Butik",
+        description: "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna. A modern platform combining traditional craftsmanship with digital presence.",
+        tech: ["Vite", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
+        image: "/images/mt-butik.png",
+        github: "https://github.com/yosephdev/mt-butik",
+        url: "https://mt-butik.vercel.app/"
+    },
+    {
         slug: "habesha-smak-butik",
         title: "Habesha Smak Butik",
         description: "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items with support for Swedish, Amharic, and Tigrinya languages.",
@@ -77,15 +86,15 @@ const projects = [
         github: "https://github.com/yosephdev/sero-global",
         url: "https://sero-global-3fbd7256cc0a.herokuapp.com/"
     },
-    {
-        slug: "devfinder",
-        title: "DevFinder",
-        description: "A GitHub user search application built with React and TypeScript, featuring user profiles and repository browsing.",
-        tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS"],
-        image: "/images/devfinder.png",
-        github: "https://github.com/yosephdev/DevFinder",
-        url: "https://dev-finder-five-iota.vercel.app/"
-    },
+    // {
+    //     slug: "devfinder",
+    //     title: "DevFinder",
+    //     description: "A GitHub user search application built with React and TypeScript, featuring user profiles and repository browsing.",
+    //     tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS"],
+    //     image: "/images/devfinder.png",
+    //     github: "https://github.com/yosephdev/DevFinder",
+    //     url: "https://dev-finder-five-iota.vercel.app/"
+    // },
     // {
     //     slug: "worldscope",
     //     title: "WorldScope",
