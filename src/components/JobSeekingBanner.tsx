@@ -98,14 +98,14 @@ export function JobSeekingBanner() {
                   <MapPin className="h-4 w-4" />
                   <span>Berlin, Germany</span>
                 </div>
-                <span>•</span>
+                {/* <span>•</span> */}
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
                   <span>Available Immediately</span>
                 </div>
-                <span>•</span>
+                {/* <span>•</span> */}
                 <span className="font-medium">✅ EU Citizen</span>
-                <span>•</span>
+                {/* <span>•</span> */}
                 <span>Open to Remote</span>
               </div>
             </div>
