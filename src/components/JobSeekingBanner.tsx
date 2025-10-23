@@ -72,13 +72,19 @@ export function JobSeekingBanner() {
             </div>
             <div className="flex flex-col gap-2 mt-2">
               <Button asChild size="sm" className="w-full">
-                <a href="/Yoseph_Berhane_CV.pdf" download>
+                <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center justify-center">
                   <FileText className="h-4 w-4 mr-2" />
-                  Download CV
+                  CV 🇩🇪 (Deutsch)
+                </a>
+              </Button>
+              <Button asChild size="sm" variant="secondary" className="w-full">
+                <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center justify-center">
+                  <FileText className="h-4 w-4 mr-2" />
+                  CV 🇬🇧 (English)
                 </a>
               </Button>
               <Button asChild variant="outline" size="sm" className="w-full">
-                <a href="/contact">
+                <a href="/contact" className="flex items-center justify-center">
                   <Mail className="h-4 w-4 mr-2" />
                   Contact Me
                 </a>
@@ -111,15 +117,21 @@ export function JobSeekingBanner() {
             </div>
             <div className="flex items-center gap-3 ml-6">
               <Button asChild size="sm">
-                <a href="/Yoseph_Berhane_CV.pdf" download>
+                <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center">
                   <FileText className="h-4 w-4 mr-2" />
-                  Download CV
+                  CV 🇩🇪
+                </a>
+              </Button>
+              <Button asChild size="sm" variant="secondary">
+                <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center">
+                  <FileText className="h-4 w-4 mr-2" />
+                  CV 🇬🇧
                 </a>
               </Button>
               <Button asChild variant="outline" size="sm">
-                <a href="/contact">
+                <a href="/contact" className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  Contact Me
+                  Contact
                 </a>
               </Button>
             </div>
