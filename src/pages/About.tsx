@@ -52,9 +52,15 @@ export default function About() {
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild size="lg">
-                  <a href="/Yoseph_Berhane_CV.pdf" download>
-                    <Download className="mr-2 h-4 w-4" />
-                    Download CV
+                  <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center">
+                    <Download className="h-4 w-4 mr-2" />
+                    CV 🇩🇪
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="secondary">
+                  <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center">
+                    <Download className="h-4 w-4 mr-2" />
+                    CV 🇬🇧
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
@@ -139,7 +145,7 @@ export default function About() {
           <div className="container text-center max-w-2xl">
             <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
             <p className="text-muted-foreground mb-8">
-              I'm currently seeking full-stack developer positions in Berlin, Germany. 
+              I'm currently seeking full-stack developer positions in Berlin, Germany.
               Available for immediate start with no visa requirements (EU Citizen).
             </p>
             <div className="flex flex-wrap justify-center gap-4">
