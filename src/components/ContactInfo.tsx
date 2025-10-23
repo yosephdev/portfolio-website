@@ -12,15 +12,15 @@ export function ContactInfo() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: 'Email',
-      value: 'yosephberhane@example.com',
-      link: 'mailto:yosephberhane@example.com',
+      value: 'contact@yoseph.dev',
+      link: 'mailto:contact@yoseph.dev',
       description: 'Best way to reach me',
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: 'LinkedIn',
       value: 'Yoseph Berhane',
-      link: 'https://linkedin.com/in/yosephberhane',
+      link: 'https://linkedin.com/in/yoseph-berhane',
       description: 'Professional network',
     },
     {
@@ -160,7 +160,7 @@ export function ContactInfo() {
             </Button>
             <Button asChild variant="outline" size="sm">
               <a
-                href="https://linkedin.com/in/yosephberhane"
+                href="https://linkedin.com/in/yoseph-berhane"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -194,10 +194,10 @@ export function ContactInfoCompact() {
       <div className="flex items-center gap-2 text-sm">
         <Mail className="h-4 w-4 text-muted-foreground" />
         <a
-          href="mailto:yosephberhane@example.com"
+          href="mailto:contact@yoseph.dev"
           className="text-primary hover:underline"
         >
-          yosephberhane@example.com
+          contact@yoseph.dev
         </a>
       </div>
       <div className="flex items-center gap-2 text-sm">
@@ -215,7 +215,7 @@ export function ContactInfoCompact() {
           <Github className="h-5 w-5" />
         </a>
         <a
-          href="https://linkedin.com/in/yosephberhane"
+          href="https://linkedin.com/in/yoseph-berhane"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors"

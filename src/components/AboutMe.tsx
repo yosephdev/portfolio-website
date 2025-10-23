@@ -16,17 +16,16 @@ export function AboutMe() {
         <div className="lg:col-span-1">
           <Card>
             <CardContent className="pt-6">
-              {/* Professional Photo Placeholder */}
-              <div className="relative mb-6">
-                <div className="aspect-square rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">👨‍💻</div>
-                    <p className="text-sm text-muted-foreground">
-                      Professional Photo
-                    </p>
-                  </div>
+                {/* Professional Photo */}
+                <div className="relative mb-6">
+                <div className="aspect-square rounded-lg overflow-hidden bg-muted/5 flex items-center justify-center">
+                  <img
+                  src="/images/professional-photo.png"
+                  alt="Professional photo of Yoseph Berhane"
+                  className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
+                </div>
 
               {/* Quick Info */}
               <div className="space-y-4">
@@ -58,7 +57,7 @@ export function AboutMe() {
                   <Languages className="h-4 w-4 text-primary" />
                   <div>
                     <p className="font-medium">Languages</p>
-                    <p className="text-muted-foreground">Swedish (Native), English (Fluent)</p>
+                    <p className="text-muted-foreground">Swedish (Professional), English (Fluent)</p>
                   </div>
                 </div>
 
@@ -66,7 +65,7 @@ export function AboutMe() {
                   <GraduationCap className="h-4 w-4 text-primary" />
                   <div>
                     <p className="font-medium">Education</p>
-                    <p className="text-muted-foreground">Full Stack Development Diploma (2024)</p>
+                    <p className="text-muted-foreground">Full Stack Development Diploma (2025)</p>
                   </div>
                 </div>
               </div>
@@ -90,7 +89,7 @@ export function AboutMe() {
                 <p className="text-base leading-relaxed mb-4">
                   Hello! I'm <strong>Yoseph Berhane</strong>, a passionate Full Stack Developer with 5 years of 
                   hands-on coding experience and a recent diploma in Full Stack Development completed in 
-                  August 2024. I specialize in building modern, scalable web applications using cutting-edge 
+                  August 2025. I specialize in building modern, scalable web applications using cutting-edge 
                   technologies like React, TypeScript, and Node.js.
                 </p>
 
