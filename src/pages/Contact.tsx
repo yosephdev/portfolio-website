@@ -2,11 +2,18 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
+import { ContactInfo } from "@/components/ContactInfo";
 import { NewsletterForm } from "@/components/NewsletterForm";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
     return (
         <div className="flex min-h-screen flex-col">
+            <SEO
+                title="Contact - Yoseph Berhane | Full Stack Developer"
+                description="Get in touch with Yoseph Berhane for job opportunities, collaborations, or questions about web development projects."
+                keywords={["Contact", "Hire", "Full Stack Developer", "Web Development", "Berlin", "Germany"]}
+            />
             <Header />
 
             <main className="flex-1">
@@ -24,66 +31,32 @@ const Contact = () => {
 
                 {/* Contact Content */}
                 <section className="container py-12">
-                    <div className="mx-auto max-w-[1000px] grid gap-8 md:grid-cols-2">
-                        <div>
-                            <h2 className="text-2xl font-bold mb-4">Let's Connect</h2>
+                    <div className="mx-auto max-w-[1200px] grid gap-8 lg:grid-cols-3">
+                        {/* Contact Form - Takes 2 columns */}
+                        <div className="lg:col-span-2">
+                            <h2 className="text-2xl font-bold mb-4">Send Me a Message</h2>
                             <p className="text-muted-foreground mb-6">
-                                I'm always interested in new opportunities, collaborations, or just having a chat about web development, technology, or anything interesting.
+                                Fill out the form below and I'll get back to you as soon as possible.
                             </p>
-
-                            <div className="space-y-4">
-                                <div>
-                                    <h3 className="font-medium">Email</h3>
-                                    <a href="mailto:contact@yoseph.dev" className="text-primary hover:text-primary/80">
-                                        contact@yoseph.dev
-                                    </a>
-                                </div>
-
-                                <div>
-                                    <h3 className="font-medium">Social</h3>
-                                    <div className="flex gap-4 mt-2">
-                                        <a
-                                            href="https://twitter.com/yosephbet"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-muted-foreground hover:text-primary"
-                                        >
-                                            Twitter
-                                        </a>
-                                        <a
-                                            href="https://github.com/yosephdev"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-muted-foreground hover:text-primary"
-                                        >
-                                            GitHub
-                                        </a>
-                                        <a
-                                            href="https://linkedin.com/in/yoseph-berhane"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-muted-foreground hover:text-primary"
-                                        >
-                                            LinkedIn
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <h3 className="font-medium">Location</h3>
-                                    <p className="text-muted-foreground">Katrineholm, Sweden</p>
-                                </div>
-                            </div>
-
-                            {/* Newsletter */}
-                            <div className="mt-8">
-                                <NewsletterForm />
-                            </div>
+                            <ContactForm />
                         </div>
 
-                        {/* Contact Form */}
-                        <div>
-                            <ContactForm />
+                        {/* Contact Info - Takes 1 column */}
+                        <div className="lg:col-span-1">
+                            <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
+                            <p className="text-muted-foreground mb-6">
+                                You can also reach me through these channels:
+                            </p>
+                            <ContactInfo />
+                        </div>
+                    </div>
+                </section>
+
+                {/* Newsletter Section */}
+                <section className="bg-muted/40 py-12">
+                    <div className="container">
+                        <div className="mx-auto max-w-[600px]">
+                            <NewsletterForm />
                         </div>
                     </div>
                 </section>

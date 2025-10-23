@@ -31,6 +31,9 @@ export function Header() {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6">
+          <Link to="/about" className="text-sm font-medium hover:text-primary focus-ring rounded-md">
+            About
+          </Link>
           <Link to="/blog" className="text-sm font-medium hover:text-primary focus-ring rounded-md">
             Blog
           </Link>
@@ -89,6 +92,13 @@ export function Header() {
             onClick={closeMenu}
           >
             Home
+          </Link>
+          <Link 
+            to="/about" 
+            className="text-lg font-medium hover:text-primary"
+            onClick={closeMenu}
+          >
+            About
           </Link>
           <Link 
             to="/blog" 

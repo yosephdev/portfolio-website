@@ -6,7 +6,11 @@ import { Footer } from "@/components/Footer";
 import { BlogCard } from "@/components/BlogCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { NewsletterForm } from "@/components/NewsletterForm";
+import { JobSeekingBanner } from "@/components/JobSeekingBanner";
+import { TechnicalSkillsCompact } from "@/components/TechnicalSkills";
+import { GitHubRepos } from "@/components/GitHubRepos";
 import SEO from "@/components/SEO";
+import { Download, FileText } from "lucide-react";
 
 // Sample data
 const featuredPosts = [
@@ -76,6 +80,11 @@ const Index = () => {
       />
       <Header />
       
+      {/* Job Seeking Banner */}
+      <div className="container pt-6">
+        <JobSeekingBanner />
+      </div>
+      
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative py-20 md:py-32 overflow-hidden">
@@ -106,16 +115,18 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Button asChild size="lg">
-                  <a href="https://www.linkedin.com/in/yoseph-berhane/" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                    Connect on LinkedIn
+                  <Link to="/about">Learn More About Me</Link>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <a href="/Yoseph_Berhane_CV.pdf" download>
+                    <Download className="mr-2 h-4 w-4" />
+                    Download CV
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <a href="https://github.com/yosephdev" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-2 1-1.2-0.34-2.4-0.34-3.6 0-1-1-2-1-2-1a4.8 4.8 0 0 0-1 3.5c-3 0-6 2-6 5.5s3 5.5 6 5.5c.39 0 .79-.06 1.2-.18 0 0 0 0 0 0V22"/><path d="M18.36 17.36A9 9 0 0 0 5.64 6.64L15 22Z"/></svg>
-                    View GitHub
-                  </a>
+                  <Link to="/contact">
+                    Get in Touch
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -150,6 +161,51 @@ const Index = () => {
             <div className="mt-10 flex justify-center">
               <Button asChild>
                 <Link to="/contact">Get in Touch</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+        
+        {/* Skills Section */}
+        <section className="py-16">
+          <div className="container">
+            <div className="mx-auto mb-10 flex max-w-[980px] flex-col items-start gap-2">
+              <h2 className="text-3xl font-bold leading-tight tracking-tight">
+                Core Technologies
+              </h2>
+              <p className="text-muted-foreground">
+                My primary technology stack and areas of expertise
+              </p>
+            </div>
+            <TechnicalSkillsCompact />
+            <div className="mt-10 flex justify-center">
+              <Button asChild variant="outline">
+                <Link to="/about">View All Skills</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+        
+        {/* GitHub Repositories Section */}
+        <section className="bg-muted/40 py-16">
+          <div className="container">
+            <div className="mx-auto mb-10 flex max-w-[980px] flex-col items-start gap-2">
+              <h2 className="text-3xl font-bold leading-tight tracking-tight">
+                GitHub Projects
+              </h2>
+              <p className="text-muted-foreground">
+                Featured repositories from my GitHub profile
+              </p>
+            </div>
+            <GitHubRepos filter="featured" limit={6} showTabs={false} />
+            <div className="mt-10 flex justify-center gap-4">
+              <Button asChild variant="outline">
+                <a href="https://github.com/yosephdev" target="_blank" rel="noopener noreferrer">
+                  View GitHub Profile
+                </a>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/projects">All Projects</Link>
               </Button>
             </div>
           </div>
