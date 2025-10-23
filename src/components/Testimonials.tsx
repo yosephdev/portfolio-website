@@ -30,43 +30,43 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'John Doe',
-    role: 'Senior Developer',
-    company: 'Tech Corp',
+    name: 'Sibar Al-ani',
+    role: 'Instructor',
+    company: "Changemaker Educations",
     quote:
-      'Working with Yoseph was an absolute pleasure. His attention to detail and ability to deliver high-quality code on time made our project a huge success. Highly recommend!',
+      'Yoseph was a persistent student that wont give up or avoid a challenge when things gets difficult. He has a good work ethic and a constant drive to evolve as a developer. You can count on a driven and a constant improving employer, which is one of the most important attributes a developer can have, when hiring Yoseph.',
     relationship: 'Colleague',
-    date: '2024',
+    date: '2023',
   },
   {
     id: '2',
-    name: 'Jane Smith',
+    name: 'Betty Mengesha',
     role: 'Project Manager',
-    company: 'Digital Solutions',
+    company: 'Cascadia Transports',
     quote:
       "Yoseph's technical expertise and problem-solving skills are exceptional. He consistently goes above and beyond to ensure the project meets all requirements.",
     relationship: 'Client',
-    date: '2024',
+    date: '2023',
   },
   {
     id: '3',
-    name: 'Alex Johnson',
-    role: 'Lead Developer',
-    company: 'StartupXYZ',
+    name: 'David Young',
+    role: 'Instructor',
+    company: 'Altcademy',
     quote:
-      'An outstanding developer who brings both technical knowledge and excellent communication skills. Yoseph is a valuable asset to any team.',
+      'Showed determinism and strong work ethic in the full-stack program. Always willing to improve and learn. Yoseph is a valuable asset to any team.',
     relationship: 'Colleague',
     date: '2023',
   },
   {
     id: '4',
-    name: 'Sarah Williams',
+    name: 'Selamawit Asres',
     role: 'Business Owner',
     company: 'E-Commerce Store',
     quote:
       'Yoseph built our e-commerce platform from scratch and it exceeded all expectations. The site is fast, beautiful, and easy to manage. Thank you!',
     relationship: 'Client',
-    date: '2024',
+    date: '2023',
   },
 ];
 

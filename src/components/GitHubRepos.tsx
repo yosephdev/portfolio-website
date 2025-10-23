@@ -97,7 +97,7 @@ export function GitHubRepos({ filter = 'featured', limit, showTabs = true }: Git
   }
 
   return (
-    <Tabs defaultValue={filter} onValueChange={(value) => setActiveFilter(value as any)}>
+    <Tabs defaultValue={filter} onValueChange={(value: 'all' | 'featured' | 'popular') => setActiveFilter(value)}>
       <TabsList className="grid w-full max-w-md grid-cols-3">
         <TabsTrigger value="featured">Featured</TabsTrigger>
         <TabsTrigger value="popular">Popular</TabsTrigger>

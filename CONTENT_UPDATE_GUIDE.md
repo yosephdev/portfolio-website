@@ -13,8 +13,8 @@ This is a quick reference for updating common content on your portfolio.
 ```tsx
 // Replace the placeholder div with:
 <img
-  src="/images/professional-photo.jpg"
-  alt="Yoseph Berhane"
+  src="/images/professional-photo.png"
+  alt="Yoseph Berhane Gebremedhin"
   className="w-full h-full object-cover rounded-lg"
 />
 ```
@@ -22,12 +22,14 @@ This is a quick reference for updating common content on your portfolio.
 ## 📄 Upload Your CV
 
 ### Option 1: Single CV
+
 1. Export your CV as PDF
 2. Name it `Yoseph_Berhane_CV.pdf`
 3. Place in `public/` directory
 4. Done! The download buttons will work automatically
 
 ### Option 2: Multiple CVs (English + German)
+
 1. Create two PDFs:
    - `Yoseph_Berhane_CV_English.pdf`
    - `Yoseph_Berhane_Lebenslauf_German.pdf`
@@ -39,9 +41,10 @@ This is a quick reference for updating common content on your portfolio.
 **File:** `src/components/ContactInfo.tsx`
 
 Find and replace:
+
 ```tsx
-value: 'yosephberhane@example.com',
-link: 'mailto:yosephberhane@example.com',
+value: 'contact@yoseph.dev',
+link: 'mailto:contact@yoseph.dev',
 ```
 
 With your actual email.
@@ -51,6 +54,7 @@ With your actual email.
 **File:** `src/components/ContactInfo.tsx`
 
 Update these URLs:
+
 ```tsx
 link: 'https://linkedin.com/in/your-actual-profile',
 link: 'https://github.com/your-actual-username',
@@ -61,6 +65,7 @@ link: 'https://github.com/your-actual-username',
 **File:** `src/components/AboutMe.tsx`
 
 Find the bio paragraphs and update with your own story:
+
 ```tsx
 <p className="text-base leading-relaxed mb-4">
   Hello! I'm <strong>Yoseph Berhane</strong>, [your story here]
@@ -72,8 +77,9 @@ Find the bio paragraphs and update with your own story:
 **File:** `src/components/AboutMe.tsx`
 
 Update the quick info section:
+
 ```tsx
-<p className="text-muted-foreground">Full Stack Development Diploma (2024)</p>
+<p className="text-muted-foreground">Full Stack Development Diploma (2025)</p>
 // Change to your actual education
 
 <p className="text-muted-foreground">5 Years Coding</p>
@@ -85,6 +91,7 @@ Update the quick info section:
 **File:** `src/components/TechnicalSkills.tsx`
 
 Add, remove, or modify skills in the `skills` array:
+
 ```tsx
 const skills: Skill[] = [
   { name: 'Your Skill', level: 85, category: 'Frontend', icon: '🎨' },
@@ -98,6 +105,7 @@ const skills: Skill[] = [
 **File:** `src/components/Testimonials.tsx`
 
 Add real testimonials to the `testimonials` array:
+
 ```tsx
 {
   id: '1',
@@ -160,11 +168,13 @@ If you've found a job and want to hide the banner:
 **File:** `src/components/JobSeekingBanner.tsx`
 
 Change:
+
 ```tsx
 const [isVisible, setIsVisible] = useState(true);
 ```
 
 To:
+
 ```tsx
 const [isVisible, setIsVisible] = useState(false);
 ```
@@ -176,6 +186,7 @@ Or remove the component from `src/pages/Index.tsx`
 When you move to Berlin, update:
 
 **File:** `src/components/AboutMe.tsx`
+
 ```tsx
 <p className="text-muted-foreground">Relocating to Berlin, Germany</p>
 // Change to:
@@ -183,6 +194,7 @@ When you move to Berlin, update:
 ```
 
 **File:** `src/components/ContactInfo.tsx`
+
 ```tsx
 value: 'Relocating to Berlin',
 // Change to:

@@ -8,30 +8,30 @@ This repository hosts the codebase for Yoseph Dev Central, a personal portfolio 
 
 ## ✨ Key Features
 
--   **🎨 Sleek & Responsive Design**: A modern, minimalist UI built with Tailwind CSS, ensuring a seamless experience across all devices (desktop, tablet, mobile).
--   **🌙 Dynamic Dark Mode**: Effortlessly switch between light and dark themes for optimal viewing comfort.
--   **📝 Integrated Blog System**: Share your knowledge with a powerful, Markdown-based blog featuring syntax highlighting and robust content management.
--   **💼 Interactive Project Showcase**: Highlight your work with a dynamic project gallery, complete with detailed pages for each project.
--   **📚 Curated Resources Section**: Provide valuable downloadable content (PDFs, code snippets, guides) for the developer community.
--   **📧 Seamless Newsletter Integration**: Grow your audience with Beehiiv-powered newsletter subscription functionality.
--   **⚡ Blazing Fast Performance**: Optimized with Vite for rapid development builds and lightning-fast production loading times.
--   **🔍 SEO-Friendly Architecture**: Built with meta tags, structured data, and sitemap generation for enhanced search engine visibility.
--   **♿ Accessibility First**: Developed with WCAG compliance in mind, ensuring keyboard navigation support and an inclusive user experience.
--   **🚀 Effortless Deployment**: Designed for one-click deployment to platforms like Netlify, simplifying your CI/CD pipeline.
+- **🎨 Sleek & Responsive Design**: A modern, minimalist UI built with Tailwind CSS, ensuring a seamless experience across all devices (desktop, tablet, mobile).
+- **🌙 Dynamic Dark Mode**: Effortlessly switch between light and dark themes for optimal viewing comfort.
+- **📝 Integrated Blog System**: Share your knowledge with a powerful, Markdown-based blog featuring syntax highlighting and robust content management.
+- **💼 Interactive Project Showcase**: Highlight your work with a dynamic project gallery, complete with detailed pages for each project.
+- **📚 Curated Resources Section**: Provide valuable downloadable content (PDFs, code snippets, guides) for the developer community.
+- **📧 Seamless Newsletter Integration**: Grow your audience with Beehiiv-powered newsletter subscription functionality.
+- **⚡ Blazing Fast Performance**: Optimized with Vite for rapid development builds and lightning-fast production loading times.
+- **🔍 SEO-Friendly Architecture**: Built with meta tags, structured data, and sitemap generation for enhanced search engine visibility.
+- **♿ Accessibility First**: Developed with WCAG compliance in mind, ensuring keyboard navigation support and an inclusive user experience.
+- **🚀 Effortless Deployment**: Designed for one-click deployment to platforms like Netlify, simplifying your CI/CD pipeline.
 
 ## 🛠️ Tech Stack & Core Libraries
 
--   **Frontend Framework**: React 18
--   **Language**: TypeScript
--   **Styling**: Tailwind CSS (with `tailwindcss-animate` and `@tailwindcss/typography` for enhanced UI and content styling)
--   **Build Tool**: Vite
--   **Content Management**: Markdown with `gray-matter` for frontmatter parsing
--   **Routing**: React Router DOM
--   **Deployment Platform**: Netlify (leveraging serverless functions for backend logic)
--   **Newsletter Service**: Beehiiv API
--   **UI Components**: shadcn/ui (built on Radix UI and Tailwind CSS)
--   **Icons**: Lucide React
--   **Markdown Processing**: Remark (with `remark-gfm` and `remark-html`)
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (with `tailwindcss-animate` and `@tailwindcss/typography` for enhanced UI and content styling)
+- **Build Tool**: Vite
+- **Content Management**: Markdown with `gray-matter` for frontmatter parsing
+- **Routing**: React Router DOM
+- **Deployment Platform**: Netlify (leveraging serverless functions for backend logic)
+- **Newsletter Service**: Beehiiv API
+- **UI Components**: shadcn/ui (built on Radix UI and Tailwind CSS)
+- **Icons**: Lucide React
+- **Markdown Processing**: Remark (with `remark-gfm` and `remark-html`)
 
 ## 🚀 Getting Started (Local Development)
 
@@ -41,26 +41,26 @@ Follow these steps to get your development environment up and running.
 
 Ensure you have the following installed:
 
--   [Node.js](https://nodejs.org/en/) (version 18 or higher)
--   [npm](https://www.npmjs.com/) (Node Package Manager) or [Yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/en/) (version 18 or higher)
+- [npm](https://www.npmjs.com/) (Node Package Manager) or [Yarn](https://yarnpkg.com/)
 
 ### Installation Steps
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
 
     ```bash
     git clone https://github.com/yosephdev/personal-website.git
     cd personal-website
     ```
 
-2.  **Install dependencies:**
+2. **Install dependencies:**
 
     ```bash
     npm install
     # or yarn install
     ```
 
-3.  **Set up environment variables:**
+3. **Set up environment variables:**
 
     Create a `.env` file in the root of your project by copying the example:
 
@@ -77,14 +77,14 @@ Ensure you have the following installed:
 
     *Note: `VITE_` prefix is required for environment variables exposed to your Vite-powered frontend.*
 
-4.  **Start the development server:**
+4. **Start the development server:**
 
     ```bash
     npm run dev
     # or yarn dev
     ```
 
-5.  **Access the application:**
+5. **Access the application:**
 
     Open your web browser and navigate to [http://localhost:5173](http://localhost:5173).
 
@@ -92,13 +92,13 @@ Ensure you have the following installed:
 
 To test serverless functions (e.g., newsletter subscription) locally, use the Netlify CLI:
 
-1.  **Install Netlify CLI globally (if you haven't already):**
+1. **Install Netlify CLI globally (if you haven't already):**
 
     ```bash
     npm install netlify-cli -g
     ```
 
-2.  **Run the Netlify development server:**
+2. **Run the Netlify development server:**
 
     ```bash
     netlify dev
@@ -142,8 +142,8 @@ Content for the blog and projects is managed using Markdown files with frontmatt
 
 ### Adding New Blog Posts
 
-1.  Create a new `.md` file in `src/content/blog/` (e.g., `my-new-post.md`).
-2.  Add frontmatter at the top of the file, followed by your Markdown content:
+1. Create a new `.md` file in `src/content/blog/` (e.g., `my-new-post.md`).
+2. Add frontmatter at the top of the file, followed by your Markdown content:
 
     ```markdown
     ---
@@ -169,12 +169,13 @@ Content for the blog and projects is managed using Markdown files with frontmatt
     ```
 
     And other Markdown elements like lists, links, and images.
+
     ```
 
 ### Adding New Projects
 
-1.  Create a new `.md` file in `src/content/projects/` (e.g., `my-awesome-project.md`).
-2.  Add frontmatter at the top of the file, followed by your Markdown content:
+1. Create a new `.md` file in `src/content/projects/` (e.g., `my-awesome-project.md`).
+2. Add frontmatter at the top of the file, followed by your Markdown content:
 
     ```markdown
     ---
@@ -226,37 +227,42 @@ This project is optimized for easy deployment to various static hosting services
 
 ### Netlify (Recommended)
 
-1.  **Connect your GitHub repository** to Netlify.
-2.  **Configure build settings**:
-    -   **Build command**: `npm run build`
-    -   **Publish directory**: `dist`
-3.  **Add environment variables** in your Netlify dashboard under `Site settings > Build & deploy > Environment`:
-    -   `VITE_BEEHIIV_API_KEY`
-    -   `VITE_BEEHIIV_PUBLICATION_ID`
-4.  **Deploy** 🎉 Netlify will automatically build and deploy your site on every push to your main branch.
+1. **Connect your GitHub repository** to Netlify.
+2. **Configure build settings**:
+    - **Build command**: `npm run build`
+    - **Publish directory**: `dist`
+3. **Add environment variables** in your Netlify dashboard under `Site settings > Build & deploy > Environment`:
+    - `VITE_BEEHIIV_API_KEY`
+    - `VITE_BEEHIIV_PUBLICATION_ID`
+4. **Deploy** 🎉 Netlify will automatically build and deploy your site on every push to your main branch.
 
 ### Other Platforms
 
 The project can also be deployed to:
 
--   [Vercel](https://vercel.com/)
--   [GitHub Pages](https://pages.github.com/)
--   [Firebase Hosting](https://firebase.google.com/docs/hosting)
--   Any static hosting service that supports Vite builds.
+- [Vercel](https://vercel.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Firebase Hosting](https://firebase.google.com/docs/hosting)
+- Any static hosting service that supports Vite builds.
 
 ## 🧪 Testing & Quality Assurance
 
 To ensure code quality and functionality, the project includes:
 
--   **Linting**: Enforced with ESLint for consistent code style and error prevention.
+- **Linting**: Enforced with ESLint for consistent code style and error prevention.
+
     ```bash
     npm run lint
     ```
--   **Type Checking**: TypeScript compiler for static type analysis.
+
+- **Type Checking**: TypeScript compiler for static type analysis.
+
     ```bash
     npm run type-check
     ```
--   **Unit/Integration Tests**: (If configured) Run tests using your preferred testing framework (e.g., Vitest, Jest).
+
+- **Unit/Integration Tests**: (If configured) Run tests using your preferred testing framework (e.g., Vitest, Jest).
+
     ```bash
     npm run test # If a test script is defined in package.json
     ```
@@ -265,34 +271,40 @@ To ensure code quality and functionality, the project includes:
 
 This website is built with performance and SEO in mind:
 
--   **Lighthouse Score**: Achieves high scores (95+ across all metrics) for performance, accessibility, best practices, and SEO.
--   **Optimized Bundle Size**: Leverages Vite's efficient bundling and code splitting to minimize load times.
--   **Fast Loading Speed**: Designed for rapid content delivery, typically loading under 2 seconds even on slower networks.
--   **Comprehensive SEO**: Includes meta tags, structured data (JSON-LD), and a dynamically generated sitemap for optimal search engine indexing.
+- **Lighthouse Score**: Achieves high scores (95+ across all metrics) for performance, accessibility, best practices, and SEO.
+- **Optimized Bundle Size**: Leverages Vite's efficient bundling and code splitting to minimize load times.
+- **Fast Loading Speed**: Designed for rapid content delivery, typically loading under 2 seconds even on slower networks.
+- **Comprehensive SEO**: Includes meta tags, structured data (JSON-LD), and a dynamically generated sitemap for optimal search engine indexing.
 
 ## 🤝 Contributing
 
 We welcome contributions to Yoseph Dev Central! If you have suggestions for improvements, new features, or bug fixes, please follow these steps:
 
-1.  **Fork the repository.**
-2.  **Create a new branch** for your feature or bug fix:
+1. **Fork the repository.**
+2. **Create a new branch** for your feature or bug fix:
+
     ```bash
     git checkout -b feature/your-feature-name
     # or
     git checkout -b bugfix/fix-issue-description
     ```
-3.  **Make your changes** and ensure they adhere to the project's coding standards.
-4.  **Commit your changes** with a clear and concise message:
+
+3. **Make your changes** and ensure they adhere to the project's coding standards.
+4. **Commit your changes** with a clear and concise message:
+
     ```bash
     git commit -m 'feat: Add new amazing feature'
     # or
     git commit -m 'fix: Resolve issue with X'
     ```
-5.  **Push your branch** to your forked repository:
+
+5. **Push your branch** to your forked repository:
+
     ```bash
     git push origin feature/your-feature-name
     ```
-6.  **Open a Pull Request** to the `main` branch of this repository, describing your changes in detail.
+
+6. **Open a Pull Request** to the `main` branch of this repository, describing your changes in detail.
 
 ## 📄 License
 
@@ -300,24 +312,24 @@ This project is open-source and licensed under the [MIT License](LICENSE). Feel 
 
 ## 👨‍💻 Author
 
-**Yoseph Berhane**
+**Yoseph Berhane Gebremedhin**
 
--   **Website**: [yoseph.dev](https://yoseph.dev)
--   **GitHub**: [@yosephdev](https://github.com/yosephdev)
--   **LinkedIn**: [Yoseph Berhane](https://linkedin.com/in/yosephberhane)
+- **Website**: [yoseph.dev](https://yoseph.dev)
+- **GitHub**: [@yosephdev](https://github.com/yosephdev)
+- **LinkedIn**: [Yoseph Berhane](https://linkedin.com/in/yoseph-berhane)
 
 ## 🙏 Acknowledgments
 
 Special thanks to the creators and maintainers of these incredible tools and libraries:
 
--   [shadcn/ui](https://ui.shadcn.com/) - For beautifully crafted and accessible UI components.
--   [Tailwind CSS](https://tailwindcss.com/) - For a utility-first CSS framework that enables rapid UI development.
--   [Lucide](https://lucide.dev/) - For a consistent and extensive icon library.
--   [Beehiiv](https://beehiiv.com/) - For robust newsletter management and API services.
--   [Netlify](https://netlify.com/) - For seamless deployment and serverless functions.
--   [Vite](https://vitejs.dev/) - For a fast and efficient development experience.
--   [React](https://react.dev/) - For the powerful JavaScript library for building user interfaces.
--   [TypeScript](https://www.typescriptlang.org/) - For adding static typing to JavaScript, enhancing code quality and maintainability.
+- [shadcn/ui](https://ui.shadcn.com/) - For beautifully crafted and accessible UI components.
+- [Tailwind CSS](https://tailwindcss.com/) - For a utility-first CSS framework that enables rapid UI development.
+- [Lucide](https://lucide.dev/) - For a consistent and extensive icon library.
+- [Beehiiv](https://beehiiv.com/) - For robust newsletter management and API services.
+- [Netlify](https://netlify.com/) - For seamless deployment and serverless functions.
+- [Vite](https://vitejs.dev/) - For a fast and efficient development experience.
+- [React](https://react.dev/) - For the powerful JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - For adding static typing to JavaScript, enhancing code quality and maintainability.
 
 ---
 
