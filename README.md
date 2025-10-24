@@ -9,11 +9,13 @@ This repository hosts the codebase for Yoseph Dev Central, a personal portfolio 
 ## ✨ Key Features
 
 - **🎨 Sleek & Responsive Design**: A modern, minimalist UI built with Tailwind CSS, ensuring a seamless experience across all devices (desktop, tablet, mobile).
-- **🌙 Dynamic Dark Mode**: Effortlessly switch between light and dark themes for optimal viewing comfort.
+- **🌙 Dynamic Dark Mode**: Effortlessly switch between light and dark themes for optimal viewing comfort with theme-aware components.
 - **📝 Integrated Blog System**: Share your knowledge with a powerful, Markdown-based blog featuring syntax highlighting and robust content management.
-- **💼 Interactive Project Showcase**: Highlight your work with a dynamic project gallery, complete with detailed pages for each project.
+- **💼 Interactive Project Showcase**: Highlight your work with a dynamic project gallery powered by a centralized data structure, complete with detailed pages for each project.
 - **📚 Curated Resources Section**: Provide valuable downloadable content (PDFs, code snippets, guides) for the developer community.
 - **📧 Seamless Newsletter Integration**: Grow your audience with Beehiiv-powered newsletter subscription functionality.
+- **🎬 Enhanced Hero Section**: Dynamic video background with smooth fade transitions and theme-adaptive overlays.
+- **🌍 Multi-language Support**: Separate German and English CV downloads for international opportunities.
 - **⚡ Blazing Fast Performance**: Optimized with Vite for rapid development builds and lightning-fast production loading times.
 - **🔍 SEO-Friendly Architecture**: Built with meta tags, structured data, and sitemap generation for enhanced search engine visibility.
 - **♿ Accessibility First**: Developed with WCAG compliance in mind, ensuring keyboard navigation support and an inclusive user experience.
@@ -115,18 +117,20 @@ dist/                    # Production build output
 node_modules/            # Project dependencies
 public/                  # Static assets (images, downloads, favicon)
 ├── admin/               # Netlify CMS admin interface
-├── downloads/           # Downloadable resources
-└── images/              # Project images
+├── downloads/           # Downloadable resources (guides, cheatsheets, templates)
+└── images/              # Project images and hero video assets
 src/
 ├── App.tsx              # Main React application component
 ├── main.tsx             # React entry point
 ├── components/          # Reusable UI components
 │   ├── ui/              # shadcn/ui components
-│   └── ...
+│   └── ...              # Feature components (Header, Footer, etc.)
 ├── config/              # Application configuration
 ├── content/             # Markdown content for blog posts and projects
 │   ├── blog/            # Blog posts (Markdown files)
 │   └── projects/        # Project descriptions (Markdown files)
+├── data/                # Centralized project data and type definitions
+│   └── projects.ts      # Project array with TypeScript interfaces
 ├── hooks/               # Custom React hooks
 ├── lib/                 # Utility libraries and helpers
 ├── pages/               # React page components (e.g., Blog, ProjectDetail)
