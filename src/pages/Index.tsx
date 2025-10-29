@@ -88,26 +88,13 @@ const Index = () => {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center py-20 md:py-32 overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
-          {/* Background Video with Fallback */}
+          {/* Background Image */}
           <div className="absolute inset-0 w-full h-full">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
+            <img
+              src="/images/hero-video-poster.jpg"
+              alt="Hero background"
               className="w-full h-full object-cover opacity-40"
-              poster="/images/hero-video-poster.jpg"
-              onLoadedData={(e) => {
-                const video = e.currentTarget;
-                video.playbackRate = 0.75;
-              }}
-            >
-              <source src="/images/Hero_Video_Developer_Portfolio.mp4" type="video/mp4" />
-              <source src="/images/Hero_Video_Developer_Portfolio.webm" type="video/webm" /> {/* Add WebM format for better compatibility */}
-              {/* Fallback background if video doesn't load */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
-            </video>
+            />
 
             {/* Enhanced Gradient Overlays - Theme Aware */}
             <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-primary/5 to-background/90"></div>
@@ -165,19 +152,25 @@ const Index = () => {
                 </Button>
 
                 <div className="flex flex-wrap items-center justify-center gap-2">
-                  <Button asChild size="lg" variant="outline" className="px-6 py-3 rounded-full transition-all duration-300">
-                    <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center gap-2">
-                      <FileText className="h-4 w-4" />
-                      CV 🇩🇪
-                    </a>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="px-6 py-3 rounded-full transition-all duration-300">
+                  <Button asChild size="lg" variant="secondary" className="px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md bg-background/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40">
                     <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center gap-2">
                       <FileText className="h-4 w-4" />
                       CV 🇬🇧
                     </a>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="px-6 py-3 rounded-full transition-all duration-300">
+                  <Button asChild size="lg" variant="secondary" className="px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md bg-background/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40">
+                    <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center gap-2">
+                      <FileText className="h-4 w-4" />
+                      CV 🇩🇪
+                    </a>
+                  </Button>
+                  <Button asChild size="lg" variant="secondary" className="px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md bg-background/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40">
+                    <a href="/Yoseph_Berhane_CV_SV.pdf" download className="flex items-center gap-2">
+                      <FileText className="h-4 w-4" />
+                      CV 🇸🇪
+                    </a>
+                  </Button>
+                  <Button asChild size="lg" variant="secondary" className="px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md bg-background/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40">
                     <Link to="/contact" className="flex items-center gap-2">
                       Get in Touch
                     </Link>
