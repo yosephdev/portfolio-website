@@ -52,15 +52,21 @@ export default function About() {
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild size="lg">
+                  <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center">
+                    <Download className="h-4 w-4 mr-2" />
+                    CV 🇬🇧
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="secondary">
                   <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center">
                     <Download className="h-4 w-4 mr-2" />
                     CV 🇩🇪
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="secondary">
-                  <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center">
+                  <a href="/Yoseph_Berhane_CV_SV.pdf" download className="flex items-center">
                     <Download className="h-4 w-4 mr-2" />
-                    CV 🇬🇧
+                    CV 🇸🇪
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
