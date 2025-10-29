@@ -1172,6 +1172,446 @@ This project is a web application that allows users to explore information about
         ],
         github: "https://github.com/yosephdev/worldscope",
         url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
+    },
+    "fitgear-clean": {
+        title: "FitGear",
+        description: "A modern e-commerce platform designed for sports equipment enthusiasts, built with a full-stack MERN architecture.",
+        longDescription: `
+FitGear is a comprehensive e-commerce platform designed for sports equipment enthusiasts. Built with a full-stack MERN architecture, it provides a seamless shopping experience for fitness and sports gear.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🛍️ **Product Catalog**: Browse sports equipment by categories
+- 🔍 **Search & Filter**: Advanced search and filtering options
+- 🛒 **Shopping Cart**: Add products and manage cart with real-time updates
+- 💳 **Secure Checkout**: Integrated payment processing
+- 👤 **User Accounts**: Registration, login, and profile management
+- ⭐ **Product Reviews**: Rate and review products
+- 📱 **Responsive Design**: Optimized for all devices
+- 🎨 **Modern UI**: Clean and intuitive interface
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · TypeScript · Tailwind CSS  
+**Backend:** Python · MongoDB  
+**Development:** ESLint · Prettier  
+**Performance:** Optimized assets and lazy loading
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Full-stack MERN architecture for scalability
+- TypeScript for type safety and better development experience
+- MongoDB for flexible data storage
+- Tailwind CSS for modern, responsive design
+- RESTful API design
+- State management for seamless user experience
+        `,
+        tech: ["React", "TypeScript", "Python", "MongoDB", "Tailwind CSS"],
+        image: "/images/fitgear.png",
+        screenshots: [
+            "/images/fitgear.png"
+        ],
+        github: "https://github.com/yosephdev/FitGear-Clean",
+        url: "https://frontend-iota-seven-68.vercel.app/"
+    },
+    "isaks-store": {
+        title: "Isak's Store",
+        description: "A modern full-stack e-commerce platform built with Next.js, Express, MongoDB, and Stripe for payments.",
+        longDescription: `
+Isak's Store is a modern full-stack e-commerce platform that provides a complete online shopping experience. Built with Next.js for optimal performance and SEO, it features secure payment processing through Stripe integration.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🛍️ **Complete E-commerce Solution**: Product browsing, cart, and checkout
+- 💳 **Stripe Integration**: Secure payment processing
+- 👤 **User Authentication**: Secure account management
+- 📦 **Order Management**: Track orders and purchase history
+- 🔍 **Product Search**: Advanced search and filtering
+- 📱 **Responsive Design**: Mobile-first approach
+- 🎨 **Modern UI**: Clean interface with Tailwind CSS
+- ⚡ **Fast Performance**: Next.js optimization
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Next.js · Tailwind CSS  
+**Backend:** Express · MongoDB  
+**Payment:** Stripe  
+**Authentication:** JWT  
+**Deployment:** Vercel
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Next.js for server-side rendering and optimal SEO
+- Express backend for robust API handling
+- MongoDB for flexible data storage
+- Stripe for secure payment processing
+- JWT authentication for security
+- Tailwind CSS for responsive design
+- RESTful API architecture
+        `,
+        tech: ["Next.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
+        image: "/images/isaks-store.png",
+        screenshots: [
+            "/images/isaks-store.png"
+        ],
+        github: "https://github.com/yosephdev/isaks-store",
+        url: "https://isaks-store.vercel.app/"
+    },
+    "tigray-tutor-ai": {
+        title: "Tigray Tutor AI",
+        description: "An AI-powered educational platform designed specifically for Tigrinya-speaking students to provide personalized tutoring.",
+        longDescription: `
+Tigray Tutor AI is an innovative educational platform that leverages artificial intelligence to provide personalized tutoring experiences for Tigrinya-speaking students. The platform adapts to individual learning styles and provides culturally relevant educational content.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🤖 **AI-Powered Tutoring**: Personalized learning experiences
+- 🌍 **Tigrinya Language Support**: Native language instruction
+- 📚 **Adaptive Learning**: Adjusts to student's pace and level
+- 💬 **Interactive Chat**: Real-time AI tutor interaction
+- 📊 **Progress Tracking**: Monitor learning achievements
+- 🎯 **Targeted Practice**: Focus on areas needing improvement
+- 📱 **Mobile Friendly**: Learn anywhere, anytime
+- 🎨 **Engaging UI**: Modern and intuitive interface
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Next.js · React · TypeScript  
+**AI/ML:** Custom AI models for educational content  
+**Styling:** Tailwind CSS  
+**Deployment:** Vercel
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- AI-powered personalized learning algorithms
+- Natural language processing for Tigrinya language
+- Real-time interactive tutoring sessions
+- TypeScript for type-safe development
+- Next.js for optimal performance
+- Responsive design for all devices
+- Progress tracking and analytics
+        `,
+        tech: ["AI", "TypeScript", "React", "Next.js"],
+        image: "/images/tigray-tutor-ai.png",
+        screenshots: [
+            "/images/tigray-tutor-ai.png"
+        ],
+        github: "https://github.com/yosephdev/tigray-tutor-ai",
+        url: "https://tigray-tutor-ai.vercel.app/"
+    },
+    "revolutaging": {
+        title: "Revolutaging",
+        description: "A compassionate AI companion application for seniors, featuring empathetic chat, health monitoring, and caregiver alerts.",
+        longDescription: `
+Revolutaging is a compassionate AI companion designed specifically for seniors. The application provides empathetic conversation, health monitoring, and vital connection to caregivers, helping seniors maintain their independence while staying connected.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🤖 **AI Companion**: Empathetic conversational AI for companionship
+- 🗣️ **Voice Interface**: Natural voice interaction
+- 💊 **Health Monitoring**: Track vitals and medications
+- 🚨 **Caregiver Alerts**: Notify caregivers of important events
+- 📅 **Reminders**: Medication and appointment reminders
+- 🎯 **Activity Tracking**: Monitor daily activities and wellness
+- 📱 **Mobile & Cross-Platform**: Available on multiple devices
+- ♿ **Accessibility**: Designed for senior-friendly use
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React Native · TypeScript  
+**AI:** Voice AI · Natural Language Processing  
+**Backend:** Cloud-based services  
+**Deployment:** Mobile app stores
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Advanced AI for empathetic and context-aware conversations
+- Voice recognition and synthesis for hands-free interaction
+- Real-time health data monitoring and alerts
+- Cross-platform development with React Native
+- TypeScript for robust, type-safe code
+- Integration with health monitoring devices
+- Secure data handling and privacy protection
+- User-friendly interface designed for seniors
+        `,
+        tech: ["AI", "TypeScript", "React Native", "Voice AI"],
+        image: "/images/revolutaging.png",
+        screenshots: [
+            "/images/revolutaging.png"
+        ],
+        github: "https://github.com/yosephdev/revolutaging",
+        url: "https://revolutaging.vercel.app/"
+    },
+    "habesha-boutique": {
+        title: "Habesha Boutique",
+        description: "An online women's fashion boutique selling luxury apparel, accessories, and outerwear including fur coats, dresses, and yoga sets.",
+        longDescription: `
+Habesha Boutique is a sophisticated online fashion destination specializing in luxury women's apparel and accessories. The platform offers an exquisite collection of fur coats, elegant dresses, stylish yoga sets, and premium accessories.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 👗 **Luxury Fashion**: Curated collection of high-end apparel
+- 🧥 **Premium Outerwear**: Exclusive fur coats and jackets
+- 🛍️ **Complete E-commerce**: Full shopping experience
+- 💳 **Secure Checkout**: Shopify-powered payment processing
+- 📱 **Responsive Design**: Beautiful on all devices
+- 🎨 **Elegant UI**: Sophisticated and modern interface
+- 🔍 **Product Filtering**: Easy navigation and search
+- ⭐ **Customer Reviews**: Product ratings and testimonials
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Platform:** Shopify  
+**Frontend:** Liquid · JavaScript · CSS  
+**E-commerce:** Shopify Commerce Platform  
+**Payment:** Shopify Payments  
+**SEO:** Optimized for search engines
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Built on Shopify's robust e-commerce platform
+- Custom Liquid templates for unique design
+- JavaScript enhancements for interactive features
+- Mobile-first responsive design
+- Secure payment processing through Shopify
+- SEO-optimized product pages
+- Fast loading times and performance optimization
+- Integrated inventory management
+        `,
+        tech: ["Shopify", "Liquid", "JavaScript", "CSS", "E-commerce"],
+        image: "/images/Habesha Boutique-preview.png",
+        screenshots: [
+            "/images/Habesha Boutique-preview.png"
+        ],
+        github: "https://github.com/yosephdev/habesha-boutique",
+        url: "https://habeshaboutique.com/"
+    },
+    "stayswift": {
+        title: "StaySwift",
+        description: "A modern hotel search and booking application powered by LiteAPI, featuring interactive maps, real-time hotel data, and seamless booking experiences.",
+        longDescription: `
+StaySwift is a comprehensive hotel search and booking platform that provides users with real-time hotel availability, pricing, and booking capabilities. Powered by LiteAPI, it offers an intuitive interface with interactive maps and detailed hotel information.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🏨 **Hotel Search**: Find hotels by location, dates, and preferences
+- 🗺️ **Interactive Maps**: Google Maps integration for location viewing
+- 💰 **Real-time Pricing**: Up-to-date rates and availability
+- 📸 **Hotel Photos**: High-quality images and virtual tours
+- ⭐ **Reviews & Ratings**: Guest reviews and ratings
+- 🔍 **Advanced Filters**: Filter by price, amenities, ratings
+- 📱 **Responsive Design**: Seamless experience on all devices
+- 💳 **Secure Booking**: Safe and encrypted booking process
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · TypeScript · Tailwind CSS  
+**API:** LiteAPI for hotel data  
+**Maps:** Google Maps API  
+**Styling:** Tailwind CSS · Responsive Design  
+**Deployment:** Vercel
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Integration with LiteAPI for comprehensive hotel data
+- Google Maps API for interactive location viewing
+- TypeScript for type-safe development
+- Real-time data fetching and updates
+- Advanced search and filtering capabilities
+- Tailwind CSS for modern, responsive UI
+- Optimized performance for fast loading
+- Cross-platform compatibility (web and mobile)
+        `,
+        tech: ["React", "TypeScript", "LiteAPI", "Tailwind CSS", "Google Maps API", "Responsive Design"],
+        image: "/images/stayswift.png",
+        screenshots: [
+            "/images/stayswift.png"
+        ],
+        github: "https://github.com/yosephdev/stayswift",
+        url: "https://stayswift-kappa.vercel.app/"
+    },
+    "jusplay-cinema-connect": {
+        title: "JusPlay Cinema Connect",
+        description: "A modern streaming platform front-end built with React and TypeScript, integrating with the TMDB API.",
+        longDescription: `
+JusPlay Cinema Connect is a sleek streaming platform interface that provides users with access to a vast library of movies and TV shows. Built with React and TypeScript, it integrates with The Movie Database (TMDB) API to deliver up-to-date content information.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🎬 **Movie Discovery**: Browse trending and popular movies
+- 📺 **TV Shows**: Explore TV series and episodes
+- 🔍 **Search Functionality**: Find any movie or show quickly
+- ⭐ **Ratings & Reviews**: See ratings and read reviews
+- 🎭 **Genre Filtering**: Browse by genre and categories
+- 📱 **Responsive Design**: Perfect viewing on any device
+- 🎨 **Modern UI**: Netflix-inspired interface
+- 🎥 **Trailers**: Watch movie trailers and teasers
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** React · TypeScript · Tailwind CSS  
+**API:** TMDB (The Movie Database) API  
+**Styling:** Tailwind CSS  
+**Deployment:** Netlify
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Integration with TMDB API for comprehensive movie data
+- TypeScript for type-safe component development
+- React hooks for efficient state management
+- Tailwind CSS for responsive, modern styling
+- Lazy loading for optimized performance
+- Search and filtering functionality
+- Dynamic routing for movie/show details
+- Mobile-first responsive design
+        `,
+        tech: ["React", "TypeScript", "TMDB API", "Tailwind CSS"],
+        image: "/images/jusplay.png",
+        screenshots: [
+            "/images/jusplay.png"
+        ],
+        github: "https://github.com/yosephdev/jusplay-cinema-connect",
+        url: "https://jusplay.netlify.app/"
+    },
+    "cascadia-chauffeur-services": {
+        title: "Cascadia Chauffeur Services",
+        description: "A modern booking platform for Cascadia Transports, designed to streamline the process of booking chauffeur services.",
+        longDescription: `
+Cascadia Chauffeur Services is a professional booking platform designed for Cascadia Transports. The platform streamlines the chauffeur booking process, providing an elegant solution for luxury transportation services.
+
+<br>
+
+## 🌟 Key Features
+
+<br>
+
+- 🚗 **Service Booking**: Easy online chauffeur reservations
+- 📅 **Scheduling**: Book rides in advance or on-demand
+- 💳 **Secure Payments**: Safe payment processing
+- 👤 **User Profiles**: Manage bookings and preferences
+- 🗺️ **Route Planning**: Plan trips and view routes
+- 📱 **Responsive Design**: Book from any device
+- 💼 **Corporate Accounts**: Business travel management
+- 📧 **Booking Confirmations**: Email notifications and reminders
+
+<br>
+
+## 🛠 Tech Stack
+
+<br>
+
+**Frontend:** Bootstrap 5 · JavaScript  
+**Backend:** Django · Python  
+**Database:** PostgreSQL  
+**Styling:** Bootstrap 5 · Custom CSS  
+**Deployment:** Production server
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Django framework for robust backend functionality
+- PostgreSQL database for reliable data management
+- Bootstrap 5 for responsive, professional design
+- User authentication and authorization
+- Booking management system
+- Payment integration
+- Email notification system
+- Admin panel for service management
+        `,
+        tech: ["Bootstrap 5", "JavaScript", "Django", "PostgreSQL"],
+        image: "/images/cascadia.png",
+        screenshots: [
+            "/images/cascadia.png"
+        ],
+        github: "https://github.com/yosephdev/chauffeur-booking-system",
+        url: "https:/www.cascadiatransports.com/"
     }
 };
 

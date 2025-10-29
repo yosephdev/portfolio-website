@@ -54,6 +54,15 @@ export const projects: Project[] = [
     url: "https://revolutaging.vercel.app/"
   },
   {
+    slug: "habesha-boutique",
+    title: "Habesha Boutique",
+    description: "An online women's fashion boutique selling luxury apparel, accessories, and outerwear including fur coats, dresses, and yoga sets.",
+    tech: ["Shopify", "Liquid", "JavaScript", "CSS", "E-commerce"],
+    image: "/images/Habesha Boutique-preview.png",
+    github: "https://github.com/yosephdev/habesha-boutique",
+    url: "https://habeshaboutique.com/"
+  },
+  {
     slug: "stayswift",
     title: "StaySwift",
     description: "A modern hotel search and booking application powered by LiteAPI, featuring interactive maps, real-time hotel data, and seamless booking experiences across web and mobile platforms.",
@@ -96,7 +105,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
     image: "/images/habesha-smak-butik.png",
     github: "https://github.com/yosephdev/habesha-smak-butik",
-    url: "https://habesha-smak.netlify.app/"
+    url: "https://habesha-smak-butik.vercel.app/"
   },
   {
     slug: "babys-and-me",
@@ -105,7 +114,7 @@ export const projects: Project[] = [
     tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
     image: "/images/babys-and-me.png",
     github: "https://github.com/yosephdev/babys-and-me",
-    url: "https://babys-and-me.vercel.app/"
+    url: "https://babysme.com"
   },
   {
     slug: "selams-handmade",
