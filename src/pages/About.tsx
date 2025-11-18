@@ -21,14 +21,13 @@ export default function About() {
     <div className="flex min-h-screen flex-col">
       <SEO
         title="About Me - Yoseph Berhane | Full Stack Developer"
-        description="Learn more about Yoseph Berhane, a Full Stack Developer with 5 years of experience specializing in React, TypeScript, and modern web technologies. Currently seeking opportunities in Berlin, Germany."
+        description="Learn more about Yoseph Berhane, a Full Stack Developer with 5 years of experience specializing in React, TypeScript, and modern web technologies. Currently seeking remote opportunities worldwide."
         keywords={[
           "About",
           "Full Stack Developer",
           "React Developer",
           "TypeScript",
-          "Berlin",
-          "Germany",
+          "Remote Developer",
           "Web Developer",
           "Software Engineer",
         ]}
@@ -48,8 +47,8 @@ export default function About() {
               </h1>
               <p className="text-xl text-muted-foreground">
                 Full Stack Developer passionate about building modern web
-                applications and currently seeking opportunities in Berlin,
-                Germany.
+                applications and currently seeking remote opportunities
+                worldwide.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild size="lg">
@@ -155,9 +154,9 @@ export default function About() {
           <div className="container text-center max-w-2xl">
             <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
             <p className="text-muted-foreground mb-8">
-              I'm currently seeking full-stack developer positions in Berlin,
-              Germany. Available for immediate start with no visa requirements
-              (EU Citizen).
+              I'm currently seeking full-stack developer positions worldwide.
+              Available for immediate start and open to remote opportunities (EU
+              Citizen).
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg">

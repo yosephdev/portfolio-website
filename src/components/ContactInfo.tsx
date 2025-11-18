@@ -3,38 +3,51 @@
  * Display contact information and social media links
  */
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Calendar } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Mail,
+  MapPin,
+  Linkedin,
+  Github,
+  ExternalLink,
+  Calendar,
+} from "lucide-react";
 
 export function ContactInfo() {
   const contactDetails = [
     {
       icon: <Mail className="h-5 w-5" />,
-      label: 'Email',
-      value: 'contact@yoseph.dev',
-      link: 'mailto:contact@yoseph.dev',
-      description: 'Best way to reach me',
+      label: "Email",
+      value: "contact@yoseph.dev",
+      link: "mailto:contact@yoseph.dev",
+      description: "Best way to reach me",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
-      label: 'LinkedIn',
-      value: 'Yoseph Berhane',
-      link: 'https://linkedin.com/in/yoseph-berhane',
-      description: 'Professional network',
+      label: "LinkedIn",
+      value: "Yoseph Berhane",
+      link: "https://linkedin.com/in/yoseph-berhane",
+      description: "Professional network",
     },
     {
       icon: <Github className="h-5 w-5" />,
-      label: 'GitHub',
-      value: '@yosephdev',
-      link: 'https://github.com/yosephdev',
-      description: 'View my code',
+      label: "GitHub",
+      value: "@yosephdev",
+      link: "https://github.com/yosephdev",
+      description: "View my code",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
-      label: 'Location',
-      value: 'Relocating to Berlin',
-      description: 'Germany',
+      label: "Location",
+      value: "Remote Worldwide",
+      description: "Open to opportunities",
     },
   ];
 
@@ -104,8 +117,9 @@ export function ContactInfo() {
             <div className="flex-1">
               <h3 className="font-semibold mb-2">Response Time</h3>
               <p className="text-sm text-muted-foreground">
-                I typically respond to messages within 24-48 hours during weekdays. 
-                For urgent inquiries, please mention it in your subject line.
+                I typically respond to messages within 24-48 hours during
+                weekdays. For urgent inquiries, please mention it in your
+                subject line.
               </p>
             </div>
           </div>
@@ -128,11 +142,11 @@ export function ContactInfo() {
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-green-500">✓</span>
-                <span>Remote opportunities</span>
+                <span>Remote opportunities worldwide</span>
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-green-500">✓</span>
-                <span>Relocation to Berlin</span>
+                <span>Open to relocation</span>
               </p>
             </div>
           </div>
@@ -202,7 +216,7 @@ export function ContactInfoCompact() {
       </div>
       <div className="flex items-center gap-2 text-sm">
         <MapPin className="h-4 w-4 text-muted-foreground" />
-        <span className="text-muted-foreground">Relocating to Berlin, Germany</span>
+        <span className="text-muted-foreground">Remote Worldwide</span>
       </div>
       <div className="flex gap-3 pt-2">
         <a

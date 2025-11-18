@@ -60,7 +60,7 @@ export function JobSeekingBanner() {
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>Berlin, Germany</span>
+                <span>Remote Worldwide</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
@@ -110,7 +110,7 @@ export function JobSeekingBanner() {
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
-                  <span>Berlin, Germany</span>
+                  <span>Remote Worldwide</span>
                 </div>
                 {/* <span>•</span> */}
                 <div className="flex items-center gap-2">
