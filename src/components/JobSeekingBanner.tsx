@@ -3,17 +3,17 @@
  * Prominent, dismissible banner displaying job seeking status
  */
 
-import { useState, useEffect } from 'react';
-import { X, Briefcase, MapPin, Clock, FileText, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { useState, useEffect } from "react";
+import { X, Briefcase, MapPin, Clock, FileText, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export function JobSeekingBanner() {
   const [isVisible, setIsVisible] = useState(true);
 
   // Check if banner was previously dismissed (stored in localStorage)
   useEffect(() => {
-    const dismissed = localStorage.getItem('jobBannerDismissed');
+    const dismissed = localStorage.getItem("jobBannerDismissed");
     const dismissedDate = dismissed ? new Date(dismissed) : null;
     const now = new Date();
 
@@ -30,7 +30,7 @@ export function JobSeekingBanner() {
 
   const handleDismiss = () => {
     setIsVisible(false);
-    localStorage.setItem('jobBannerDismissed', new Date().toISOString());
+    localStorage.setItem("jobBannerDismissed", new Date().toISOString());
   };
 
   if (!isVisible) {
@@ -72,13 +72,21 @@ export function JobSeekingBanner() {
             </div>
             <div className="flex flex-col gap-2 mt-2">
               <Button asChild size="sm" className="w-full">
-                <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center justify-center">
+                <a
+                  href="/Yoseph_Berhane_CV_SV.pdf"
+                  download
+                  className="flex items-center justify-center"
+                >
                   <FileText className="h-4 w-4 mr-2" />
-                  CV 🇩🇪 (Deutsch)
+                  CV 🇸🇪 (Svenska)
                 </a>
               </Button>
               <Button asChild size="sm" variant="secondary" className="w-full">
-                <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center justify-center">
+                <a
+                  href="/Yoseph_Berhane_CV_EN.pdf"
+                  download
+                  className="flex items-center justify-center"
+                >
                   <FileText className="h-4 w-4 mr-2" />
                   CV 🇬🇧 (English)
                 </a>
@@ -117,13 +125,21 @@ export function JobSeekingBanner() {
             </div>
             <div className="flex items-center gap-3 ml-6">
               <Button asChild size="sm">
-                <a href="/Yoseph_Berhane_CV_DE.pdf" download className="flex items-center">
+                <a
+                  href="/Yoseph_Berhane_CV_SV.pdf"
+                  download
+                  className="flex items-center"
+                >
                   <FileText className="h-4 w-4 mr-2" />
-                  CV 🇩🇪
+                  CV 🇸🇪
                 </a>
               </Button>
               <Button asChild size="sm" variant="secondary">
-                <a href="/Yoseph_Berhane_CV_EN.pdf" download className="flex items-center">
+                <a
+                  href="/Yoseph_Berhane_CV_EN.pdf"
+                  download
+                  className="flex items-center"
+                >
                   <FileText className="h-4 w-4 mr-2" />
                   CV 🇬🇧
                 </a>
