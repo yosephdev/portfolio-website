@@ -4,14 +4,15 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
-import { marked } from 'marked';
+import { marked } from "marked";
 
 // Define the project details
 const projects = {
-    "mt-butik": {
-        title: "MT Skrädderi & Butik",
-        description: "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna.",
-        longDescription: `
+  "mt-butik": {
+    title: "MT Skrädderi & Butik",
+    description:
+      "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna.",
+    longDescription: `
 MT Skrädderi & Butik is a professional business combining traditional tailoring, men's barbering services, and authentic Habesha products. Located in the heart of Eskilstuna, the business offers high-quality services with a focus on personal service and cultural authenticity.
 
 <br>
@@ -33,10 +34,10 @@ MT Skrädderi & Butik is a professional business combining traditional tailoring
 
 <br>
 
-**Frontend:** Vite · React 18 · TypeScript · Tailwind CSS  
-**Icons:** Lucide React  
-**Development:** ESLint · PostCSS · Autoprefixer  
-**Build Tool:** Vite for fast development and optimized builds  
+**Frontend:** Vite · React 18 · TypeScript · Tailwind CSS
+**Icons:** Lucide React
+**Development:** ESLint · PostCSS · Autoprefixer
+**Build Tool:** Vite for fast development and optimized builds
 **Performance:** Optimized assets and fast loading times
 
 <br>
@@ -60,20 +61,17 @@ Key technical aspects:
 - PostCSS with Autoprefixer for cross-browser compatibility
 - Modular architecture for maintainable codebase
         `,
-        tech: [
-            "Vite", "React", "TypeScript", "Tailwind CSS", "Lucide React"
-        ],
-        image: "/images/mt-butik.png",
-        screenshots: [
-            "/images/mt-butik.png"
-        ],
-        github: "https://github.com/yosephdev/mt-butik",
-        url: "https://mt-butik.vercel.app/"
-    },
-    "habesha-smak-butik": {
-        title: "Habesha Smak Butik",
-        description: "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items.",
-        longDescription: `
+    tech: ["Vite", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
+    image: "/images/mt-butik.png",
+    screenshots: ["/images/mt-butik.png"],
+    github: "https://github.com/yosephdev/mt-butik",
+    url: "https://mt-butik.vercel.app/",
+  },
+  "habesha-smak-butik": {
+    title: "Habesha Smak Butik",
+    description:
+      "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items.",
+    longDescription: `
 Habesha Smak Butik is a comprehensive multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items. The platform supports Swedish, Amharic, and Tigrinya languages, making Ethiopian products accessible to diverse communities.
 
 <br>
@@ -98,11 +96,11 @@ Habesha Smak Butik is a comprehensive multilingual e-commerce platform specializ
 
 <br>
 
-**Frontend:** React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui  
-**Backend:** Node.js · Express.js · PostgreSQL (Neon Database)  
-**Payment:** Stripe Integration  
-**State Management:** React Context API · React Query  
-**Deployment:** Netlify  
+**Frontend:** React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui
+**Backend:** Node.js · Express.js · PostgreSQL (Neon Database)
+**Payment:** Stripe Integration
+**State Management:** React Context API · React Query
+**Deployment:** Netlify
 **Tools:** React Hook Form · Zod validation · Sonner notifications
 
 <br>
@@ -127,20 +125,25 @@ Key technical aspects:
 - Responsive design with Tailwind CSS and shadcn/ui components
 - Form validation with React Hook Form and Zod
         `,
-        tech: [
-            "React", "TypeScript", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS", "Vite"
-        ],
-        image: "/images/habesha-smak-butik.png",
-        screenshots: [
-            "/images/habesha-smak-butik.png"
-        ],
-        github: "https://github.com/yosephdev/habesha-smak-butik",
-        url: "https://habesha-smak.netlify.app/"
-    },
-    "babys-and-me": {
-        title: "Baby's & Me",
-        description: "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
-        longDescription: `
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Stripe",
+      "Tailwind CSS",
+      "Vite",
+    ],
+    image: "/images/habesha-smak-butik.png",
+    screenshots: ["/images/habesha-smak-butik.png"],
+    github: "https://github.com/yosephdev/habesha-smak-butik",
+    url: "https://habesha-smak.netlify.app/",
+  },
+  "babys-and-me": {
+    title: "Baby's & Me",
+    description:
+      "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
+    longDescription: `
 Baby's & Me is a responsive eCommerce store offering handmade baby and toddler products. Built for scalability and modern UX, it emphasizes mobile-first design and smooth performance. The platform provides an accessible marketplace supporting local artisans and sustainable babywear.
 
 <br>
@@ -162,9 +165,9 @@ Baby's & Me is a responsive eCommerce store offering handmade baby and toddler p
 
 <br>
 
-**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS  
-**Deployment:** Vercel  
-**Features:** Modern eCommerce functionality with accessibility focus  
+**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS
+**Deployment:** Vercel
+**Features:** Modern eCommerce functionality with accessibility focus
 **Design:** Clean UI with emphasis on product presentation
 
 <br>
@@ -186,20 +189,17 @@ Key technical aspects:
 - shadcn/ui for accessible, reusable UI components
 - Optimized image loading for product catalog performance
         `,
-        tech: [
-            "Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"
-        ],
-        image: "/images/babys-and-me.png",
-        screenshots: [
-            "/images/babys-and-me.png"
-        ],
-        github: "https://github.com/yosephdev/babys-and-me",
-        url: "https://babys-and-me.vercel.app/"
-    },
-    "anenitigray-development-services": {
-        title: "Anenitigray Development Services (ADS)",
-        description: "A platform for an NGO committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives.",
-        longDescription: `
+    tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+    image: "/images/babys-and-me.png",
+    screenshots: ["/images/babys-and-me.png"],
+    github: "https://github.com/yosephdev/babys-and-me",
+    url: "https://babys-and-me.vercel.app/",
+  },
+  "anenitigray-development-services": {
+    title: "Anenitigray Development Services (ADS)",
+    description:
+      "A platform for an NGO committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives.",
+    longDescription: `
 Anenitigray Development Services (ADS) is a young Non-Governmental Organization (NGO) committed to fostering sustainable development and providing humanitarian support in Tigray through community-driven initiatives. The website was built to support ADS's mission by offering clarity, accessibility, and scalability.
 
 <br>
@@ -221,9 +221,9 @@ Anenitigray Development Services (ADS) is a young Non-Governmental Organization 
 
 <br>
 
-**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS  
-**Deployment:** Vercel  
-**Features:** Optimized for NGO needs with donation capabilities  
+**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS
+**Deployment:** Vercel
+**Features:** Optimized for NGO needs with donation capabilities
 **Design:** Accessible interface with focus on information clarity
 
 <br>
@@ -245,21 +245,18 @@ Key technical aspects:
 - shadcn/ui for consistent, accessible UI components
 - Optimized assets for performance in low-bandwidth environments
         `,
-        tech: [
-            "Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"
-        ],
-        image: "/images/anenitigray-development-services.png",
-        screenshots: [
-            "/images/anenitigray-development-services.png"
-        ],
-        github: "https://github.com/yosephdev/anenitigray-development-services",
-        url: "https://anenitigray-development-services.vercel.app/"
-    },
-    "ternafit": {
-        title: "Ternafit",
-        description: "A platform for a Sweden-based NGO empowering the Tigrean people through information sharing, raising awareness, and building connections for aid.",
-        longDescription: `
-Ternafit is a Sweden-based NGO with a mission to empower the Tigrean people through initiatives in information sharing, raising awareness, and building connections for aid. The platform promotes digital solidarity, community engagement, and resource mobilization.
+    tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
+    image: "/images/anenitigray-development-services.png",
+    screenshots: ["/images/anenitigray-development-services.png"],
+    github: "https://github.com/yosephdev/anenitigray-development-services",
+    url: "https://anenitigray-development-services.vercel.app/",
+  },
+  "isaks-bilar": {
+    title: "Isaks Bilar",
+    description:
+      "En modern e-handelsplattform för leksaksbilar, modellbilar och RC-bilar.",
+    longDescription: `
+Isaks Bilar är en modern e-handelsplattform specialiserad på leksaksbilar, modellbilar och RC-bilar. Plattformen erbjuder ett brett sortiment av produkter för bilentusiaster i alla åldrar.
 
 <br>
 
@@ -267,12 +264,14 @@ Ternafit is a Sweden-based NGO with a mission to empower the Tigrean people thro
 
 <br>
 
-- ✅ Comprehensive information about the organization's mission and work
-- 🔗 Resource hub for community support and aid coordination
-- 📣 Awareness campaigns and educational content
-- 📱 Responsive design optimized for global accessibility
-- 🌍 Multi-language support for broader reach
-- 📅 Events calendar for community engagement
+- 🚗 **Omfattande Produktkatalog**: Brett utbud av leksaksbilar, modellbilar och RC-bilar
+- 🔍 **Avancerad Sök**: Filtrera produkter efter kategori, pris och varumärke
+- 🛒 **Kundvagn**: Lägg till produkter och hantera din varukorg med realtidsuppdateringar
+- 💳 **Säker Betalning**: Stripe-integration för säkra transaktioner
+- 👤 **Användarkonton**: Registrering, inloggning och profilhantering
+- ⭐ **Produktrecensioner**: Betygsätt och recensera produkter
+- 📱 **Responsiv Design**: Optimerad för alla enheter
+- 🎨 **Modern UI**: Ren och intuitiv gränssnittsdesign
 
 <br>
 
@@ -280,44 +279,36 @@ Ternafit is a Sweden-based NGO with a mission to empower the Tigrean people thro
 
 <br>
 
-**Frontend:** Vite · TypeScript · React · shadcn/ui · Tailwind CSS  
-**Deployment:** Vercel  
-**Features:** Information sharing and community building tools  
-**Design:** Clean, accessible interface with focus on content clarity
+**Frontend:** React · TypeScript · Next.js · Tailwind CSS
+**Backend:** Next.js API Routes
+**Payment:** Stripe
+**Deployment:** Vercel
+**Performance:** Server-side rendering för optimal SEO
 
 <br>
 
-## Technical Details
+## Technical Highlights
 
 <br>
 
-The website leverages modern web technologies to create a fast, accessible platform for information sharing and community building. The architecture is designed for easy content updates and future expansion of features.
-
-<br>
-
-Key technical aspects:
-<br>
-
-- Vite for optimized build performance and development experience
-- TypeScript for code quality and maintainability
-- Tailwind CSS for responsive, consistent styling
-- shadcn/ui for accessible UI components
-- Content management system integration for easy updates
+- Next.js för server-side rendering och optimal prestanda
+- TypeScript för typsäker utveckling
+- Stripe för säker betalningshantering
+- Tailwind CSS för responsiv design
+- RESTful API-arkitektur
+- Bildoptimering för snabb laddning
         `,
-        tech: [
-            "Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"
-        ],
-        image: "/images/ternafit.png",
-        screenshots: [
-            "/images/ternafit.png"
-        ],
-        github: "https://github.com/yosephdev/ternafit",
-        url: "https://ternafit.vercel.app/"
-    },
-    "le-menelik-saly-vibes": {
-        title: "Le Menelik Restaurant",
-        description: "A modern restaurant website showcasing authentic cuisine and vibrant atmosphere.",
-        longDescription: `
+    tech: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Stripe"],
+    image: "/images/isaks-bilar.png",
+    screenshots: ["/images/isaks-bilar.png"],
+    github: "https://github.com/yosephdev/isaks-bilar",
+    url: "https://isaks-bilar.vercel.app/",
+  },
+  "le-menelik-saly-vibes": {
+    title: "Le Menelik Restaurant",
+    description:
+      "A modern restaurant website showcasing authentic cuisine and vibrant atmosphere.",
+    longDescription: `
 Le Menelik Restaurant is a sophisticated restaurant website that captures the essence of authentic cuisine and vibrant atmosphere. The site features elegant design, interactive menus, and seamless booking functionality.
 
 <br>
@@ -339,9 +330,9 @@ Le Menelik Restaurant is a sophisticated restaurant website that captures the es
 
 <br>
 
-**Frontend:** React · Next.js · TypeScript · Tailwind CSS  
-**Deployment:** Vercel  
-**Features:** Server-side rendering for optimal performance  
+**Frontend:** React · Next.js · TypeScript · Tailwind CSS
+**Deployment:** Vercel
+**Features:** Server-side rendering for optimal performance
 **Design:** Modern UI/UX with smooth animations
 
 <br>
@@ -363,20 +354,17 @@ Key technical aspects:
 - Responsive design that works across all devices
 - Clean, semantic HTML structure for accessibility
         `,
-        tech: [
-            "React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"
-        ],
-        image: "/images/le-menelik-saly-vibes.png",
-        screenshots: [
-            "/images/le-menelik-saly-vibes.png"
-        ],
-        github: "https://github.com/yosephdev/le-menelik-saly-vibes",
-        url: "https://le-menelik-saly-vibes.vercel.app/"
-    },
-    "selams-handmade": {
-        title: "Selam's Handmade",
-        description: "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
-        longDescription: `
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    image: "/images/le-menelik-saly-vibes.png",
+    screenshots: ["/images/le-menelik-saly-vibes.png"],
+    github: "https://github.com/yosephdev/le-menelik-saly-vibes",
+    url: "https://le-menelik-saly-vibes.vercel.app/",
+  },
+  "selams-handmade": {
+    title: "Selam's Handmade",
+    description:
+      "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
+    longDescription: `
 Selam's Handmade is an elegant e-commerce platform dedicated to showcasing and selling beautiful handcrafted products. The site combines modern web technologies with thoughtful design to create an exceptional shopping experience.
 
 <br>
@@ -398,9 +386,9 @@ Selam's Handmade is an elegant e-commerce platform dedicated to showcasing and s
 
 <br>
 
-**Frontend:** React · Next.js · Tailwind CSS  
-**Payment:** Stripe Integration  
-**Deployment:** Vercel  
+**Frontend:** React · Next.js · Tailwind CSS
+**Payment:** Stripe Integration
+**Deployment:** Vercel
 **Features:** E-commerce functionality with modern UI
 
 <br>
@@ -422,20 +410,17 @@ Key technical aspects:
 - Product management and inventory tracking
 - SEO optimization for better product discoverability
         `,
-        tech: [
-            "React", "Next.js", "Tailwind CSS", "Stripe", "Vercel"
-        ],
-        image: "/images/selams-handmade.png",
-        screenshots: [
-            "/images/selams-handmade.png"
-        ],
-        github: "https://github.com/yosephdev/selams-handmade",
-        url: "https://selamshandmade.com/"
-    },
-    "supermerra": {
-        title: "Supermerra",
-        description: "A modern, responsive website for Super Merra Frisör – a professional men's hair salon in Katrineholm, Sweden.",
-        longDescription: `
+    tech: ["React", "Next.js", "Tailwind CSS", "Stripe", "Vercel"],
+    image: "/images/selams-handmade.png",
+    screenshots: ["/images/selams-handmade.png"],
+    github: "https://github.com/yosephdev/selams-handmade",
+    url: "https://selamshandmade.com/",
+  },
+  supermerra: {
+    title: "Supermerra",
+    description:
+      "A modern, responsive website for Super Merra Frisör – a professional men's hair salon in Katrineholm, Sweden.",
+    longDescription: `
 Supermerra is a professional website for Super Merra Frisör, a men's hair salon located in Katrineholm, Sweden. The site showcases the salon's services, team, and booking capabilities with a clean, modern design.
 
 <br>
@@ -457,8 +442,8 @@ Supermerra is a professional website for Super Merra Frisör, a men's hair salon
 
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS · Next.js  
-**Deployment:** Custom hosting  
+**Frontend:** React · TypeScript · Tailwind CSS · Next.js
+**Deployment:** Custom hosting
 **Features:** Professional business website with booking integration
 
 <br>
@@ -480,20 +465,17 @@ Key technical aspects:
 - Professional design that reflects the salon's brand
 - Integration with booking systems for appointments
         `,
-        tech: [
-            "React", "TypeScript", "Tailwind CSS", "Next.js"
-        ],
-        image: "/images/supermerra.png",
-        screenshots: [
-            "/images/supermerra.png"
-        ],
-        github: "https://github.com/yosephdev/supermerra",
-        url: "https://supermerra.se/"
-    },
-    "devfinder": {
-        title: "DevFinder",
-        description: "A developer search tool built with React, TypeScript and the GitHub API.",
-        longDescription: `
+    tech: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    image: "/images/supermerra.png",
+    screenshots: ["/images/supermerra.png"],
+    github: "https://github.com/yosephdev/supermerra",
+    url: "https://supermerra.se/",
+  },
+  devfinder: {
+    title: "DevFinder",
+    description:
+      "A developer search tool built with React, TypeScript and the GitHub API.",
+    longDescription: `
 DevFinder is a web application that allows users to search for developers on GitHub and view their profiles, repositories, and other information. The app is built with React and TypeScript, and uses the GitHub API to fetch data.
 
 <br>
@@ -513,9 +495,9 @@ DevFinder is a web application that allows users to search for developers on Git
 
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS  
-**API:** GitHub REST API  
-**State Management:** React Context API  
+**Frontend:** React · TypeScript · Tailwind CSS
+**API:** GitHub REST API
+**State Management:** React Context API
 **Deployment:** Vercel
 
 <br>
@@ -537,21 +519,24 @@ The project also features:
 - Accessibility considerations throughout the UI
 - Comprehensive error handling for API calls
         `,
-        tech: [
-            "React", "TypeScript", "GitHub API",
-            "Tailwind CSS", "Context API", "Vercel"
-        ],
-        image: "/images/devfinder.png",
-        screenshots: [
-            "/images/devfinder.png"
-        ],
-        github: "https://github.com/yosephdev/DevFinder",
-        url: "https://dev-finder-five-iota.vercel.app/"
-    },
-    "markdown-editor": {
-        title: "Markdown Editor",
-        description: "A real-time markdown editor with preview and export functionality.",
-        longDescription: `
+    tech: [
+      "React",
+      "TypeScript",
+      "GitHub API",
+      "Tailwind CSS",
+      "Context API",
+      "Vercel",
+    ],
+    image: "/images/devfinder.png",
+    screenshots: ["/images/devfinder.png"],
+    github: "https://github.com/yosephdev/DevFinder",
+    url: "https://dev-finder-five-iota.vercel.app/",
+  },
+  "markdown-editor": {
+    title: "Markdown Editor",
+    description:
+      "A real-time markdown editor with preview and export functionality.",
+    longDescription: `
 This Markdown Editor provides a clean, distraction-free writing environment with real-time preview. It's perfect for writing documentation, blog posts, or any content that uses Markdown syntax.
 
 <br>
@@ -572,9 +557,9 @@ This Markdown Editor provides a clean, distraction-free writing environment with
 
 <br>
 
-**Frontend:** JavaScript · React · CodeMirror  
-**Parser:** marked.js  
-**Backend:** Node.js  
+**Frontend:** JavaScript · React · CodeMirror
+**Parser:** marked.js
+**Backend:** Node.js
 **Deployment:** Vercel
 
 <br>
@@ -594,21 +579,24 @@ Key technical aspects:
 - Responsive design that adapts to different screen sizes
 - Keyboard shortcuts for common editing operations
         `,
-        tech: [
-            "JavaScript", "React", "CodeMirror",
-            "marked.js", "Node.js", "Vercel"
-        ],
-        image: "/images/markdown-editor.png",
-        screenshots: [
-            "/images/markdown-editor.png"
-        ],
-        github: "https://github.com/yosephdev/markdown-editor",
-        url: "https://instant-markdown-canvas.vercel.app"
-    },
-    "portfolio-website": {
-        title: "Portfolio Website",
-        description: "A modern portfolio website built with React, TypeScript, and Tailwind CSS.",
-        longDescription: `
+    tech: [
+      "JavaScript",
+      "React",
+      "CodeMirror",
+      "marked.js",
+      "Node.js",
+      "Vercel",
+    ],
+    image: "/images/markdown-editor.png",
+    screenshots: ["/images/markdown-editor.png"],
+    github: "https://github.com/yosephdev/markdown-editor",
+    url: "https://instant-markdown-canvas.vercel.app",
+  },
+  "portfolio-website": {
+    title: "Portfolio Website",
+    description:
+      "A modern portfolio website built with React, TypeScript, and Tailwind CSS.",
+    longDescription: `
 This project is a personal portfolio website built to showcase my projects, blog posts, and professional information. It features a clean, minimalist design with dark mode support and responsive layouts.
 
 <br>
@@ -627,9 +615,9 @@ This project is a personal portfolio website built to showcase my projects, blog
 ## 🛠 Tech Stack
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS  
-**Content Management:** Netlify CMS  
-**Deployment:** Netlify  
+**Frontend:** React · TypeScript · Tailwind CSS
+**Content Management:** Netlify CMS
+**Deployment:** Netlify
 **Performance:** Optimized images and assets
 
 ## Technical Details
@@ -646,22 +634,27 @@ The website also features:
 - Accessibility considerations throughout the UI
 - Analytics integration for visitor tracking
         `,
-        tech: [
-            "React", "TypeScript", "Tailwind CSS",
-            "Netlify CMS", "Netlify", "SEO Optimization"
-        ],
-        image: "/images/portfolio-website.png",
-        screenshots: [
-            "/images/portfolio-website.png",
-            "https://via.placeholder.com/800x600?text=Screenshot+2"
-        ],
-        github: "https://github.com/yosephdev/portfolio",
-        url: "https://yoseph.dev"
-    },
-    "react-notes-app": {
-        title: "React Notes App",
-        description: "A feature-rich note-taking application built with React and Firebase.",
-        longDescription: `
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Netlify CMS",
+      "Netlify",
+      "SEO Optimization",
+    ],
+    image: "/images/portfolio-website.png",
+    screenshots: [
+      "/images/portfolio-website.png",
+      "https://via.placeholder.com/800x600?text=Screenshot+2",
+    ],
+    github: "https://github.com/yosephdev/portfolio",
+    url: "https://yoseph.dev",
+  },
+  "react-notes-app": {
+    title: "React Notes App",
+    description:
+      "A feature-rich note-taking application built with React and Firebase.",
+    longDescription: `
 A modern note-taking application built with React and Firebase. This app allows users to create, edit, and organize notes with rich text formatting, tags, and categories.<br>
 
 ## 🌟 Key Features
@@ -677,10 +670,10 @@ A modern note-taking application built with React and Firebase. This app allows 
 ## 🛠 Tech Stack
 <br>
 
-**Frontend:** React · Redux · Tailwind CSS  
-**Backend:** Firebase (Firestore, Authentication)  
-**State Management:** Redux  
-**Deployment:** Vercel  
+**Frontend:** React · Redux · Tailwind CSS
+**Backend:** Firebase (Firestore, Authentication)
+**State Management:** Redux
+**Deployment:** Vercel
 **Features:** Service Workers for offline functionality
 
 ## Technical Details
@@ -697,21 +690,24 @@ Key technical aspects include:
 - Service workers for offline functionality
 - Responsive design with Tailwind CSS
         `,
-        tech: [
-            "React", "Firebase", "Redux",
-            "Tailwind CSS", "Vercel", "Service Workers"
-        ],
-        image: "/images/react-notes.png",
-        screenshots: [
-            "/images/react-notes.png"
-        ],
-        github: "https://github.com/yosephdev/react-notes",
-        url: "https://react-notes-five-phi.vercel.app/"
-    },
-    "countries-api": {
-        title: "Worldscope",
-        description: "A web application that displays information about countries using the REST Countries API.",
-        longDescription: `
+    tech: [
+      "React",
+      "Firebase",
+      "Redux",
+      "Tailwind CSS",
+      "Vercel",
+      "Service Workers",
+    ],
+    image: "/images/react-notes.png",
+    screenshots: ["/images/react-notes.png"],
+    github: "https://github.com/yosephdev/react-notes",
+    url: "https://react-notes-five-phi.vercel.app/",
+  },
+  "countries-api": {
+    title: "Worldscope",
+    description:
+      "A web application that displays information about countries using the REST Countries API.",
+    longDescription: `
 This project is a web application that allows users to explore information about countries around the world. It uses the REST Countries API to fetch data about countries, including their flags, population, languages, currencies, and more.<br>
 
 ## 🌟 Key Features
@@ -727,10 +723,10 @@ This project is a web application that allows users to explore information about
 ## 🛠 Tech Stack
 <br>
 
-**Frontend:** JavaScript · React · CSS  
-**API:** REST Countries API  
-**Routing:** React Router  
-**Deployment:** Vercel  
+**Frontend:** JavaScript · React · CSS
+**API:** REST Countries API
+**Routing:** React Router
+**Deployment:** Vercel
 **Design:** CSS Grid and Flexbox
 
 ## Technical Details
@@ -747,21 +743,17 @@ Key technical aspects:
 - CSS variables for theming
 - Responsive design principles
         `,
-        tech: [
-            "JavaScript", "React", "REST API",
-            "CSS", "React Router", "Vercel"
-        ],
-        image: "/images/worldscope.png",
-        screenshots: [
-            "/images/worldscope.png"
-        ],
-        github: "https://github.com/yosephdev/worldscope",
-        url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
-    },
-    "ip-address-tracker": {
-        title: "IP Address Tracker",
-        description: "A web application that allows users to track IP addresses and view their location on a map.",
-        longDescription: `
+    tech: ["JavaScript", "React", "REST API", "CSS", "React Router", "Vercel"],
+    image: "/images/worldscope.png",
+    screenshots: ["/images/worldscope.png"],
+    github: "https://github.com/yosephdev/worldscope",
+    url: "https://worldscope-yoseph-berhanes-projects.vercel.app/",
+  },
+  "ip-address-tracker": {
+    title: "IP Address Tracker",
+    description:
+      "A web application that allows users to track IP addresses and view their location on a map.",
+    longDescription: `
 This IP Address Tracker application allows users to search for any IP address and view its location on a map, along with additional information such as ISP, timezone, and location.
 
 <br>
@@ -780,10 +772,10 @@ This IP Address Tracker application allows users to search for any IP address an
 ## 🛠 Tech Stack
 <br>
 
-**Frontend:** JavaScript · HTML/CSS  
-**Mapping:** Leaflet.js  
-**API:** IP Geolocation API  
-**Deployment:** Vercel  
+**Frontend:** JavaScript · HTML/CSS
+**Mapping:** Leaflet.js
+**API:** IP Geolocation API
+**Deployment:** Vercel
 **Features:** Interactive maps with custom markers
 
 <br>
@@ -803,21 +795,24 @@ Key technical aspects:
 - Responsive design for mobile and desktop
 - Error handling for API requests
         `,
-        tech: [
-            "JavaScript", "Leaflet.js", "IP Geolocation API",
-            "HTML/CSS", "Vercel", "Interactive Maps"
-        ],
-        image: "/images/ip-address-tracker.png",
-        screenshots: [
-            "/images/ip-address-tracker.png"
-        ],
-        github: "https://github.com/yosephdev/ip-address-tracker",
-        url: "https://ip-address-tracker-swart-rho.vercel.app/"
-    },
-    "book-dine": {
-        "title": "Book & Dine",
-        "description": "A full-stack restaurant reservation system with real-time availability, secure bookings, and a responsive interface powered by Django.",
-        "longDescription": `
+    tech: [
+      "JavaScript",
+      "Leaflet.js",
+      "IP Geolocation API",
+      "HTML/CSS",
+      "Vercel",
+      "Interactive Maps",
+    ],
+    image: "/images/ip-address-tracker.png",
+    screenshots: ["/images/ip-address-tracker.png"],
+    github: "https://github.com/yosephdev/ip-address-tracker",
+    url: "https://ip-address-tracker-swart-rho.vercel.app/",
+  },
+  "book-dine": {
+    title: "Book & Dine",
+    description:
+      "A full-stack restaurant reservation system with real-time availability, secure bookings, and a responsive interface powered by Django.",
+    longDescription: `
 Book & Dine is a full-stack restaurant reservation system built with Python and Django. It includes real-time availability checking, reservation logic, user authentication, and a clean, responsive UI. <br>
 The application allows users to search for restaurants, check table availability, and make reservations. It also features an admin dashboard for restaurant management and email notifications for bookings.
 
@@ -828,11 +823,11 @@ The application allows users to search for restaurants, check table availability
 
 <br>
 
-**Frontend:** HTML5 · CSS3 · JavaScript · Bootstrap  
-**Backend:** Python · Django  
-**Database:** Neon PostgreSQL  
-**Media Handling:** Cloudinary  
-**Hosting:** Heroku  
+**Frontend:** HTML5 · CSS3 · JavaScript · Bootstrap
+**Backend:** Python · Django
+**Database:** Neon PostgreSQL
+**Media Handling:** Cloudinary
+**Hosting:** Heroku
 **Tools:** GitPod · GitHub
 
 <br>
@@ -841,12 +836,12 @@ The application allows users to search for restaurants, check table availability
 
 <br>
 
-- ✅ Real-time table availability checking  
-- 🖥️ User-friendly booking interface  
-- 🔐 Secure registration and login system  
-- 📊 Admin dashboard for restaurant management  
-- 📧 Email confirmation for reservations  
-- 📱 Mobile-first responsive design  
+- ✅ Real-time table availability checking
+- 🖥️ User-friendly booking interface
+- 🔐 Secure registration and login system
+- 📊 Admin dashboard for restaurant management
+- 📧 Email confirmation for reservations
+- 📱 Mobile-first responsive design
 
 <br>
 
@@ -862,30 +857,35 @@ Key technical elements include:
 
 <br>
 
-- Django ORM for database queries  
-- Django authentication with session management  
-- Integration with Cloudinary for media handling  
-- Responsive UI built with Bootstrap  
-- Deployment via Heroku with PostgreSQL from Neon  
+- Django ORM for database queries
+- Django authentication with session management
+- Integration with Cloudinary for media handling
+- Responsive UI built with Bootstrap
+- Deployment via Heroku with PostgreSQL from Neon
 
 `,
-        "tech": [
-            "Python", "Django", "PostgreSQL",
-            "HTML5", "CSS3", "JavaScript", "Bootstrap",
-            "Cloudinary", "Heroku"
-        ],
-        "image": "/images/book-dine.png",
-        "screenshots": [
-            "/images/book-dine.png"
-        ],
-        "github": "https://github.com/yosephdev/book-dine",
-        "url": ""
-    },
-    "mastery-hub": {
-        title: "Mastery Hub",
-        description: "A platform that connects professionals for mentorship and skill-sharing with responsive design and intuitive navigation.",
-        longDescription: `
-Mastery Hub connects professionals for mentorship and skill-sharing. The app emphasizes responsive design, intuitive navigation, and clean UI. 
+    tech: [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "Cloudinary",
+      "Heroku",
+    ],
+    image: "/images/book-dine.png",
+    screenshots: ["/images/book-dine.png"],
+    github: "https://github.com/yosephdev/book-dine",
+    url: "",
+  },
+  "mastery-hub": {
+    title: "Mastery Hub",
+    description:
+      "A platform that connects professionals for mentorship and skill-sharing with responsive design and intuitive navigation.",
+    longDescription: `
+Mastery Hub connects professionals for mentorship and skill-sharing. The app emphasizes responsive design, intuitive navigation, and clean UI.
 
 <br>
 
@@ -903,10 +903,10 @@ Mastery Hub connects professionals for mentorship and skill-sharing. The app emp
 ## 🛠 Tech Stack
 <br>
 
-**Backend:** Python · Django · PostgreSQL  
-**Frontend:** HTML · CSS · Bootstrap · JavaScript  
-**Authentication:** Django Authentication  
-**Deployment:** Heroku  
+**Backend:** Python · Django · PostgreSQL
+**Frontend:** HTML · CSS · Bootstrap · JavaScript
+**Authentication:** Django Authentication
+**Deployment:** Heroku
 **Database:** PostgreSQL with Django ORM
 
 ## Technical Details
@@ -924,21 +924,17 @@ Key technical aspects:
 - Custom context processors for dynamic content
 - Deployment on Heroku
         `,
-        tech: [
-            "Python", "Django", "PostgreSQL",
-            "HTML/CSS", "Bootstrap", "Heroku"
-        ],
-        image: "/images/mastery-hub.png",
-        screenshots: [
-            "/images/mastery-hub.png"
-        ],
-        github: "https://github.com/yosephdev/mastery-hub",
-        url: "https://skill-sharing-446c0336ffb5.herokuapp.com/"
-    },
-    "boutique-ado": {
-        title: "Boutique Ado",
-        description: "A Django web application for an online clothing store with e-commerce functionality.",
-        longDescription: `
+    tech: ["Python", "Django", "PostgreSQL", "HTML/CSS", "Bootstrap", "Heroku"],
+    image: "/images/mastery-hub.png",
+    screenshots: ["/images/mastery-hub.png"],
+    github: "https://github.com/yosephdev/mastery-hub",
+    url: "https://skill-sharing-446c0336ffb5.herokuapp.com/",
+  },
+  "boutique-ado": {
+    title: "Boutique Ado",
+    description:
+      "A Django web application for an online clothing store with e-commerce functionality.",
+    longDescription: `
 Boutique Ado is a fully-featured e-commerce platform built with Django. It offers a complete online shopping experience with product management, user accounts, and secure checkout.
 
 <br>
@@ -971,10 +967,10 @@ Boutique Ado is a fully-featured e-commerce platform built with Django. It offer
 
 <br>
 
-**Backend:** Python · Django · PostgreSQL  
-**Frontend:** HTML · CSS · Bootstrap  
-**Payment:** Stripe Integration  
-**Storage:** AWS S3  
+**Backend:** Python · Django · PostgreSQL
+**Frontend:** HTML · CSS · Bootstrap
+**Payment:** Stripe Integration
+**Storage:** AWS S3
 **Authentication:** Django Authentication
 
 <br>
@@ -996,64 +992,78 @@ Key technical aspects:
 - Responsive design with Bootstrap
 - AWS S3 for media storage
         `,
-        tech: [
-            "Python", "Django", "PostgreSQL",
-            "HTML/CSS", "Bootstrap", "Stripe", "AWS S3"
-        ],
-        image: "/images/boutique-ado.png",
-        screenshots: [
-            "/images/boutique-ado.png",
-        ],
-        github: "https://github.com/yosephdev/boutique-ado",
-        url: ""
-    },
-    "sero-global": {
-        title: "Sero Global",
-        description: "A modern mental health platform built with Django and AWS to improve access to therapy, education, and progress tracking.",
-        longDescription: `
-Sero Global is a modern mental health platform built with Django and AWS to improve access to therapy, education, and progress tracking. It empowers users and therapists with secure, remote tools for better mental wellness care. 
+    tech: [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "HTML/CSS",
+      "Bootstrap",
+      "Stripe",
+      "AWS S3",
+    ],
+    image: "/images/boutique-ado.png",
+    screenshots: ["/images/boutique-ado.png"],
+    github: "https://github.com/yosephdev/boutique-ado",
+    url: "",
+  },
+  "yaz-mari-website": {
+    title: "Yaz Mari Music Website",
+    description: "Modern Amharic & Reggae Music Streaming Platform.",
+    longDescription: `
+Yaz Mari Music Website is a modern streaming platform dedicated to Amharic and Reggae music. The platform provides music lovers with access to a curated collection of songs, artist information, and seamless streaming experience.
 
 <br>
-
 
 ## 🌟 Key Features
+
 <br>
 
-- ✅ Secure user authentication & profile management
-
-- 🔍 Therapist discovery and appointment booking
-- 📹 Encrypted video conferencing for remote sessions
-- 📚 Educational resource library on mental health
-- 📈 Progress tracking and goal-setting tools
-- 🛠️ Admin dashboard for content and user management
+- 🎵 **Music Streaming**: High-quality audio streaming
+- 🎤 **Artist Profiles**: Detailed information about artists and their work
+- 📱 **Responsive Design**: Seamless experience across all devices
+- 🎧 **Playlists**: Curated playlists for different moods and occasions
+- 🔍 **Search**: Find your favorite songs and artists quickly
+- ♥️ **Favorites**: Save and organize your favorite tracks
+- 🎨 **Modern UI**: Clean, intuitive interface inspired by modern streaming platforms
+- 🌍 **Multi-language**: Support for Amharic and English
 
 <br>
 
 ## 🛠 Tech Stack
+
 <br>
 
-**Backend:** Django · Python · PostgreSQL  
-**Frontend:** HTML · CSS · Bootstrap · JavaScript  
-**Infrastructure:** AWS (EC2, S3, RDS, CloudFront)  
-**DevOps:** Docker · GitHub Actions (CI/CD) · Heroku-compatible
+**Frontend:** React · TypeScript · Next.js · Tailwind CSS
+**API Integration:** Spotify API for music data
+**Deployment:** Vercel
+**Styling:** Tailwind CSS for modern, responsive design
+**Performance:** Optimized for fast loading and smooth playback
+
+<br>
+
+## Technical Highlights
+
+<br>
+
+- Next.js for server-side rendering and optimal performance
+- TypeScript for type-safe development
+- Spotify API integration for comprehensive music library
+- Tailwind CSS for responsive, modern UI
+- Audio player with custom controls
+- Real-time search and filtering
+- Optimized image and asset loading
         `,
-        tech: [
-            "Django", "Python", "PostgreSQL",
-            "HTML", "CSS", "Bootstrap", "JavaScript",
-            "AWS (EC2, S3, RDS, CloudFront)",
-            "Docker", "GitHub Actions", "Heroku-compatible"
-        ],
-        image: "/images/sero-global.png",
-        screenshots: [
-            "/images/sero-global.png"
-        ],
-        github: "https://github.com/yosephdev/sero-global",
-        url: ""
-    },
-    "isana-facilitation": {
-        "title": "Isana Facilitation Platform",
-        "description": "A secure, full-stack mental health platform built with Django, React, and AWS — empowering therapists with modern tools for client and session management.",
-        "longDescription": `
+    tech: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Spotify API"],
+    image: "/images/yaz-mari-website.png",
+    screenshots: ["/images/yaz-mari-website.png"],
+    github: "https://github.com/yosephdev/yaz-mari-website",
+    url: "https://yaz-mari.vercel.app/",
+  },
+  "isana-facilitation": {
+    title: "Isana Facilitation Platform",
+    description:
+      "A secure, full-stack mental health platform built with Django, React, and AWS — empowering therapists with modern tools for client and session management.",
+    longDescription: `
 Isana Facilitation Platform is a comprehensive mental health web application designed for therapists and counselors. It blends the reliability of Django on the backend with a professional, modern React frontend to deliver a seamless experience for managing clients, therapy sessions, and mental wellness resources.
 
 <br>
@@ -1066,14 +1076,14 @@ The platform ensures high performance, security, and accessibility — suitable 
 
 <br>
 
-- ✅ Secure user authentication & profile management  
-- 🧠 Therapist and client dashboards with role-based access  
-- 📅 Drag-and-drop calendar scheduling with reminders  
-- 📝 Session notes system with PDF export and autosave  
-- 📈 Dashboard analytics and progress tracking  
-- 📚 Educational mental health resources  
-- 📹 Encrypted video conferencing for virtual therapy  
-- 🛠️ Admin panel for managing users and content  
+- ✅ Secure user authentication & profile management
+- 🧠 Therapist and client dashboards with role-based access
+- 📅 Drag-and-drop calendar scheduling with reminders
+- 📝 Session notes system with PDF export and autosave
+- 📈 Dashboard analytics and progress tracking
+- 📚 Educational mental health resources
+- 📹 Encrypted video conferencing for virtual therapy
+- 🛠️ Admin panel for managing users and content
 
 <br>
 
@@ -1081,11 +1091,11 @@ The platform ensures high performance, security, and accessibility — suitable 
 
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS · Zustand · Headless UI  
-**Backend:** Django · Python  
-**Database:** PostgreSQL (via AWS RDS)  
-**DevOps & Infra:** AWS (EC2, S3, RDS, CloudFront) · Docker · GitHub Actions (CI/CD)  
-**Additional Tools:** Cloudinary (for media) · WCAG/ARIA accessibility standards  
+**Frontend:** React · TypeScript · Tailwind CSS · Zustand · Headless UI
+**Backend:** Django · Python
+**Database:** PostgreSQL (via AWS RDS)
+**DevOps & Infra:** AWS (EC2, S3, RDS, CloudFront) · Docker · GitHub Actions (CI/CD)
+**Additional Tools:** Cloudinary (for media) · WCAG/ARIA accessibility standards
 
 <br>
 
@@ -1093,33 +1103,39 @@ The platform ensures high performance, security, and accessibility — suitable 
 
 <br>
 
-- Type-safe, component-driven UI with TypeScript and React  
-- Zustand for fast and lightweight global state management  
-- Lazy-loaded routes and components for performance  
-- Secure API endpoints with Django Rest Framework  
-- Full mobile responsiveness and accessibility compliance  
-- Dockerized environment for scalability and portability  
-- Continuous deployment pipeline via GitHub Actions  
-- Hosted on AWS with scalable cloud infrastructure  
+- Type-safe, component-driven UI with TypeScript and React
+- Zustand for fast and lightweight global state management
+- Lazy-loaded routes and components for performance
+- Secure API endpoints with Django Rest Framework
+- Full mobile responsiveness and accessibility compliance
+- Dockerized environment for scalability and portability
+- Continuous deployment pipeline via GitHub Actions
+- Hosted on AWS with scalable cloud infrastructure
 
   `,
-        "tech": [
-            "React", "TypeScript", "Tailwind CSS", "Zustand",
-            "Django", "Python", "PostgreSQL",
-            "AWS (EC2, S3, RDS, CloudFront)",
-            "Docker", "GitHub Actions", "Cloudinary"
-        ],
-        "image": "/images/isana-facilitation.png",
-        "screenshots": [
-            "/images/isana-facilitation.png"
-        ],
-        "github": "https://github.com/yosephdev/isana-facilitation",
-        "url": ""
-    },
-    "worldscope": {
-        title: "Worldscope",
-        description: "A web application that displays information about countries using the REST Countries API.",
-        longDescription: `
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Django",
+      "Python",
+      "PostgreSQL",
+      "AWS (EC2, S3, RDS, CloudFront)",
+      "Docker",
+      "GitHub Actions",
+      "Cloudinary",
+    ],
+    image: "/images/isana-facilitation.png",
+    screenshots: ["/images/isana-facilitation.png"],
+    github: "https://github.com/yosephdev/isana-facilitation",
+    url: "",
+  },
+  worldscope: {
+    title: "Worldscope",
+    description:
+      "A web application that displays information about countries using the REST Countries API.",
+    longDescription: `
 This project is a web application that allows users to explore information about countries around the world. It uses the REST Countries API to fetch data about countries, including their flags, population, languages, currencies, and more.<br>
 
 <br>
@@ -1160,23 +1176,26 @@ This project is a web application that allows users to explore information about
 - Continuous deployment pipeline via GitHub Actions
 - Hosted on AWS with scalable cloud infrastructure
         `,
-        tech: [
-            "React", "TypeScript", "Tailwind CSS",
-            "REST Countries API",
-            "GitHub Actions", "AWS (EC2, S3, RDS, CloudFront)",
-            "Docker", "Cloudinary"
-        ],
-        image: "/images/worldscope.png",
-        screenshots: [
-            "/images/worldscope.png"
-        ],
-        github: "https://github.com/yosephdev/worldscope",
-        url: "https://worldscope-yoseph-berhanes-projects.vercel.app/"
-    },
-    "fitgear-clean": {
-        title: "FitGear",
-        description: "A modern e-commerce platform designed for sports equipment enthusiasts, built with a full-stack MERN architecture.",
-        longDescription: `
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST Countries API",
+      "GitHub Actions",
+      "AWS (EC2, S3, RDS, CloudFront)",
+      "Docker",
+      "Cloudinary",
+    ],
+    image: "/images/worldscope.png",
+    screenshots: ["/images/worldscope.png"],
+    github: "https://github.com/yosephdev/worldscope",
+    url: "https://worldscope-yoseph-berhanes-projects.vercel.app/",
+  },
+  "fitgear-clean": {
+    title: "FitGear",
+    description:
+      "A modern e-commerce platform designed for sports equipment enthusiasts, built with a full-stack MERN architecture.",
+    longDescription: `
 FitGear is a comprehensive e-commerce platform designed for sports equipment enthusiasts. Built with a full-stack MERN architecture, it provides a seamless shopping experience for fitness and sports gear.
 
 <br>
@@ -1200,9 +1219,9 @@ FitGear is a comprehensive e-commerce platform designed for sports equipment ent
 
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS  
-**Backend:** Python · MongoDB  
-**Development:** ESLint · Prettier  
+**Frontend:** React · TypeScript · Tailwind CSS
+**Backend:** Python · MongoDB
+**Development:** ESLint · Prettier
 **Performance:** Optimized assets and lazy loading
 
 <br>
@@ -1218,18 +1237,17 @@ FitGear is a comprehensive e-commerce platform designed for sports equipment ent
 - RESTful API design
 - State management for seamless user experience
         `,
-        tech: ["React", "TypeScript", "Python", "MongoDB", "Tailwind CSS"],
-        image: "/images/fitgear.png",
-        screenshots: [
-            "/images/fitgear.png"
-        ],
-        github: "https://github.com/yosephdev/FitGear-Clean",
-        url: "https://frontend-iota-seven-68.vercel.app/"
-    },
-    "isaks-store": {
-        title: "Isak's Store",
-        description: "A modern full-stack e-commerce platform built with Next.js, Express, MongoDB, and Stripe for payments.",
-        longDescription: `
+    tech: ["React", "TypeScript", "Python", "MongoDB", "Tailwind CSS"],
+    image: "/images/fitgear.png",
+    screenshots: ["/images/fitgear.png"],
+    github: "https://github.com/yosephdev/FitGear-Clean",
+    url: "https://frontend-iota-seven-68.vercel.app/",
+  },
+  "isaks-store": {
+    title: "Isak's Store",
+    description:
+      "A modern full-stack e-commerce platform built with Next.js, Express, MongoDB, and Stripe for payments.",
+    longDescription: `
 Isak's Store is a modern full-stack e-commerce platform that provides a complete online shopping experience. Built with Next.js for optimal performance and SEO, it features secure payment processing through Stripe integration.
 
 <br>
@@ -1253,10 +1271,10 @@ Isak's Store is a modern full-stack e-commerce platform that provides a complete
 
 <br>
 
-**Frontend:** Next.js · Tailwind CSS  
-**Backend:** Express · MongoDB  
-**Payment:** Stripe  
-**Authentication:** JWT  
+**Frontend:** Next.js · Tailwind CSS
+**Backend:** Express · MongoDB
+**Payment:** Stripe
+**Authentication:** JWT
 **Deployment:** Vercel
 
 <br>
@@ -1273,18 +1291,17 @@ Isak's Store is a modern full-stack e-commerce platform that provides a complete
 - Tailwind CSS for responsive design
 - RESTful API architecture
         `,
-        tech: ["Next.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
-        image: "/images/isaks-store.png",
-        screenshots: [
-            "/images/isaks-store.png"
-        ],
-        github: "https://github.com/yosephdev/isaks-store",
-        url: "https://isaks-store.vercel.app/"
-    },
-    "tigray-tutor-ai": {
-        title: "Tigray Tutor AI",
-        description: "An AI-powered educational platform designed specifically for Tigrinya-speaking students to provide personalized tutoring.",
-        longDescription: `
+    tech: ["Next.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
+    image: "/images/isaks-store.png",
+    screenshots: ["/images/isaks-store.png"],
+    github: "https://github.com/yosephdev/isaks-store",
+    url: "https://isaks-store.vercel.app/",
+  },
+  "tigray-tutor-ai": {
+    title: "Tigray Tutor AI",
+    description:
+      "An AI-powered educational platform designed specifically for Tigrinya-speaking students to provide personalized tutoring.",
+    longDescription: `
 Tigray Tutor AI is an innovative educational platform that leverages artificial intelligence to provide personalized tutoring experiences for Tigrinya-speaking students. The platform adapts to individual learning styles and provides culturally relevant educational content.
 
 <br>
@@ -1308,9 +1325,9 @@ Tigray Tutor AI is an innovative educational platform that leverages artificial 
 
 <br>
 
-**Frontend:** Next.js · React · TypeScript  
-**AI/ML:** Custom AI models for educational content  
-**Styling:** Tailwind CSS  
+**Frontend:** Next.js · React · TypeScript
+**AI/ML:** Custom AI models for educational content
+**Styling:** Tailwind CSS
 **Deployment:** Vercel
 
 <br>
@@ -1327,19 +1344,18 @@ Tigray Tutor AI is an innovative educational platform that leverages artificial 
 - Responsive design for all devices
 - Progress tracking and analytics
         `,
-        tech: ["AI", "TypeScript", "React", "Next.js"],
-        image: "/images/tigray-tutor-ai.png",
-        screenshots: [
-            "/images/tigray-tutor-ai.png"
-        ],
-        github: "https://github.com/yosephdev/tigray-tutor-ai",
-        url: "https://tigray-tutor-ai.vercel.app/"
-    },
-    "revolutaging": {
-        title: "Revolutaging",
-        description: "A compassionate AI companion application for seniors, featuring empathetic chat, health monitoring, and caregiver alerts.",
-        longDescription: `
-Revolutaging is a compassionate AI companion designed specifically for seniors. The application provides empathetic conversation, health monitoring, and vital connection to caregivers, helping seniors maintain their independence while staying connected.
+    tech: ["AI", "TypeScript", "React", "Next.js"],
+    image: "/images/tigray-tutor-ai.png",
+    screenshots: ["/images/tigray-tutor-ai.png"],
+    github: "https://github.com/yosephdev/tigray-tutor-ai",
+    url: "https://tigray-tutor-ai.vercel.app/",
+  },
+  afelu: {
+    title: "Afelu",
+    description:
+      "A global sustainable marketplace connecting eco-conscious consumers with verified green vendors.",
+    longDescription: `
+Afelu is a global sustainable marketplace that connects eco-conscious consumers with verified green vendors. The platform promotes sustainable living by making it easy to discover and purchase environmentally friendly products from trusted sellers worldwide.
 
 <br>
 
@@ -1347,14 +1363,14 @@ Revolutaging is a compassionate AI companion designed specifically for seniors. 
 
 <br>
 
-- 🤖 **AI Companion**: Empathetic conversational AI for companionship
-- 🗣️ **Voice Interface**: Natural voice interaction
-- 💊 **Health Monitoring**: Track vitals and medications
-- 🚨 **Caregiver Alerts**: Notify caregivers of important events
-- 📅 **Reminders**: Medication and appointment reminders
-- 🎯 **Activity Tracking**: Monitor daily activities and wellness
-- 📱 **Mobile & Cross-Platform**: Available on multiple devices
-- ♿ **Accessibility**: Designed for senior-friendly use
+- 🌱 **Sustainable Products**: Curated marketplace of eco-friendly products
+- ✅ **Verified Vendors**: All sellers verified for sustainability practices
+- 🌍 **Global Marketplace**: Connect with green vendors worldwide
+- 🔍 **Advanced Search**: Filter by sustainability certifications and categories
+- 🛒 **Shopping Experience**: Seamless cart and checkout process
+- 💚 **Impact Tracking**: See the environmental impact of your purchases
+- 📱 **Responsive Design**: Beautiful experience on all devices
+- ⭐ **Reviews & Ratings**: Community-driven vendor and product reviews
 
 <br>
 
@@ -1362,10 +1378,12 @@ Revolutaging is a compassionate AI companion designed specifically for seniors. 
 
 <br>
 
-**Frontend:** React Native · TypeScript  
-**AI:** Voice AI · Natural Language Processing  
-**Backend:** Cloud-based services  
-**Deployment:** Mobile app stores
+**Frontend:** React · TypeScript · Tailwind CSS
+**Backend:** Node.js · Express
+**Database:** MongoDB
+**Authentication:** JWT
+**Deployment:** Vercel
+**Performance:** Optimized for fast loading and smooth navigation
 
 <br>
 
@@ -1373,27 +1391,26 @@ Revolutaging is a compassionate AI companion designed specifically for seniors. 
 
 <br>
 
-- Advanced AI for empathetic and context-aware conversations
-- Voice recognition and synthesis for hands-free interaction
-- Real-time health data monitoring and alerts
-- Cross-platform development with React Native
-- TypeScript for robust, type-safe code
-- Integration with health monitoring devices
-- Secure data handling and privacy protection
-- User-friendly interface designed for seniors
+- React with TypeScript for type-safe component development
+- Node.js backend with Express for robust API
+- MongoDB for flexible product and vendor data storage
+- JWT authentication for secure user sessions
+- Tailwind CSS for modern, responsive UI
+- Vendor verification system
+- Real-time search and filtering
+- Impact calculator for sustainability tracking
         `,
-        tech: ["AI", "TypeScript", "React Native", "Voice AI"],
-        image: "/images/revolutaging.png",
-        screenshots: [
-            "/images/revolutaging.png"
-        ],
-        github: "https://github.com/yosephdev/revolutaging",
-        url: "https://revolutaging.vercel.app/"
-    },
-    "habesha-boutique": {
-        title: "Habesha Boutique",
-        description: "An online women's fashion boutique selling luxury apparel, accessories, and outerwear including fur coats, dresses, and yoga sets.",
-        longDescription: `
+    tech: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
+    image: "/images/afelu.png",
+    screenshots: ["/images/afelu.png"],
+    github: "https://github.com/yosephdev/afelu",
+    url: "https://afelu.vercel.app/",
+  },
+  "habesha-boutique": {
+    title: "Habesha Boutique",
+    description:
+      "An online women's fashion boutique selling luxury apparel, accessories, and outerwear including fur coats, dresses, and yoga sets.",
+    longDescription: `
 Habesha Boutique is a sophisticated online fashion destination specializing in luxury women's apparel and accessories. The platform offers an exquisite collection of fur coats, elegant dresses, stylish yoga sets, and premium accessories.
 
 <br>
@@ -1417,10 +1434,10 @@ Habesha Boutique is a sophisticated online fashion destination specializing in l
 
 <br>
 
-**Platform:** Shopify  
-**Frontend:** Liquid · JavaScript · CSS  
-**E-commerce:** Shopify Commerce Platform  
-**Payment:** Shopify Payments  
+**Platform:** Shopify
+**Frontend:** Liquid · JavaScript · CSS
+**E-commerce:** Shopify Commerce Platform
+**Payment:** Shopify Payments
 **SEO:** Optimized for search engines
 
 <br>
@@ -1438,18 +1455,17 @@ Habesha Boutique is a sophisticated online fashion destination specializing in l
 - Fast loading times and performance optimization
 - Integrated inventory management
         `,
-        tech: ["Shopify", "Liquid", "JavaScript", "CSS", "E-commerce"],
-        image: "/images/Habesha Boutique-preview.png",
-        screenshots: [
-            "/images/Habesha Boutique-preview.png"
-        ],
-        github: "https://github.com/yosephdev/habesha-boutique",
-        url: "https://habeshaboutique.com/"
-    },
-    "stayswift": {
-        title: "StaySwift",
-        description: "A modern hotel search and booking application powered by LiteAPI, featuring interactive maps, real-time hotel data, and seamless booking experiences.",
-        longDescription: `
+    tech: ["Shopify", "Liquid", "JavaScript", "CSS", "E-commerce"],
+    image: "/images/Habesha Boutique-preview.png",
+    screenshots: ["/images/Habesha Boutique-preview.png"],
+    github: "https://github.com/yosephdev/habesha-boutique",
+    url: "https://habeshaboutique.com/",
+  },
+  stayswift: {
+    title: "StaySwift",
+    description:
+      "A modern hotel search and booking application powered by LiteAPI, featuring interactive maps, real-time hotel data, and seamless booking experiences.",
+    longDescription: `
 StaySwift is a comprehensive hotel search and booking platform that provides users with real-time hotel availability, pricing, and booking capabilities. Powered by LiteAPI, it offers an intuitive interface with interactive maps and detailed hotel information.
 
 <br>
@@ -1473,10 +1489,10 @@ StaySwift is a comprehensive hotel search and booking platform that provides use
 
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS  
-**API:** LiteAPI for hotel data  
-**Maps:** Google Maps API  
-**Styling:** Tailwind CSS · Responsive Design  
+**Frontend:** React · TypeScript · Tailwind CSS
+**API:** LiteAPI for hotel data
+**Maps:** Google Maps API
+**Styling:** Tailwind CSS · Responsive Design
 **Deployment:** Vercel
 
 <br>
@@ -1494,18 +1510,24 @@ StaySwift is a comprehensive hotel search and booking platform that provides use
 - Optimized performance for fast loading
 - Cross-platform compatibility (web and mobile)
         `,
-        tech: ["React", "TypeScript", "LiteAPI", "Tailwind CSS", "Google Maps API", "Responsive Design"],
-        image: "/images/stayswift.png",
-        screenshots: [
-            "/images/stayswift.png"
-        ],
-        github: "https://github.com/yosephdev/stayswift",
-        url: "https://stayswift-kappa.vercel.app/"
-    },
-    "jusplay-cinema-connect": {
-        title: "JusPlay Cinema Connect",
-        description: "A modern streaming platform front-end built with React and TypeScript, integrating with the TMDB API.",
-        longDescription: `
+    tech: [
+      "React",
+      "TypeScript",
+      "LiteAPI",
+      "Tailwind CSS",
+      "Google Maps API",
+      "Responsive Design",
+    ],
+    image: "/images/stayswift.png",
+    screenshots: ["/images/stayswift.png"],
+    github: "https://github.com/yosephdev/stayswift",
+    url: "https://stayswift-kappa.vercel.app/",
+  },
+  "jusplay-cinema-connect": {
+    title: "JusPlay Cinema Connect",
+    description:
+      "A modern streaming platform front-end built with React and TypeScript, integrating with the TMDB API.",
+    longDescription: `
 JusPlay Cinema Connect is a sleek streaming platform interface that provides users with access to a vast library of movies and TV shows. Built with React and TypeScript, it integrates with The Movie Database (TMDB) API to deliver up-to-date content information.
 
 <br>
@@ -1529,9 +1551,9 @@ JusPlay Cinema Connect is a sleek streaming platform interface that provides use
 
 <br>
 
-**Frontend:** React · TypeScript · Tailwind CSS  
-**API:** TMDB (The Movie Database) API  
-**Styling:** Tailwind CSS  
+**Frontend:** React · TypeScript · Tailwind CSS
+**API:** TMDB (The Movie Database) API
+**Styling:** Tailwind CSS
 **Deployment:** Netlify
 
 <br>
@@ -1549,18 +1571,17 @@ JusPlay Cinema Connect is a sleek streaming platform interface that provides use
 - Dynamic routing for movie/show details
 - Mobile-first responsive design
         `,
-        tech: ["React", "TypeScript", "TMDB API", "Tailwind CSS"],
-        image: "/images/jusplay.png",
-        screenshots: [
-            "/images/jusplay.png"
-        ],
-        github: "https://github.com/yosephdev/jusplay-cinema-connect",
-        url: "https://jusplay.netlify.app/"
-    },
-    "cascadia-chauffeur-services": {
-        title: "Cascadia Chauffeur Services",
-        description: "A modern booking platform for Cascadia Transports, designed to streamline the process of booking chauffeur services.",
-        longDescription: `
+    tech: ["React", "TypeScript", "TMDB API", "Tailwind CSS"],
+    image: "/images/jusplay.png",
+    screenshots: ["/images/jusplay.png"],
+    github: "https://github.com/yosephdev/jusplay-cinema-connect",
+    url: "https://jusplay.netlify.app/",
+  },
+  "cascadia-chauffeur-services": {
+    title: "Cascadia Chauffeur Services",
+    description:
+      "A modern booking platform for Cascadia Transports, designed to streamline the process of booking chauffeur services.",
+    longDescription: `
 Cascadia Chauffeur Services is a professional booking platform designed for Cascadia Transports. The platform streamlines the chauffeur booking process, providing an elegant solution for luxury transportation services.
 
 <br>
@@ -1584,10 +1605,10 @@ Cascadia Chauffeur Services is a professional booking platform designed for Casc
 
 <br>
 
-**Frontend:** Bootstrap 5 · JavaScript  
-**Backend:** Django · Python  
-**Database:** PostgreSQL  
-**Styling:** Bootstrap 5 · Custom CSS  
+**Frontend:** Bootstrap 5 · JavaScript
+**Backend:** Django · Python
+**Database:** PostgreSQL
+**Styling:** Bootstrap 5 · Custom CSS
 **Deployment:** Production server
 
 <br>
@@ -1605,149 +1626,152 @@ Cascadia Chauffeur Services is a professional booking platform designed for Casc
 - Email notification system
 - Admin panel for service management
         `,
-        tech: ["Bootstrap 5", "JavaScript", "Django", "PostgreSQL"],
-        image: "/images/cascadia.png",
-        screenshots: [
-            "/images/cascadia.png"
-        ],
-        github: "https://github.com/yosephdev/chauffeur-booking-system",
-        url: "https:/www.cascadiatransports.com/"
-    }
+    tech: ["Bootstrap 5", "JavaScript", "Django", "PostgreSQL"],
+    image: "/images/cascadia.png",
+    screenshots: ["/images/cascadia.png"],
+    github: "https://github.com/yosephdev/chauffeur-booking-system",
+    url: "https:/www.cascadiatransports.com/",
+  },
 };
 
-
-
 const ProjectDetail = () => {
-    const { slug } = useParams<{ slug: string }>();
-    const [project, setProject] = useState(slug ? projects[slug as keyof typeof projects] : null);
-    const [htmlContent, setHtmlContent] = useState<string>("");
+  const { slug } = useParams<{ slug: string }>();
+  const [project, setProject] = useState(
+    slug ? projects[slug as keyof typeof projects] : null
+  );
+  const [htmlContent, setHtmlContent] = useState<string>("");
 
+  useEffect(() => {
+    if (!project) {
+      window.location.href = "/projects";
+      return;
+    }
 
-    useEffect(() => {
-        if (!project) {
-            window.location.href = "/projects";
-            return;
-        }
+    // Scroll to top
+    window.scrollTo(0, 0);
 
-        // Scroll to top
-        window.scrollTo(0, 0);
+    if (project.longDescription) {
+      const htmlOrPromise = marked(project.longDescription, {
+        breaks: true,
+        gfm: true,
+      });
 
-        if (project.longDescription) {
-            const htmlOrPromise = marked(project.longDescription, {
-                breaks: true,
-                gfm: true,
-            });
+      if (htmlOrPromise instanceof Promise) {
+        htmlOrPromise.then((html) => setHtmlContent(html));
+      } else {
+        setHtmlContent(htmlOrPromise);
+      }
+    }
+  }, [project, slug]);
 
-            if (htmlOrPromise instanceof Promise) {
-                htmlOrPromise.then(html => setHtmlContent(html));
-            } else {
-                setHtmlContent(htmlOrPromise);
-            }
-        }
-    }, [project, slug]);
+  if (!project) return null;
 
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Header />
 
-    if (!project) return null;
+      <main className="flex-1">
+        <article className="mx-auto max-w-screen-lg py-8 md:py-12 px-4">
+          <div className="mx-auto max-w-[800px]">
+            {/* Header */}
+            <div className="mb-8">
+              <Link
+                to="/projects"
+                className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="mr-1"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+                Back to Projects
+              </Link>
 
-    return (
-        <div className="flex min-h-screen flex-col">
-            <Header />
+              <h1 className="text-3xl md:text-4xl font-bold">
+                {project.title}
+              </h1>
+              <p className="mt-4 text-lg text-muted-foreground">
+                {project.description}
+              </p>
 
-            <main className="flex-1">
-                <article className="mx-auto max-w-screen-lg py-8 md:py-12 px-4">
-                    <div className="mx-auto max-w-[800px]">
-                        {/* Header */}
-                        <div className="mb-8">
-                            <Link
-                                to="/projects"
-                                className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="mr-1"
-                                >
-                                    <path d="M15 18l-6-6 6-6" />
-                                </svg>
-                                Back to Projects
-                            </Link>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.tech.map((tech) => (
+                  <Badge key={tech} variant="secondary">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
 
-                            <h1 className="text-3xl md:text-4xl font-bold">{project.title}</h1>
-                            <p className="mt-4 text-lg text-muted-foreground">{project.description}</p>
+              <div className="mt-6 flex gap-4">
+                {project.url && (
+                  <Button asChild>
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      View Live Demo
+                    </a>
+                  </Button>
+                )}
+                {project.github && (
+                  <Button asChild variant="outline">
+                    <a href={project.github} target="_blank" rel="noreferrer">
+                      View on GitHub
+                    </a>
+                  </Button>
+                )}
+              </div>
+            </div>
 
-                            <div className="mt-4 flex flex-wrap gap-2">
-                                {project.tech.map((tech) => (
-                                    <Badge key={tech} variant="secondary">
-                                        {tech}
-                                    </Badge>
-                                ))}
-                            </div>
+            {/* Project Image */}
+            {project.image && (
+              <div className="my-8 overflow-hidden rounded-lg border">
+                <img
+                  src={project.image}
+                  alt={`${project.title} main image`}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            )}
 
-                            <div className="mt-6 flex gap-4">
-                                {project.url && (
-                                    <Button asChild>
-                                        <a href={project.url} target="_blank" rel="noreferrer">
-                                            View Live Demo
-                                        </a>
-                                    </Button>
-                                )}
-                                {project.github && (
-                                    <Button asChild variant="outline">
-                                        <a href={project.github} target="_blank" rel="noreferrer">
-                                            View on GitHub
-                                        </a>
-                                    </Button>
-                                )}
-                            </div>
-                        </div>
+            {/* Markdown Content */}
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+            </div>
 
-                        {/* Project Image */}
-                        {project.image && (
-                            <div className="my-8 overflow-hidden rounded-lg border">
-                                <img
-                                    src={project.image}
-                                    alt={`${project.title} main image`}
-                                    className="w-full h-auto object-cover"
-                                />
-                            </div>
-                        )}
-
-                        {/* Markdown Content */}
-                        <div className="prose prose-lg dark:prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-                        </div>
-
-                        {/* Screenshots */}
-                        {project.screenshots && project.screenshots.length > 0 && (
-                            <div className="my-12">
-                                <h2 className="text-2xl font-bold mb-6">Screenshots</h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    {project.screenshots.map((screenshot, index) => (
-                                        <div key={index} className="overflow-hidden rounded-lg border">
-                                            <img
-                                                src={screenshot}
-                                                alt={`${project.title} screenshot ${index + 1}`}
-                                                className="w-full h-auto object-cover"
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
+            {/* Screenshots */}
+            {project.screenshots && project.screenshots.length > 0 && (
+              <div className="my-12">
+                <h2 className="text-2xl font-bold mb-6">Screenshots</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {project.screenshots.map((screenshot, index) => (
+                    <div
+                      key={index}
+                      className="overflow-hidden rounded-lg border"
+                    >
+                      <img
+                        src={screenshot}
+                        alt={`${project.title} screenshot ${index + 1}`}
+                        className="w-full h-auto object-cover"
+                      />
                     </div>
-                </article>
-            </main>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </article>
+      </main>
 
-            <Footer />
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 };
 
 export default ProjectDetail;
