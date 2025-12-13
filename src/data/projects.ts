@@ -21,7 +21,7 @@ export const projects: Project[] = [
     slug: "fitgear-clean",
     title: "FitGear",
     description:
-      "A modern e-commerce platform designed for sports equipment enthusiasts, built with a full-stack MERN architecture.",
+      "A full-stack e-commerce platform for sports equipment, built with a MERN-style architecture and a clean, scalable frontend.",
     tech: ["React", "TypeScript", "Python", "MongoDB", "Tailwind CSS"],
     image: "/images/fitgear.png",
     github: "https://github.com/yosephdev/FitGear-Clean",
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     slug: "isaks-store",
     title: "Isak's Store",
     description:
-      "A modern full-stack e-commerce platform built with Next.js, Express, MongoDB, and Stripe for payments.",
+      "A production-ready e-commerce system with secure payments, product management, and a modern Next.js frontend.",
     tech: ["Next.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
     image: "/images/isaks-store.png",
     github: "https://github.com/yosephdev/isaks-store",
@@ -41,27 +41,27 @@ export const projects: Project[] = [
     slug: "tigray-tutor-ai",
     title: "Tigray Tutor AI",
     description:
-      "An AI-powered educational platform designed specifically for Tigrinya-speaking students to provide personalized tutoring.",
+      "An AI-assisted learning platform providing personalized educational support for Tigrinya-speaking students.",
     tech: ["AI", "TypeScript", "React", "Next.js"],
     image: "/images/tigray-tutor-ai.png",
     github: "https://github.com/yosephdev/tigray-tutor-ai",
     url: "https://tigray-tutor-ai.vercel.app/",
   },
   {
-    slug: "afelu",
-    title: "Afelu",
+    slug: "ecosyn",
+    title: "EcoSyn",
     description:
-      "A global sustainable marketplace connecting eco-conscious consumers with verified green vendors.",
+      "A sustainable marketplace platform connecting eco-conscious buyers with verified green vendors.",
     tech: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
-    image: "/images/afelu.png",
-    github: "https://github.com/yosephdev/afelu",
-    url: "https://afelu.vercel.app/",
+    image: "/images/ecosyn.png",
+    github: "https://github.com/yosephdev/ecosyn",
+    url: "https://ecosyn-yoseph-berhanes-projects.vercel.app/",
   },
   {
     slug: "habesha-boutique",
     title: "Habesha Boutique",
     description:
-      "An online women's fashion boutique selling luxury apparel, accessories, and outerwear including fur coats, dresses, and yoga sets.",
+      "A Shopify-based fashion storefront focused on premium women’s apparel and a polished online shopping experience.",
     tech: ["Shopify", "Liquid", "JavaScript", "CSS", "E-commerce"],
     image: "/images/Habesha Boutique-preview.png",
     github: "https://github.com/yosephdev/habesha-boutique",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     slug: "stayswift",
     title: "StaySwift",
     description:
-      "A modern hotel search and booking application powered by LiteAPI, featuring interactive maps, real-time hotel data, and seamless booking experiences across web and mobile platforms.",
+      "A hotel discovery and booking application integrating real-time data, maps, and responsive search workflows.",
     tech: [
       "React",
       "TypeScript",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     slug: "jusplay-cinema-connect",
     title: "JusPlay Cinema Connect",
     description:
-      "A modern streaming platform front-end built with React and TypeScript, integrating with the TMDB API.",
+      "A streaming platform frontend built with React and TypeScript, consuming movie data from the TMDB API.",
     tech: ["React", "TypeScript", "TMDB API", "Tailwind CSS"],
     image: "/images/jusplay.png",
     github: "https://github.com/yosephdev/jusplay-cinema-connect",
@@ -97,7 +97,8 @@ export const projects: Project[] = [
   {
     slug: "yaz-mari-website",
     title: "Yaz Mari Music Website",
-    description: "Modern Amharic & Reggae Music Streaming Platform.",
+    description:
+      "A modern music platform showcasing Amharic and reggae content with API-driven media integration.",
     tech: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Spotify API"],
     image: "/images/yaz-mari-website.png",
     github: "https://github.com/yosephdev/yaz-mari-website",
@@ -107,7 +108,7 @@ export const projects: Project[] = [
     slug: "mt-butik",
     title: "MT Skrädderi & Butik",
     description:
-      "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna.",
+      "A business website for a local tailoring and grooming shop, focused on clarity, accessibility, and speed.",
     tech: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/mt-butik.png",
     github: "https://github.com/yosephdev/mt-butik",
@@ -117,7 +118,7 @@ export const projects: Project[] = [
     slug: "habesha-smak-butik",
     title: "Habesha Smak Butik",
     description:
-      "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items.",
+      "A multilingual e-commerce platform for Ethiopian food products with secure checkout and structured catalog management.",
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
     image: "/images/habesha-smak-butik.png",
     github: "https://github.com/yosephdev/habesha-smak-butik",
@@ -127,7 +128,7 @@ export const projects: Project[] = [
     slug: "babys-and-me",
     title: "Baby's & Me",
     description:
-      "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability.",
+      "An e-commerce storefront for handmade baby products, built with a component-driven UI and modern tooling.",
     tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
     image: "/images/babys-and-me.png",
     github: "https://github.com/yosephdev/babys-and-me",
@@ -137,7 +138,7 @@ export const projects: Project[] = [
     slug: "selams-handmade",
     title: "Selam's Handmade",
     description:
-      "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
+      "A production e-commerce site for handcrafted goods with a focus on performance, simplicity, and trust.",
     tech: ["React", "Next.js", "Tailwind CSS", "Stripe"],
     image: "/images/selams-handmade.png",
     github: "https://github.com/yosephdev/selams-handmade",
@@ -147,12 +148,12 @@ export const projects: Project[] = [
     slug: "cascadia-chauffeur-services",
     title: "Cascadia Chauffeur Services",
     description:
-      "A modern, full-stack limousine booking system built with Hono and Cloudflare Pages, featuring instant quotes, multi-step reservations, admin dashboard, and driver portal.",
+      "A full-stack limousine booking system with instant quotes, role-based access, and an admin management dashboard.",
     tech: [
-      "JavaScript(ES6+)",
+      "TypeScript",
       "Hono",
       "Cloudflare Workers",
-      "TypeScript",
+      "JavaScript (ES6+)",
       "Tailwind CSS",
       "Stripe",
     ],
@@ -164,7 +165,7 @@ export const projects: Project[] = [
     slug: "isaks-bilar",
     title: "Isaks Bilar",
     description:
-      "En modern e-handelsplattform för leksaksbilar, modellbilar och RC-bilar.",
+      "An e-commerce storefront for toy, model, and RC cars built with a modern Next.js stack.",
     tech: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Stripe"],
     image: "/images/isaks-bilar.png",
     github: "https://github.com/yosephdev/isaks-bilar",

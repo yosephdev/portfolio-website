@@ -1350,12 +1350,12 @@ Tigray Tutor AI is an innovative educational platform that leverages artificial 
     github: "https://github.com/yosephdev/tigray-tutor-ai",
     url: "https://tigray-tutor-ai.vercel.app/",
   },
-  afelu: {
-    title: "Afelu",
+  ecosyn: {
+    title: "EcoSyn",
     description:
       "A global sustainable marketplace connecting eco-conscious consumers with verified green vendors.",
     longDescription: `
-Afelu is a global sustainable marketplace that connects eco-conscious consumers with verified green vendors. The platform promotes sustainable living by making it easy to discover and purchase environmentally friendly products from trusted sellers worldwide.
+EcoSyn is a global sustainable marketplace that connects eco-conscious consumers with verified green vendors. The platform promotes sustainable living by making it easy to discover and purchase environmentally friendly products from trusted sellers worldwide.
 
 <br>
 
@@ -1401,10 +1401,10 @@ Afelu is a global sustainable marketplace that connects eco-conscious consumers 
 - Impact calculator for sustainability tracking
         `,
     tech: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
-    image: "/images/afelu.png",
-    screenshots: ["/images/afelu.png"],
-    github: "https://github.com/yosephdev/afelu",
-    url: "https://afelu.vercel.app/",
+    image: "/images/ecosyn.png",
+    screenshots: ["/images/ecosyn.png"],
+    github: "https://github.com/yosephdev/ecosyn",
+    url: "https://ecosyn-yoseph-berhanes-projects.vercel.app/",
   },
   "habesha-boutique": {
     title: "Habesha Boutique",
