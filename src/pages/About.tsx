@@ -20,10 +20,10 @@ export default function About() {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title="About Me - Yoseph Berhane | Full Stack Developer"
-        description="Learn more about Yoseph Berhane, a Full Stack Developer with 5 years of experience specializing in React, TypeScript, and modern web technologies. Currently seeking remote opportunities worldwide."
+        title="About – Yoseph Berhane | Full Stack Developer"
+        description="Learn more about Yoseph Berhane, a Full Stack Developer with 5+ years of experience building production-ready web applications using React, TypeScript, and modern backend technologies. Available for remote work globally."
         keywords={[
-          "About",
+          "About Yoseph Berhane",
           "Full Stack Developer",
           "React Developer",
           "TypeScript",
@@ -32,6 +32,7 @@ export default function About() {
           "Software Engineer",
         ]}
       />
+
       <Header />
 
       <main className="flex-1">
@@ -42,14 +43,17 @@ export default function About() {
               <div className="mb-6">
                 <JobSeekingBadge />
               </div>
+
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-                About Me
+                About
               </h1>
+
               <p className="text-xl text-muted-foreground">
-                Full Stack Developer passionate about building modern web
-                applications and currently seeking remote opportunities
-                worldwide.
+                Full Stack Developer focused on building reliable, scalable web
+                applications. Available for remote work across English-speaking
+                teams.
               </p>
+
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild size="lg">
                   <a
@@ -61,6 +65,7 @@ export default function About() {
                     CV 🇬🇧
                   </a>
                 </Button>
+
                 <Button asChild size="lg" variant="secondary">
                   <a
                     href="/Yoseph_Berhane_CV_SV.pdf"
@@ -71,10 +76,11 @@ export default function About() {
                     CV 🇸🇪
                   </a>
                 </Button>
+
                 <Button asChild variant="outline" size="lg">
                   <Link to="/contact">
                     <Mail className="mr-2 h-4 w-4" />
-                    Contact Me
+                    Contact
                   </Link>
                 </Button>
               </div>
@@ -97,8 +103,8 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Technical Expertise</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                A comprehensive overview of my technical skills across frontend,
-                backend, databases, and development tools.
+                A focused overview of my capabilities across frontend, backend,
+                databases, and modern development workflows.
               </p>
             </div>
             <SkillsOverview />
@@ -111,8 +117,8 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Skills Breakdown</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Detailed proficiency levels across different technology
-                categories
+                Proficiency levels across key technologies and tools used in
+                production environments.
               </p>
             </div>
             <TechnicalSkills />
@@ -127,7 +133,8 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">GitHub Activity</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                My open-source contributions and development activity on GitHub
+                A snapshot of my open-source contributions and ongoing
+                development work.
               </p>
             </div>
             <GitHubStats />
@@ -140,7 +147,7 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Testimonials</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                What clients and colleagues say about working with me
+                Feedback from clients and collaborators I’ve worked with.
               </p>
             </div>
             <Testimonials />
@@ -152,18 +159,19 @@ export default function About() {
         {/* CTA Section */}
         <section className="py-20 bg-muted/30">
           <div className="container text-center max-w-2xl">
-            <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
+            <h2 className="text-3xl font-bold mb-4">Let’s Work Together</h2>
             <p className="text-muted-foreground mb-8">
-              I'm currently seeking full-stack developer positions worldwide.
-              Available for immediate start and open to remote opportunities (EU
-              Citizen).
+              Available for full-stack development roles and project-based work.
+              Comfortable working remotely with international teams and ready to
+              contribute immediately.
             </p>
+
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg">
                 <Link to="/contact">Get in Touch</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/projects">View My Work</Link>
+                <Link to="/projects">View Projects</Link>
               </Button>
             </div>
           </div>

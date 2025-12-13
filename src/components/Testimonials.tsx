@@ -3,17 +3,17 @@
  * Carousel displaying client/colleague testimonials and recommendations
  */
 
-import { Card, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Quote } from 'lucide-react';
+} from "@/components/ui/carousel";
+import { Quote } from "lucide-react";
 
 interface Testimonial {
   id: string;
@@ -29,44 +29,54 @@ interface Testimonial {
 // Sample testimonials - you can populate these with real data
 const testimonials: Testimonial[] = [
   {
-    id: '1',
-    name: 'Sibar Al-ani',
-    role: 'Instructor',
+    id: "1",
+    name: "Sibar Al-ani",
+    role: "Instructor",
     company: "Changemaker Educations",
     quote:
-      'Yoseph was a persistent student that wont give up or avoid a challenge when things gets difficult. He has a good work ethic and a constant drive to evolve as a developer. You can count on a driven and a constant improving employer, which is one of the most important attributes a developer can have, when hiring Yoseph.',
-    relationship: 'Colleague',
-    date: '2023',
+      "Yoseph was a persistent student that wont give up or avoid a challenge when things gets difficult. He has a good work ethic and a constant drive to evolve as a developer. You can count on a driven and a constant improving employer, which is one of the most important attributes a developer can have, when hiring Yoseph.",
+    relationship: "Colleague",
+    date: "2023",
   },
   {
-    id: '2',
-    name: 'Betty Mengesha',
-    role: 'Project Manager',
-    company: 'Cascadia Transports',
+    id: "2",
+    name: "Betty Mengesha",
+    role: "Owner",
+    company: "Cascadia Transport Services",
     quote:
-      "Yoseph's technical expertise and problem-solving skills are exceptional. He consistently goes above and beyond to ensure the project meets all requirements.",
-    relationship: 'Client',
-    date: '2023',
+      "Working with Yoseph on our booking platform was an excellent experience. He delivered a professional, user-friendly system that has significantly improved our operations. His technical expertise and dedication to quality are outstanding.",
+    relationship: "Client",
+    date: "2023",
   },
   {
-    id: '3',
-    name: 'David Young',
-    role: 'Instructor',
-    company: 'Altcademy',
+    id: "3",
+    name: "Merhawi Tesfamariam",
+    role: "Owner",
+    company: "Super Merra Frisör",
     quote:
-      'Showed determinism and strong work ethic in the full-stack program. Always willing to improve and learn. Yoseph is a valuable asset to any team.',
-    relationship: 'Colleague',
-    date: '2023',
+      "Yoseph created a modern website for our salon that perfectly represents our brand. His attention to detail and understanding of our business needs resulted in a platform that our customers love. Highly professional and reliable!",
+    relationship: "Client",
+    date: "2024",
   },
   {
-    id: '4',
-    name: 'Selamawit Asres',
-    role: 'Business Owner',
-    company: 'E-Commerce Store',
+    id: "4",
+    name: "Bahlebi Gidey",
+    role: "Owner",
+    company: "MT Skrädderi och Butik",
     quote:
-      'Yoseph built our e-commerce platform from scratch and it exceeded all expectations. The site is fast, beautiful, and easy to manage. Thank you!',
-    relationship: 'Client',
-    date: '2023',
+      "Yoseph built our tailoring and barbershop website with great skill and professionalism. The site beautifully showcases our services and has helped us reach more customers. His work ethic and technical abilities are impressive.",
+    relationship: "Client",
+    date: "2025",
+  },
+  {
+    id: "5",
+    name: "David Young",
+    role: "Instructor",
+    company: "Altcademy",
+    quote:
+      "Showed determinism and strong work ethic in the full-stack program. Always willing to improve and learn. Yoseph is a valuable asset to any team.",
+    relationship: "Colleague",
+    date: "2023",
   },
 ];
 
@@ -91,14 +101,17 @@ export function Testimonials() {
     <div className="relative">
       <Carousel
         opts={{
-          align: 'start',
+          align: "start",
           loop: true,
         }}
         className="w-full"
       >
         <CarouselContent>
           {testimonials.map((testimonial) => (
-            <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem
+              key={testimonial.id}
+              className="md:basis-1/2 lg:basis-1/3"
+            >
               <TestimonialCard testimonial={testimonial} />
             </CarouselItem>
           ))}
@@ -116,9 +129,9 @@ interface TestimonialCardProps {
 
 function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const initials = testimonial.name
-    .split(' ')
+    .split(" ")
     .map((n) => n[0])
-    .join('')
+    .join("")
     .toUpperCase();
 
   return (
@@ -153,7 +166,9 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
               {testimonial.relationship}
             </Badge>
             {testimonial.date && (
-              <span className="text-xs text-muted-foreground">{testimonial.date}</span>
+              <span className="text-xs text-muted-foreground">
+                {testimonial.date}
+              </span>
             )}
           </div>
         </div>
