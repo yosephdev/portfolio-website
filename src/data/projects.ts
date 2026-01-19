@@ -48,25 +48,6 @@ export const projects: Project[] = [
     url: "https://tigray-tutor-ai.vercel.app/",
   },
   {
-    slug: "phonea",
-    title: "Phonea",
-    description:
-      "Website for mobile repair and accessories in Katrineholm. Online booking, price list, and admin dashboard.",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB",
-      "SendGrid",
-      "Mailgun",
-      "Twilio",
-      "Google Calendar API",
-    ],
-    image: "/images/phonea.png",
-    github: "https://github.com/yosephdev/phonea",
-    url: "https://phonea.se/",
-  },
-  {
     slug: "dungo-energy-solutions",
     title: "Dungo Energy Solutions",
     description:
@@ -83,7 +64,6 @@ export const projects: Project[] = [
     github: "https://github.com/yosephdev/dungo-energy",
     url: "https://dungoenergy.org/",
   },
-  ,
   {
     slug: "limoflow",
     title: "LimoFlow",
@@ -105,7 +85,7 @@ export const projects: Project[] = [
     slug: "stayswift",
     title: "StaySwift",
     description:
-      "A hotel discovery and booking application integrating real-time data, maps, and responsive search workflows.",
+      "Mobile-ready hotel search and booking application powered by LiteAPI",
     tech: [
       "React",
       "TypeScript",
@@ -146,17 +126,17 @@ export const projects: Project[] = [
     tech: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/mt-butik.png",
     github: "https://github.com/yosephdev/mt-butik",
-    url: "https://mt-butik.vercel.app/",
+    url: "https://mtbutik.se/",
   },
   {
     slug: "habesha-smak-butik",
     title: "Habesha Smak Butik",
     description:
-      "A multilingual e-commerce platform for Ethiopian food products with secure checkout and structured catalog management.",
+      "A multilingual e-commerce platform specializing in authentic Ethiopian food products, spices, and cultural items.",
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
     image: "/images/habesha-smak-butik.png",
     github: "https://github.com/yosephdev/habesha-smak-butik",
-    url: "https://habesha-smak-butik.vercel.app/",
+    url: "https://habeshasmak.store/",
   },
   {
     slug: "babys-and-me",
@@ -187,5 +167,25 @@ export const projects: Project[] = [
     image: "/images/isaks-bilar.png",
     github: "https://github.com/yosephdev/isaks-bilar",
     url: "https://isaks-bilar.netlify.app/",
+  },
+  {
+    slug: "afelu-marketplace",
+    title: "Afelu Marketplace",
+    description:
+      "A platform for selling and running AI tools and prompts. Built with Next.js, TypeScript, PostgreSQL, and Stripe.",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+    image: "/images/afelu-marketplace.png",
+    github: "https://github.com/yosephdev/afelu-marketplace",
+    url: "https://afelu-marketplace.vercel.app/",
+  },
+  {
+    slug: "dina-boutique",
+    title: "Dina Boutique",
+    description:
+      "A production-ready, full-featured e-commerce platform built for entrepreneurial journeys.",
+    tech: ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
+    image: "/images/dina-boutique.png",
+    github: "https://github.com/yosephdev/dina-boutique",
+    url: "https://dina-boutique.vercel.app/",
   },
 ];
