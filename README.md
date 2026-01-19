@@ -6,6 +6,8 @@
 ![Portfolio Preview](public/images/portfolio-website.png)
 *[Live Demo](https://yoseph.dev)*
 
+[![Full Stack Developer & AI Enthusiast - Watch Video](https://cdn.loom.com/sessions/thumbnails/bb72b2f2b0734e508839366192da4aa8-884931ef83c5ca50-full-play.gif)](https://www.loom.com/share/bb72b2f2b0734e508839366192da4aa8)
+
 ## 🎯 What This Is
 
 This isn't just another portfolio template. It's a **high-performance, fully-featured developer hub** that:
