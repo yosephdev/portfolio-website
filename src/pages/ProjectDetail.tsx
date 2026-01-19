@@ -217,7 +217,7 @@ Att återuppbygga och modernisera Tigrays energiinfrastruktur med solenergi, fok
 Mekelle Office
 📍 Mekelle, Tigray, Ethiopia
 📧 info@dungoenergy.org
-📱 WhatsApp: +251 91 XXX XXXX`,
+📱 WhatsApp: +251 91 702 2100`,
     tech: [
       "React",
       "TypeScript",
