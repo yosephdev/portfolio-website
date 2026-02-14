@@ -46,18 +46,18 @@ const skills: Skill[] = [
   { name: 'Google Analytics', level: 78, category: 'DevOps & Analytics', icon: '�' },
 
   // Commerce & Growth
-  { name: 'Stripe', level: 80, category: 'Commerce & Growth', icon: '�' },
+  { name: 'Stripe', level: 80, category: 'Commerce & Growth', icon: '💳' },
   { name: 'Klarna', level: 75, category: 'Commerce & Growth', icon: '💰' },
   { name: 'SEO', level: 78, category: 'Commerce & Growth', icon: '🔍' },
   { name: 'Conversion Optimization', level: 75, category: 'Commerce & Growth', icon: '�' },
-  { name: 'Email Marketing', level: 70, category: 'Commerce & Growth', icon: '�' },
+  { name: 'Email Marketing', level: 70, category: 'Commerce & Growth', icon: '📧' },
 
   // Tools & Foundation
   { name: 'Git', level: 90, category: 'Tools & Foundation', icon: '📚' },
   { name: 'GitHub', level: 92, category: 'Tools & Foundation', icon: '🐙' },
   { name: 'VS Code', level: 95, category: 'Tools & Foundation', icon: '💻' },
   { name: 'npm', level: 90, category: 'Tools & Foundation', icon: '📦' },
-  { name: 'Docker', level: 70, category: 'Tools & Foundation', icon: '�' },
+  { name: 'Docker', level: 70, category: 'Tools & Foundation', icon: '🐳' },
 ];
 
 const categories = ['All', 'Frontend', 'Backend & APIs', 'Databases', 'DevOps & Analytics', 'Commerce & Growth', 'Tools & Foundation'];
