@@ -16,18 +16,18 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-    title = 'Yoseph Berhane - Full Stack Developer & AI Enthusiast',
-    description = 'Full Stack Developer specializing in Python, Django, React, and AI-powered web applications. Building innovative solutions with modern technologies.',
-    keywords = ['Full Stack Developer', 'Python', 'Django', 'React', 'AI', 'Machine Learning', 'Web Development'],
+    title = 'Yoseph Berhane Gebremedhin - Full Stack Web Developer – E-commerce & SaaS',
+    description = 'Full stack developer with 5+ years building and shipping production e-commerce, SaaS, and nonprofit platforms using React, Next.js, and Django. Focused on UX, SEO, and measurable business impact (sales, traffic, reach).',
+    keywords = ['Full Stack Developer', 'E-commerce Developer', 'SaaS Developer', 'React Developer', 'Next.js Developer', 'Django Developer', 'Product Development', 'UX Design', 'SEO Expert', 'Web Performance', 'Revenue Optimization'],
     image = `${config.siteUrl}/og-image.jpg`,
     url = config.siteUrl,
     type = 'website',
     publishedTime,
     modifiedTime,
-    author = 'Yoseph Berhane',
+    author = 'Yoseph Berhane Gebremedhin',
     tags = []
 }) => {
-    const fullTitle = title.includes('Yoseph Berhane') ? title : `${title} | Yoseph Berhane`;
+    const fullTitle = title.includes('Yoseph Berhane') ? title : `${title} | Yoseph Berhane Gebremedhin`;
 
     return (
         <Helmet>
@@ -44,7 +44,7 @@ const SEO: React.FC<SEOProps> = ({
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
             <meta property="og:url" content={url} />
-            <meta property="og:site_name" content="Yoseph Berhane" />
+            <meta property="og:site_name" content="Yoseph Berhane Gebremedhin" />
 
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
