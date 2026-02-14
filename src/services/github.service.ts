@@ -191,24 +191,49 @@ function calculateStreak(repos: GitHubRepository[]): number {
 }
 
 /**
- * Get featured repositories (based on topics or stars)
+ * Get featured repositories (curated best repos)
  */
 export async function getFeaturedRepositories(
   username: string = GITHUB_USERNAME
 ): Promise<GitHubRepository[]> {
   const repos = await getGitHubRepositories(username);
 
-  // Filter for featured repos: has topics, not forked, has description, has stars
-  return repos
+  // List of best repositories to feature (prioritized order)
+  const featuredRepoNames = [
+    'klyrform',           // Product Hunt launched SaaS
+    'ecopaws-harmony',     // Acquisition target
+    'afelu-marketplace',     // AI tools marketplace
+    'limoflow',             // White-label SaaS
+    'portfolio-website',     // Current portfolio
+    'tigray-tutor-ai',      // Educational AI platform
+  ];
+
+  // Filter for featured repos: prioritize our curated list
+  const featuredRepos = repos
     .filter(
       (repo) =>
         !repo.fork &&
         !repo.archived &&
         repo.description &&
-        (repo.topics.length > 0 || repo.stargazers_count > 0)
+        (featuredRepoNames.includes(repo.name) || 
+         (repo.topics.length > 0 && repo.stargazers_count >= 1))
     )
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6);
+    .sort((a, b) => {
+      // Prioritize curated repos first
+      const aIndex = featuredRepoNames.indexOf(a.name);
+      const bIndex = featuredRepoNames.indexOf(b.name);
+      
+      if (aIndex !== -1 && bIndex !== -1) {
+        return aIndex - bIndex;
+      }
+      if (aIndex !== -1) return -1;
+      if (bIndex !== -1) return 1;
+      
+      // For non-curated repos, sort by stars
+      return b.stargazers_count - a.stargazers_count;
+    });
+
+  return featuredRepos.slice(0, 6);
 }
 
 /**
