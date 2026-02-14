@@ -15,8 +15,7 @@ const Projects = () => {
             <div className="mx-auto max-w-[800px] text-center">
               <h1 className="text-4xl font-bold sm:text-5xl">Projects</h1>
               <p className="mt-4 text-xl text-muted-foreground">
-                A showcase of my work in web development, AI, and Python
-                applications.
+                E-commerce platforms, SaaS applications, and AI tools built with modern web technologies.
               </p>
             </div>
           </div>
