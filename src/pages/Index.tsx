@@ -132,7 +132,7 @@ const Index = () => {
           {/* Background Image */}
           <div className="absolute inset-0 w-full h-full">
             <img
-              src="/images/hero-video-poster.jpg"
+              src="/images/hero-image.jpg"
               alt="Hero background"
               className="w-full h-full object-cover opacity-40"
             />
