@@ -76,7 +76,7 @@ const featuredProjects = [
     tech: ["Next.js 14", "TypeScript", "PostgreSQL", "Redis", "Three.js", "Prisma", "Node.js"],
     image: "/images/ecopaws-harmony.png",
     github: "https://github.com/yosephdev/ecopaws-harmony",
-    url: "https://ecopawsharmony.com",
+    url: "https://ecopaws.vercel.app/",
     featured: true,
   },
   {
