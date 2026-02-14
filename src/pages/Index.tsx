@@ -44,34 +44,58 @@ const featuredPosts = [
 
 const featuredProjects = [
   {
-    slug: "mt-butik",
-    title: "MT Skrädderi & Butik",
+    slug: "klyrform",
+    title: "Klyrform",
     description:
-      "Professional tailoring, men's barbering, and authentic Habesha products in the heart of Eskilstuna. A modern platform combining traditional craftsmanship with digital presence.",
-    tech: ["Vite", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
-    image: "/images/mt-butik.png",
-    github: "https://github.com/yosephdev/mt-butik",
-    url: "https://mt-butik.vercel.app/",
+      "Production-ready SaaS application that converts unstructured data (PDFs, images, URLs, documents) into clean structured data (JSON, CSV, Markdown).",
+    summary: "Built and launched data extraction SaaS on Product Hunt that converts unstructured documents into clean, structured data for businesses.",
+    role: "Full Stack Developer",
+    impact: [
+      "Launched on Product Hunt with positive reception",
+      "Processes multiple document formats with high accuracy",
+      "Saves businesses hours of manual data entry work"
+    ],
+    tech: ["TypeScript", "Next.js", "Node.js", "PostgreSQL", "AI/ML APIs"],
+    image: "/images/klyrform.png",
+    github: "https://github.com/yosephdev/klyrform",
+    url: "https://klyrform.com",
+    featured: true,
   },
   {
-    slug: "babys-and-me",
-    title: "Baby's & Me",
+    slug: "ecopaws-harmony",
+    title: "EcoPaws Harmony",
     description:
-      "A responsive eCommerce store offering handmade baby and toddler products with focus on sustainability and supporting local artisans.",
-    tech: ["Vite", "TypeScript", "React", "shadcn/ui", "Tailwind CSS"],
-    image: "/images/babys-and-me.png",
-    github: "https://github.com/yosephdev/babys-and-me",
-    url: "https://babys-and-me.vercel.app/",
+      "Sustainable Pet Products & Digital Guides E-commerce Platform built with Next.js 14, preparing for acquisition on Acquire.com.",
+    summary: "Building sustainable pet products platform with advanced features for acquisition - modern tech stack with Three.js, Redis, and PostgreSQL.",
+    role: "Full Stack Developer & Founder",
+    impact: [
+      "Preparing for acquisition on Acquire.com",
+      "Built with modern Next.js 14 and advanced features",
+      "Sustainable e-commerce with digital product integration"
+    ],
+    tech: ["Next.js 14", "TypeScript", "PostgreSQL", "Redis", "Three.js", "Prisma", "Node.js"],
+    image: "/images/ecopaws-harmony.png",
+    github: "https://github.com/yosephdev/ecopaws-harmony",
+    url: "https://ecopawsharmony.com",
+    featured: true,
   },
   {
-    slug: "selams-handmade",
-    title: "Selam's Handmade",
+    slug: "afelu-marketplace",
+    title: "Afelu.com",
     description:
-      "An elegant e-commerce platform for handcrafted products with modern design and seamless shopping experience.",
-    tech: ["React", "Next.js", "Tailwind CSS", "Stripe"],
-    image: "/images/selams-handmade.png",
-    github: "https://github.com/yosephdev/selams-handmade",
-    url: "https://selamshandmade.com/",
+      "AI tools marketplace connecting creators with users seeking AI-powered solutions.",
+    summary: "Built and launched an AI tools marketplace from scratch, including listings, payments, and admin tools.",
+    role: "Founding Software Developer / Co‑Founder",
+    impact: [
+      "Launched marketplace MVP with complete payment integration",
+      "Built admin dashboard for vendor management",
+      "Implemented search and filtering for AI tools"
+    ],
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+    image: "/images/afelu-marketplace.png",
+    github: "https://github.com/yosephdev/afelu-marketplace",
+    url: "https://afelu.com",
+    featured: true,
   },
 ];
 
@@ -79,19 +103,20 @@ const Index = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title="Yoseph Berhane - Full Stack Developer & AI Enthusiast"
-        description="Full Stack Developer specializing in Python, Django, React, and AI-powered web applications. Building innovative solutions with modern technologies."
+        title="Yoseph Berhane Gebremedhin - Full Stack Web Developer – E-commerce & SaaS"
+        description="Full stack developer with 5+ years building and shipping production e-commerce, SaaS, and nonprofit platforms using React, Next.js, and Django. Focused on UX, SEO, and measurable business impact (sales, traffic, reach)."
         keywords={[
           "Full Stack Developer",
-          "Python",
-          "Django",
-          "React",
-          "AI",
-          "Machine Learning",
-          "Web Development",
-          "Mentorship",
-          "Technical Consulting",
-          "Open Source",
+          "E-commerce Developer",
+          "SaaS Developer",
+          "React Developer",
+          "Next.js Developer",
+          "Django Developer",
+          "Product Development",
+          "UX Design",
+          "SEO Expert",
+          "Web Performance",
+          "Revenue Optimization",
         ]}
       />
       <Header />
@@ -125,43 +150,54 @@ const Index = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-2">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
                 <span className="text-sm font-medium text-primary">
-                  Available for new projects
+                  Open to full-time and long-term contract roles
                 </span>
               </div>
 
               {/* Main Heading with Staggered Animation Ready */}
               <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
-                <span className="block">Hey, I'm</span>
+                <span className="block">Full Stack Developer</span>
                 <span className="block bg-gradient-to-r from-primary via-primary/90 to-primary bg-clip-text text-transparent mt-2">
-                  Yoseph
+                  building production web products
                 </span>
               </h1>
 
               {/* Enhanced Subtitle */}
               <p className="max-w-[700px] text-lg sm:text-xl md:text-2xl text-foreground/90 leading-relaxed font-light">
-                Full Stack Developer &{" "}
-                <span className="text-primary font-semibold">
-                  AI Enthusiast
-                </span>
-                . I craft digital experiences that blend cutting-edge technology
-                with user-centric design.
+                I've spent 5+ years building e-commerce, SaaS, and community platforms using React, Next.js, and Django. I care about clean UX, fast performance, and shipping features that move metrics like sales, signups, and reach.
               </p>
+
+              {/* Expertise Areas */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Marketplaces & SaaS platforms (Afelu, Klyrform, AI tools)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Modern e-commerce with Stripe/Klarna, SEO, and analytics</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Nonprofit & community platforms that actually reach people</span>
+                </div>
+              </div>
 
               {/* Stats Bar */}
               <div className="flex flex-wrap items-center justify-center gap-6 py-4 text-muted-foreground">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">3+</div>
+                  <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
                 <div className="w-px h-8 bg-border"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">50+</div>
-                  <div className="text-sm">Projects Completed</div>
+                  <div className="text-2xl font-bold text-primary">35+</div>
+                  <div className="text-sm">Real Projects</div>
                 </div>
                 <div className="w-px h-8 bg-border"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">AI</div>
-                  <div className="text-sm">Specialized</div>
+                  <div className="text-2xl font-bold text-primary">Product</div>
+                  <div className="text-sm">Focused</div>
                 </div>
               </div>
 
@@ -173,7 +209,7 @@ const Index = () => {
                   className="px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   <Link to="/projects" className="flex items-center gap-2">
-                    <span>View My Work</span>
+                    <span>View projects</span>
                   </Link>
                 </Button>
 
@@ -215,7 +251,7 @@ const Index = () => {
                     className="px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md bg-background/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40"
                   >
                     <Link to="/contact" className="flex items-center gap-2">
-                      Get in Touch
+                      Contact me
                     </Link>
                   </Button>
                 </div>
