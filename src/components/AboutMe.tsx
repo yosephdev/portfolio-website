@@ -97,35 +97,19 @@ export function AboutMe() {
         <div className="lg:col-span-2 space-y-6">
           <Card>
             <CardContent className="pt-6">
-              <h2 className="text-2xl font-bold mb-4">About the Developer</h2>
+              <h2 className="text-2xl font-bold mb-4">About</h2>
 
               <div className="prose prose-neutral dark:prose-invert max-w-none">
                 <p className="text-base leading-relaxed mb-4">
-                  I’m <strong>Yoseph Berhane</strong>, a Full Stack Developer
-                  with over five years of hands-on experience building
-                  production-ready web applications across e-commerce, booking
-                  systems, and content platforms.
+                  I'm a full stack developer with 5+ years of experience delivering e-commerce, marketplaces, and nonprofit platforms. I work across React, Next.js, TypeScript, and Django, and I'm comfortable owning features end-to-end – from discovery and UX to deployment and iteration.
                 </p>
 
                 <p className="text-base leading-relaxed mb-4">
-                  My work spans the full development lifecycle — from database
-                  design and API architecture to clean, responsive user
-                  interfaces. I focus on writing maintainable code, making
-                  pragmatic technical decisions, and shipping features that
-                  solve real problems.
-                </p>
-
-                <p className="text-base leading-relaxed mb-4">
-                  I’m comfortable working across modern stacks including React,
-                  TypeScript, Node.js, Python, and cloud-based platforms. I
-                  value clarity, collaboration, and systems that are easy to
-                  extend and operate in the real world.
+                  I've built and maintained production systems for small businesses, NGOs, and startups, improving sales, visibility, and community impact. I enjoy working closely with founders and teams to turn ideas into shipped, measurable outcomes.
                 </p>
 
                 <p className="text-base leading-relaxed">
-                  I work remotely with distributed teams and communicate
-                  fluently in English. I’m most effective in environments that
-                  value ownership, trust, and steady execution over hype.
+                  <strong>Now:</strong> Currently open to full-time and contract roles as a full stack or frontend-focused engineer (remote or relocation).
                 </p>
               </div>
             </CardContent>
