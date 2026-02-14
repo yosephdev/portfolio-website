@@ -9,15 +9,19 @@ const Contact = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title="Contact - Yoseph Berhane | Full Stack Developer"
-        description="Get in touch with Yoseph Berhane for job opportunities, collaborations, or questions about web development projects."
+        title="Contact - Yoseph Berhane Gebremedhin | Full Stack Developer"
+        description="I'm open to full-time roles, long-term contracts, and serious collaborations on existing products (e-commerce, SaaS, AI tools). Remote-first, relocation-friendly. Swedish citizen."
         keywords={[
           "Contact",
           "Hire",
           "Full Stack Developer",
-          "Web Development",
+          "React Developer",
+          "Next.js Developer",
+          "Django Developer",
           "Remote Developer",
-          "Worldwide",
+          "Product Development",
+          "E-commerce",
+          "SaaS",
         ]}
       />
       <Header />
@@ -27,10 +31,9 @@ const Contact = () => {
         <section className="bg-muted/40 py-12">
           <div className="container">
             <div className="mx-auto max-w-[800px] text-center">
-              <h1 className="text-4xl font-bold sm:text-5xl">Contact</h1>
+              <h1 className="text-4xl font-bold sm:text-5xl">Open to Collaboration</h1>
               <p className="mt-4 text-xl text-muted-foreground">
-                Get in touch with me for collaborations, questions, or just to
-                say hello.
+                I'm open to full-time roles, long-term contracts, and serious collaborations on existing products (e-commerce, SaaS, AI tools).
               </p>
             </div>
           </div>
@@ -41,10 +44,9 @@ const Contact = () => {
           <div className="mx-auto max-w-[1200px] grid gap-8 lg:grid-cols-3">
             {/* Contact Form - Takes 2 columns */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold mb-4">Send Me a Message</h2>
+              <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
               <p className="text-muted-foreground mb-6">
-                Fill out the form below and I'll get back to you as soon as
-                possible.
+                For serious inquiries about full-time roles, contract work, or product collaborations, please reach out through the form below.
               </p>
               <ContactForm />
             </div>
