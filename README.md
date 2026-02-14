@@ -1,28 +1,27 @@
-# Yoseph Dev Central 🚀
+# Yoseph Berhane Gebremedhin - Full Stack Developer Portfolio 🚀
 
-**A Production-Ready Portfolio & Project Showcase**  
-*Built with React 18, TypeScript, Tailwind CSS • 98+ Lighthouse Score • Fully Responsive*
+**Product-Focused Full Stack Developer (React, Next.js, Django) – 5+ Years Building Production Web Products**  
+*Remote-first, relocation-friendly, Swedish citizen • 35+ real projects shipped • Revenue-driven approach*
 
 ![Portfolio Preview](public/images/portfolio-website.png)
-*[Live Demo](https://yoseph.dev) • [Full Stack Developer & AI Enthusiast - Watch Video](https://www.loom.com/share/bb72b2f2b0734e508839366192da4aa8)*
+*[Live Portfolio](https://yoseph.dev) • [Professional Profile & Contact](https://yoseph.dev/contact)*
 
-## 🎯 What This Is
+## 🎯 About This Portfolio
 
-This isn't just another portfolio template. It's a **high-performance, fully-featured developer hub** that:
-- **Showcases 35+ real projects** (from e-commerce platforms to AI tools)
-- **Serves as a technical blog** with Markdown-based content management
-- **Demonstrates production-grade patterns** (CI/CD, SEO, accessibility, performance optimization)
-- **Acts as a living codebase** that evolves with modern web development practices
+This is my **personal production portfolio** showcasing real-world work as a product-focused full stack developer. It demonstrates:
+- **35+ shipped projects** across e-commerce, SaaS, AI tools, and community platforms
+- **End-to-end product development** from discovery and UX to deployment and iteration
+- **Measurable business impact** with focus on UX, SEO, performance, and revenue-driven results
+- **Production-grade architecture** built for scalability, maintainability, and team collaboration
 
-## ✨ Why This Stands Out
+## 💼 Professional Focus
 
-| Feature | Benefit |
-|---------|---------|
-| **🎨 Custom Design System** | Not another template - unique, branded UI built from scratch |
-| **⚡ Blazing Fast Performance** | 95+ Lighthouse scores, optimized bundles, ~1.5s load times |
-| **🔄 Live Project Integration** | Real connections to active projects like [BabysMe.com](https://babysme.com) |
-| **📈 SEO & Conversion Optimized** | Built for discoverability and user engagement |
-| **🔧 Enterprise-Ready Architecture** | Scalable folder structure, TypeScript safety, component library |
+| Area | Expertise |
+|-------|------------|
+| **🛒 E-commerce Platforms** | Stripe/Klarna integration, SEO optimization, conversion-focused |
+| **🚀 SaaS & Tools** | AI marketplaces, subscription models, scalable architectures |
+| **🌍 Community Platforms** | Nonprofit solutions, educational tools, accessibility focus |
+| **⚡ Performance & UX** | 95+ Lighthouse scores, mobile-first, conversion optimization |
 
 ## 🏗️ Tech Stack Deep Dive
 
