@@ -210,23 +210,6 @@ export const projects: Project[] = [
     url: "https://habeshasmak.store/",
   },
   {
-    slug: "limo-saas-starter",
-    title: "Limo SaaS Starter",
-    description:
-      "Professional White-Label Chauffeur Booking System with Distance Calculation, Stripe Integration, and Admin Dashboard. Ready to deploy.",
-    summary: "Built comprehensive white-label chauffeur booking SaaS with real-time distance calculation and complete admin dashboard.",
-    role: "Full Stack Developer",
-    impact: [
-      "Complete white-label solution ready for deployment",
-      "Real-time distance calculation with Google Maps",
-      "Full Stripe payment integration and admin dashboard"
-    ],
-    tech: ["JavaScript", "Stripe", "Google Maps", "Cloudflare", "Payment Processing", "Booking System"],
-    image: "/images/limo-saas-starter.png",
-    github: "https://github.com/yosephdev/limo-saas-starter",
-    url: "https://limo-saas-starter.vercel.app",
-  },
-  {
     slug: "klyrform",
     title: "Klyrform",
     description:
@@ -259,8 +242,25 @@ export const projects: Project[] = [
     tech: ["Next.js 14", "TypeScript", "PostgreSQL", "Redis", "Three.js", "Prisma", "Node.js"],
     image: "/images/ecopaws-harmony.png",
     github: "https://github.com/yosephdev/ecopaws-harmony",
-    url: "https://ecopawsharmony.com",
+    url: "https://ecopaws-harmony.vercel.app/",
     featured: true,
+  },
+  {
+    slug: "limoflow",
+    title: "LimoFlow",
+    description:
+      "Professional White-Label Chauffeur Booking System with Distance Calculation, Stripe Integration, and Admin Dashboard. Ready to deploy.",
+    summary: "Built comprehensive white-label chauffeur booking SaaS with real-time distance calculation and complete admin dashboard.",
+    role: "Full Stack Developer",
+    impact: [
+      "Complete white-label solution ready for deployment",
+      "Real-time distance calculation with Google Maps",
+      "Full Stripe payment integration and admin dashboard"
+    ],
+    tech: ["JavaScript", "Stripe", "Google Maps", "Cloudflare", "Payment Processing", "Booking System"],
+    image: "/images/limoflow.png",
+    github: "https://github.com/yosephdev/limoflow",
+    url: "https://limoflow.vercel.app",
   },
   {
     slug: "dina-boutique",
