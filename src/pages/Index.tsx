@@ -74,7 +74,7 @@ const featuredProjects = [
       "Sustainable e-commerce with digital product integration"
     ],
     tech: ["Next.js 14", "TypeScript", "PostgreSQL", "Redis", "Three.js", "Prisma", "Node.js"],
-    image: "/images/ecopaws-harmony.png",
+    image: "/images/eco-paws.png",
     github: "https://github.com/yosephdev/ecopaws-harmony",
     url: "https://ecopaws.vercel.app/",
     featured: true,
