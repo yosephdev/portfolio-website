@@ -20,42 +20,47 @@ const skills: Skill[] = [
   { name: 'React', level: 90, category: 'Frontend', icon: '⚛️' },
   { name: 'Next.js', level: 85, category: 'Frontend', icon: '▲' },
   { name: 'TypeScript', level: 88, category: 'Frontend', icon: '📘' },
-  { name: 'JavaScript', level: 92, category: 'Frontend', icon: '🟨' },
-  { name: 'HTML5', level: 95, category: 'Frontend', icon: '🌐' },
-  { name: 'CSS3', level: 90, category: 'Frontend', icon: '🎨' },
+  { name: 'Vite', level: 88, category: 'Frontend', icon: '⚡' },
   { name: 'Tailwind CSS', level: 93, category: 'Frontend', icon: '💨' },
-  { name: 'shadcn/ui', level: 87, category: 'Frontend', icon: '🎭' },
-  { name: 'Responsive Design', level: 92, category: 'Frontend', icon: '📱' },
+  { name: 'shadcn/ui', level: 87, category: 'Frontend', icon: '�' },
+  { name: 'Framer Motion', level: 75, category: 'Frontend', icon: '🎬' },
 
-  // Backend
-  { name: 'Node.js', level: 85, category: 'Backend', icon: '🟢' },
-  { name: 'Express', level: 83, category: 'Backend', icon: '🚂' },
-  { name: 'REST APIs', level: 88, category: 'Backend', icon: '🔌' },
-  { name: 'Python', level: 78, category: 'Backend', icon: '🐍' },
-  { name: 'Django', level: 75, category: 'Backend', icon: '🎸' },
+  // Backend & APIs
+  { name: 'Django', level: 75, category: 'Backend & APIs', icon: '🎸' },
+  { name: 'Node.js', level: 85, category: 'Backend & APIs', icon: '🟢' },
+  { name: 'Express', level: 83, category: 'Backend & APIs', icon: '🚂' },
+  { name: 'REST APIs', level: 88, category: 'Backend & APIs', icon: '🔌' },
+  { name: 'Serverless Functions', level: 80, category: 'Backend & APIs', icon: '⚡' },
 
   // Databases
   { name: 'PostgreSQL', level: 80, category: 'Databases', icon: '🐘' },
+  { name: 'MySQL', level: 78, category: 'Databases', icon: '�' },
   { name: 'MongoDB', level: 82, category: 'Databases', icon: '🍃' },
-  { name: 'SQL', level: 83, category: 'Databases', icon: '💾' },
+  { name: 'Firebase', level: 70, category: 'Databases', icon: '�' },
 
-  // Tools & DevOps
-  { name: 'Git', level: 90, category: 'Tools', icon: '📚' },
-  { name: 'GitHub', level: 92, category: 'Tools', icon: '🐙' },
-  { name: 'VS Code', level: 95, category: 'Tools', icon: '💻' },
-  { name: 'Vite', level: 88, category: 'Tools', icon: '⚡' },
-  { name: 'npm', level: 90, category: 'Tools', icon: '📦' },
-  { name: 'Docker', level: 70, category: 'Tools', icon: '🐳' },
+  // DevOps & Analytics
+  { name: 'Netlify', level: 90, category: 'DevOps & Analytics', icon: '🌐' },
+  { name: 'Vercel', level: 85, category: 'DevOps & Analytics', icon: '▲' },
+  { name: 'AWS', level: 70, category: 'DevOps & Analytics', icon: '☁️' },
+  { name: 'CI/CD (GitHub Actions)', level: 82, category: 'DevOps & Analytics', icon: '🔄' },
+  { name: 'Google Analytics', level: 78, category: 'DevOps & Analytics', icon: '�' },
 
-  // Other
-  { name: 'Stripe Integration', level: 80, category: 'Other', icon: '💳' },
-  { name: 'State Management (Zustand)', level: 85, category: 'Other', icon: '🐻' },
-  { name: 'Performance Optimization', level: 82, category: 'Other', icon: '⚡' },
-  { name: 'Accessibility (a11y)', level: 80, category: 'Other', icon: '♿' },
-  { name: 'SEO', level: 78, category: 'Other', icon: '🔍' },
+  // Commerce & Growth
+  { name: 'Stripe', level: 80, category: 'Commerce & Growth', icon: '�' },
+  { name: 'Klarna', level: 75, category: 'Commerce & Growth', icon: '💰' },
+  { name: 'SEO', level: 78, category: 'Commerce & Growth', icon: '🔍' },
+  { name: 'Conversion Optimization', level: 75, category: 'Commerce & Growth', icon: '�' },
+  { name: 'Email Marketing', level: 70, category: 'Commerce & Growth', icon: '�' },
+
+  // Tools & Foundation
+  { name: 'Git', level: 90, category: 'Tools & Foundation', icon: '📚' },
+  { name: 'GitHub', level: 92, category: 'Tools & Foundation', icon: '🐙' },
+  { name: 'VS Code', level: 95, category: 'Tools & Foundation', icon: '💻' },
+  { name: 'npm', level: 90, category: 'Tools & Foundation', icon: '📦' },
+  { name: 'Docker', level: 70, category: 'Tools & Foundation', icon: '�' },
 ];
 
-const categories = ['All', 'Frontend', 'Backend', 'Databases', 'Tools', 'Other'];
+const categories = ['All', 'Frontend', 'Backend & APIs', 'Databases', 'DevOps & Analytics', 'Commerce & Growth', 'Tools & Foundation'];
 
 export function TechnicalSkills() {
   return (
@@ -153,11 +158,12 @@ function getProficiencyLabel(level: number): string {
 
 function getCategoryDescription(category: string): string {
   const descriptions: Record<string, string> = {
-    Frontend: 'Building responsive and interactive user interfaces',
-    Backend: 'Server-side development and API creation',
-    Databases: 'Data modeling and database management',
-    Tools: 'Development tools and version control',
-    Other: 'Additional skills and integrations',
+    Frontend: 'React, Next.js, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion',
+    'Backend & APIs': 'Django, Node.js, Express, REST APIs, serverless functions',
+    Databases: 'PostgreSQL, MySQL, MongoDB, Firebase',
+    'DevOps & Analytics': 'Netlify, Vercel, AWS, CI/CD, Google Analytics',
+    'Commerce & Growth': 'Stripe, Klarna, SEO, conversion optimization, email marketing',
+    'Tools & Foundation': 'Git, GitHub, VS Code, npm, Docker',
   };
   return descriptions[category] || '';
 }
