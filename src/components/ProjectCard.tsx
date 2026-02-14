@@ -31,36 +31,42 @@ export function ProjectCard({ slug, title, description, summary, role, impact, t
         </div>
       )}
       <CardHeader className={cn("p-4", !image && "pt-6")}>
-        <div className="space-y-1">
+        <div className="space-y-2">
           <h3 className="text-xl font-bold">{title}</h3>
           {role && (
-            <p className="text-sm text-primary font-medium">{role}</p>
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary" className="text-xs">
+                {role}
+              </Badge>
+            </div>
           )}
         </div>
       </CardHeader>
       <CardContent className="p-4 pt-0">
-        {summary ? (
-          <p className="text-muted-foreground text-sm mb-3">{summary}</p>
-        ) : (
-          <p className="text-muted-foreground">{description}</p>
+        <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{description}</p>
+        {summary && (
+          <div className="bg-muted/50 rounded-lg p-3 mb-4">
+            <h4 className="text-sm font-semibold text-foreground mb-2">Overview</h4>
+            <p className="text-muted-foreground text-sm">{summary}</p>
+          </div>
         )}
         {impact && impact.length > 0 && (
-          <div className="mt-3 space-y-1">
-            <p className="text-sm font-semibold text-foreground">Key Outcomes:</p>
-            <ul className="text-sm text-muted-foreground space-y-1">
+          <div className="mt-4">
+            <h4 className="text-sm font-semibold text-foreground mb-3">Key Achievements</h4>
+            <div className="grid gap-2">
               {impact.slice(0, 3).map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>{item}</span>
-                </li>
+                <div key={index} className="flex items-start gap-2 bg-muted/30 rounded p-2">
+                  <span className="text-primary font-bold mt-0.5">✓</span>
+                  <span className="text-sm text-muted-foreground">{item}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         )}
       </CardContent>
-      <CardFooter className="p-4 pt-0 flex flex-col items-start gap-3">
+      <CardFooter className="p-4 pt-0 space-y-4">
         <div className="flex flex-wrap gap-2">
-          <span className="text-sm text-muted-foreground">Tech:</span>
+          <span className="text-sm font-medium text-muted-foreground">Technologies:</span>
           {tech.slice(0, 4).map((t) => (
             <Badge key={t} variant="outline" className="text-xs">
               {t}
@@ -72,21 +78,21 @@ export function ProjectCard({ slug, title, description, summary, role, impact, t
             </Badge>
           )}
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 pt-2">
           <Link
             to={`/projects/${slug}`}
-            className="text-sm font-medium text-primary hover:text-primary/80"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 px-3 py-2 rounded-md hover:bg-primary/20 transition-colors"
           >
-            {summary ? "View project" : "View Details"}
+            View Details
           </Link>
           {url && (
             <a
               href={url}
               target="_blank"
               rel="noreferrer"
-              className="text-sm font-medium text-muted-foreground hover:text-primary ml-2"
+              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary border border-border px-3 py-2 rounded-md hover:border-primary transition-colors"
             >
-              Live demo
+              Live Demo
             </a>
           )}
           {github && (
@@ -94,7 +100,7 @@ export function ProjectCard({ slug, title, description, summary, role, impact, t
               href={github}
               target="_blank"
               rel="noreferrer"
-              className="text-sm font-medium text-muted-foreground hover:text-primary ml-2"
+              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary border border-border px-3 py-2 rounded-md hover:border-primary transition-colors"
             >
               GitHub
             </a>
