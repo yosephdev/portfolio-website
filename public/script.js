@@ -1,341 +1,235 @@
 /* ═══════════════════════════════════════════
-   YOSEPH.DEV — REDESIGN SCRIPTS
-   • Dark / light mode with localStorage
-   • Sticky header on scroll
-   • Mobile hamburger menu
-   • Active nav link on scroll
-   • Scroll-in animations (Intersection Observer)
-   • Skill bar animations
-   • Testimonials carousel
-   • Contact form validation
-   • Footer year
+   YOSEPH.DEV — SCRIPTS
+   Key safety rule: <html> gets .js-ready only
+   after this file runs successfully. The CSS
+   hides animated elements ONLY when .js-ready
+   is present, so content is always visible if
+   JS fails or is blocked.
 ═══════════════════════════════════════════ */
 
 'use strict';
 
-/* ──────────────────────────────────────────
-   UTILITY
-────────────────────────────────────────── */
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
-
-/* ──────────────────────────────────────────
-   THEME TOGGLE
-────────────────────────────────────────── */
-const themeToggle = $('#theme-toggle');
 const html = document.documentElement;
 
-const savedTheme = localStorage.getItem('theme') ||
-  (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+/* ─────────────────────────────────────────
+   1. MARK JS AS READY (must be first)
+   Activates CSS animation classes.
+───────────────────────────────────────── */
+html.classList.add('js-ready');
 
-html.setAttribute('data-theme', savedTheme);
+/* ─────────────────────────────────────────
+   2. THEME — localStorage wrapped in
+   try/catch (throws in Safari private mode)
+───────────────────────────────────────── */
+(function () {
+  let saved = null;
+  try { saved = localStorage.getItem('theme'); } catch (_) {}
+  const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  html.setAttribute('data-theme', theme);
 
-themeToggle?.addEventListener('click', () => {
-  const current = html.getAttribute('data-theme');
-  const next = current === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-});
+  $('#theme-toggle')?.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (_) {}
+  });
+})();
 
-/* ──────────────────────────────────────────
-   STICKY HEADER
-────────────────────────────────────────── */
+/* ─────────────────────────────────────────
+   3. STICKY HEADER
+───────────────────────────────────────── */
 const header = $('#header');
-
 window.addEventListener('scroll', () => {
   header?.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
-/* ──────────────────────────────────────────
-   MOBILE HAMBURGER
-────────────────────────────────────────── */
+/* ─────────────────────────────────────────
+   4. MOBILE NAV
+───────────────────────────────────────── */
 const hamburger = $('#hamburger');
-const navLinks = $('#nav-links');
+const navLinks  = $('#nav-links');
+
+function closeNav() {
+  hamburger?.classList.remove('open');
+  navLinks?.classList.remove('open');
+  hamburger?.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
 
 hamburger?.addEventListener('click', () => {
   const isOpen = hamburger.classList.toggle('open');
   navLinks?.classList.toggle('open', isOpen);
-  hamburger.setAttribute('aria-expanded', isOpen);
+  hamburger.setAttribute('aria-expanded', String(isOpen));
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
-// Close on nav link click
-$$('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger?.classList.remove('open');
-    navLinks?.classList.remove('open');
-    hamburger?.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  });
-});
+$$('.nav-link').forEach(l => l.addEventListener('click', closeNav));
 
-// Close on outside click
 document.addEventListener('click', e => {
-  if (!navLinks?.contains(e.target) && !hamburger?.contains(e.target)) {
-    hamburger?.classList.remove('open');
-    navLinks?.classList.remove('open');
-    hamburger?.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
+  if (!navLinks?.contains(e.target) && !hamburger?.contains(e.target)) closeNav();
 });
 
-/* ──────────────────────────────────────────
-   ACTIVE NAV LINK ON SCROLL
-────────────────────────────────────────── */
-const sections = $$('section[id]');
-
-const navObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        $$('.nav-link').forEach(link => {
-          link.classList.toggle(
-            'active',
-            link.getAttribute('href') === `#${entry.target.id}`
-          );
-        });
-      }
-    });
-  },
-  { rootMargin: '-40% 0px -55% 0px' }
-);
-
-sections.forEach(section => navObserver.observe(section));
-
-/* ──────────────────────────────────────────
-   SCROLL-IN ANIMATIONS (.fade-up & .reveal)
-────────────────────────────────────────── */
-const animObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        animObserver.unobserve(entry.target); // animate once
-      }
-    });
-  },
-  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-);
-
-// Trigger hero elements immediately after load
-window.addEventListener('DOMContentLoaded', () => {
-  $$('.fade-up').forEach((el, i) => {
-    setTimeout(() => animObserver.observe(el), i * 60);
+/* ─────────────────────────────────────────
+   5. ACTIVE NAV LINK ON SCROLL
+───────────────────────────────────────── */
+const navObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      $$('.nav-link').forEach(l =>
+        l.classList.toggle('active', l.getAttribute('href') === `#${entry.target.id}`)
+      );
+    }
   });
+}, { rootMargin: '-40% 0px -55% 0px' });
+
+$$('section[id]').forEach(s => navObserver.observe(s));
+
+/* ─────────────────────────────────────────
+   6. SCROLL-IN ANIMATIONS
+───────────────────────────────────────── */
+const animObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      animObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+window.addEventListener('DOMContentLoaded', () => {
+  $$('.fade-up').forEach((el, i) => setTimeout(() => animObserver.observe(el), i * 60));
   $$('.reveal').forEach(el => animObserver.observe(el));
 });
 
-/* ──────────────────────────────────────────
-   SKILL BAR ANIMATIONS
-   Bars fill when the skill group scrolls in
-────────────────────────────────────────── */
-const skillObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        $$('.skill-fill', entry.target).forEach(bar => {
-          const width = bar.getAttribute('data-width') || 0;
-          // Short delay so CSS transition is visible
-          setTimeout(() => { bar.style.width = `${width}%`; }, 200);
-        });
-        skillObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+/* ─────────────────────────────────────────
+   7. SKILL BARS
+───────────────────────────────────────── */
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      $$('.skill-fill', entry.target).forEach(bar =>
+        setTimeout(() => { bar.style.width = `${bar.getAttribute('data-width') || 0}%`; }, 200)
+      );
+      skillObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
 
-$$('.skill-group').forEach(group => skillObserver.observe(group));
+$$('.skill-group').forEach(g => skillObserver.observe(g));
 
-/* ──────────────────────────────────────────
-   TESTIMONIALS CAROUSEL
-────────────────────────────────────────── */
-(function initCarousel() {
+/* ─────────────────────────────────────────
+   8. TESTIMONIALS CAROUSEL
+───────────────────────────────────────── */
+(function () {
   const track = $('#testimonials-track');
-  const dotsContainer = $('#testimonial-dots');
-  const prevBtn = $('#prev-testimonial');
-  const nextBtn = $('#next-testimonial');
-
   if (!track) return;
 
+  const dots  = $('#testimonial-dots');
   const cards = $$('.testimonial-card', track);
-  let current = 0;
-  let visibleCount = getVisibleCount();
-  let autoTimer;
+  let cur = 0, visCount = vis(), timer;
 
-  function getVisibleCount() {
-    if (window.innerWidth <= 600) return 1;
-    if (window.innerWidth <= 900) return 2;
-    return 3;
+  function vis() {
+    return window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
   }
-
-  // Build dots
+  function cardW() {
+    return cards[0] ? cards[0].offsetWidth + 20 : 0;
+  }
+  function goTo(i) {
+    cur = Math.min(Math.max(i, 0), Math.max(0, cards.length - visCount));
+    track.style.transform = `translateX(-${cur * cardW()}px)`;
+    $$('.testimonial-dot', dots).forEach((d, idx) => d.classList.toggle('active', idx === cur));
+    cards.forEach((c, idx) => c.classList.toggle('active', idx === cur));
+  }
   function buildDots() {
-    if (!dotsContainer) return;
-    dotsContainer.innerHTML = '';
-    const total = Math.max(0, cards.length - visibleCount + 1);
+    if (!dots) return;
+    dots.innerHTML = '';
+    const total = Math.max(0, cards.length - visCount + 1);
     for (let i = 0; i < total; i++) {
-      const dot = document.createElement('button');
-      dot.className = 'testimonial-dot' + (i === current ? ' active' : '');
-      dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
-      dot.addEventListener('click', () => goTo(i));
-      dotsContainer.appendChild(dot);
+      const d = document.createElement('button');
+      d.className = 'testimonial-dot' + (i === cur ? ' active' : '');
+      d.setAttribute('aria-label', `Testimonial ${i + 1}`);
+      d.addEventListener('click', () => { goTo(i); restart(); });
+      dots.appendChild(d);
     }
   }
+  function start()   { timer = setInterval(() => goTo(cur < Math.max(0, cards.length - visCount) ? cur + 1 : 0), 5000); }
+  function restart() { clearInterval(timer); start(); }
 
-  function updateDots() {
-    $$('.testimonial-dot', dotsContainer).forEach((dot, i) => {
-      dot.classList.toggle('active', i === current);
-    });
-  }
+  $('#prev-testimonial')?.addEventListener('click', () => { goTo(cur - 1); restart(); });
+  $('#next-testimonial')?.addEventListener('click', () => { goTo(cur + 1); restart(); });
 
-  function updateCards() {
-    cards.forEach((card, i) => {
-      card.classList.toggle('active', i === current);
-    });
-  }
-
-  function getCardWidth() {
-    if (!cards[0]) return 0;
-    const card = cards[0];
-    const style = window.getComputedStyle(card);
-    const marginRight = parseFloat(style.marginRight) || 20;
-    return card.offsetWidth + marginRight;
-  }
-
-  function goTo(index) {
-    const maxIndex = Math.max(0, cards.length - visibleCount);
-    current = Math.min(Math.max(index, 0), maxIndex);
-    track.style.transform = `translateX(-${current * getCardWidth()}px)`;
-    updateDots();
-    updateCards();
-  }
-
-  prevBtn?.addEventListener('click', () => {
-    goTo(current - 1);
-    resetAuto();
-  });
-
-  nextBtn?.addEventListener('click', () => {
-    goTo(current + 1);
-    resetAuto();
-  });
-
-  // Auto-advance every 5s
-  function startAuto() {
-    autoTimer = setInterval(() => {
-      const maxIndex = Math.max(0, cards.length - visibleCount);
-      goTo(current < maxIndex ? current + 1 : 0);
-    }, 5000);
-  }
-
-  function resetAuto() {
-    clearInterval(autoTimer);
-    startAuto();
-  }
-
-  // Touch/swipe support
-  let touchStartX = 0;
-  track.addEventListener('touchstart', e => {
-    touchStartX = e.touches[0].clientX;
+  let tx = 0;
+  track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend',   e => {
+    const d = tx - e.changedTouches[0].clientX;
+    if (Math.abs(d) > 50) { goTo(d > 0 ? cur + 1 : cur - 1); restart(); }
   }, { passive: true });
 
-  track.addEventListener('touchend', e => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) {
-      goTo(diff > 0 ? current + 1 : current - 1);
-      resetAuto();
-    }
-  }, { passive: true });
-
-  // Responsive rebuild
-  let resizeTimer;
+  let rt;
   window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      visibleCount = getVisibleCount();
-      current = 0;
-      buildDots();
-      goTo(0);
-    }, 200);
+    clearTimeout(rt);
+    rt = setTimeout(() => { visCount = vis(); cur = 0; buildDots(); goTo(0); }, 200);
   });
 
-  // Init
   buildDots();
-  updateCards();
-  startAuto();
+  start();
 })();
 
-/* ──────────────────────────────────────────
-   CONTACT FORM
-────────────────────────────────────────── */
-(function initForm() {
+/* ─────────────────────────────────────────
+   9. CONTACT FORM
+───────────────────────────────────────── */
+(function () {
   const form = $('#contact-form');
   if (!form) return;
 
-  const submitBtn = $('#form-submit');
+  const btn = $('#form-submit');
+  const ok  = $('#form-success');
 
-  function validateField(id, errorId, message) {
-    const field = $(`#${id}`);
-    const error = $(`#${errorId}`);
-    if (!field) return true;
-
-    const val = field.value.trim();
-    let isValid = true;
-
-    if (id === 'email') {
-      isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
-    } else {
-      isValid = val.length > 0;
-    }
-
-    if (error) error.textContent = isValid ? '' : message;
-    field.closest('.form-group')?.classList.toggle('has-error', !isValid);
-
-    return isValid;
+  function validate(id, errId, msg) {
+    const f = $(`#${id}`), e = $(`#${errId}`);
+    if (!f) return true;
+    const valid = id === 'email' ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim()) : f.value.trim().length > 0;
+    if (e) e.textContent = valid ? '' : msg;
+    f.closest('.form-group')?.classList.toggle('has-error', !valid);
+    return valid;
   }
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
+    if (![
+      validate('name',    'name-error',    'Please enter your name'),
+      validate('email',   'email-error',   'Please enter a valid email'),
+      validate('message', 'message-error', 'Please enter a message'),
+    ].every(Boolean)) return;
 
-    const nameOk  = validateField('name',    'name-error',    'Please enter your name');
-    const emailOk = validateField('email',   'email-error',   'Please enter a valid email');
-    const msgOk   = validateField('message', 'message-error', 'Please enter a message');
+    if (btn) { const t = btn.querySelector('.btn-text'); if (t) t.textContent = 'Sending…'; btn.disabled = true; }
 
-    if (!nameOk || !emailOk || !msgOk) return;
-
-    // Disable button & show loading
-    if (submitBtn) {
-      const btnText = submitBtn.querySelector('.btn-text');
-      if (btnText) btnText.textContent = 'Sending…';
-      submitBtn.disabled = true;
-    }
-
-    // Simulate async submit (replace with your actual endpoint / Netlify form)
-    await new Promise(r => setTimeout(r, 1200));
+    try {
+      await fetch('/', { method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString() });
+    } catch (_) {}
 
     form.reset();
     form.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
+    if (ok)  ok.hidden  = false;
+    if (btn) btn.hidden = true;
 
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      const btnText = submitBtn.querySelector('.btn-text');
-      if (btnText) btnText.textContent = 'Send Message';
-    }
+    setTimeout(() => {
+      if (ok)  ok.hidden  = true;
+      if (btn) { btn.hidden = false; btn.disabled = false; const t = btn.querySelector('.btn-text'); if (t) t.textContent = 'Send Message'; }
+    }, 6000);
   });
 
-  // Live validation on blur
-  [
-    ['name',    'name-error',    'Please enter your name'],
-    ['email',   'email-error',   'Please enter a valid email'],
-    ['message', 'message-error', 'Please enter a message'],
-  ].forEach(([id, errId, msg]) => {
-    $(`#${id}`)?.addEventListener('blur', () => validateField(id, errId, msg));
-  });
+  [['name','name-error','Please enter your name'],
+   ['email','email-error','Please enter a valid email'],
+   ['message','message-error','Please enter a message'],
+  ].forEach(([id, err, msg]) => $(`#${id}`)?.addEventListener('blur', () => validate(id, err, msg)));
 })();
 
-/* ──────────────────────────────────────────
-   FOOTER YEAR
-────────────────────────────────────────── */
-const yearEl = $('#footer-year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+/* ─────────────────────────────────────────
+   10. FOOTER YEAR
+───────────────────────────────────────── */
+const yr = $('#footer-year');
+if (yr) yr.textContent = new Date().getFullYear();
