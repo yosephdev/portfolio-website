@@ -28,3 +28,9 @@ dist-ssr
 
 # environment files
 .env
+
+.codex-stage
+
+redesign/
+
+index.html.backup

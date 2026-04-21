@@ -19,6 +19,9 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+const pathname = window.location.pathname;
+const appBasename =
+  pathname === "/app" || pathname.startsWith("/app/") ? "/app" : undefined;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -26,7 +29,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={appBasename}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />

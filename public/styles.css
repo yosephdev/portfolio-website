@@ -814,28 +814,6 @@ input, textarea, select { font-family: inherit; }
   border-color: rgba(88, 166, 255, 0.3);
 }
 
-/* Project card screenshot image */
-.project-img-wrap {
-  width: 100%;
-  height: 156px;
-  border-radius: var(--radius);
-  overflow: hidden;
-  margin-bottom: 16px;
-  background: var(--bg-2);
-  border: 1px solid var(--border);
-}
-
-.project-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-slow);
-}
-
-.project-card:hover .project-img-wrap img {
-  transform: scale(1.04);
-}
-
 .project-card-header {
   display: flex;
   align-items: flex-start;
@@ -1380,31 +1358,32 @@ input, textarea, select { font-family: inherit; }
 /* ──────────────────────────────────────────
    16. SCROLL ANIMATIONS
 ────────────────────────────────────────── */
-.fade-up {
+/*
+  Animations only activate once JS confirms it loaded (.js-ready on <html>).
+  Without JS (or if JS errors), all content stays fully visible by default.
+*/
+.js-ready .fade-up {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
-.fade-up.visible {
+.js-ready .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
+.js-ready .fade-up:nth-child(1) { transition-delay: 0.05s; }
+.js-ready .fade-up:nth-child(2) { transition-delay: 0.12s; }
+.js-ready .fade-up:nth-child(3) { transition-delay: 0.18s; }
+.js-ready .fade-up:nth-child(4) { transition-delay: 0.24s; }
+.js-ready .fade-up:nth-child(5) { transition-delay: 0.30s; }
+.js-ready .fade-up:nth-child(6) { transition-delay: 0.36s; }
 
-.fade-up:nth-child(1) { transition-delay: 0.05s; }
-.fade-up:nth-child(2) { transition-delay: 0.12s; }
-.fade-up:nth-child(3) { transition-delay: 0.18s; }
-.fade-up:nth-child(4) { transition-delay: 0.24s; }
-.fade-up:nth-child(5) { transition-delay: 0.30s; }
-.fade-up:nth-child(6) { transition-delay: 0.36s; }
-
-.reveal {
+.js-ready .reveal {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
-
-.reveal.visible {
+.js-ready .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
