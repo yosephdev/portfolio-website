@@ -274,7 +274,6 @@ $$('.skill-group').forEach(group => skillObserver.observe(group));
   if (!form) return;
 
   const submitBtn = $('#form-submit');
-  const successMsg = $('#form-success');
 
   function validateField(id, errorId, message) {
     const field = $(`#${id}`);
@@ -318,19 +317,11 @@ $$('.skill-group').forEach(group => skillObserver.observe(group));
     form.reset();
     form.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
 
-    if (successMsg) successMsg.hidden = false;
-    if (submitBtn) submitBtn.hidden = true;
-
-    // Reset after 6s
-    setTimeout(() => {
-      if (successMsg) successMsg.hidden = true;
-      if (submitBtn) {
-        submitBtn.hidden = false;
-        submitBtn.disabled = false;
-        const btnText = submitBtn.querySelector('.btn-text');
-        if (btnText) btnText.textContent = 'Send Message';
-      }
-    }, 6000);
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      const btnText = submitBtn.querySelector('.btn-text');
+      if (btnText) btnText.textContent = 'Send Message';
+    }
   });
 
   // Live validation on blur
