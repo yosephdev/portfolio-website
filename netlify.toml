@@ -25,5 +25,46 @@
   to = "/app.html"
   status = 200
 
+# Redirect bare routes → React app under /app
+[[redirects]]
+  from = "/about"
+  to = "/app/about"
+  status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/app/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/app/blog/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/projects"
+  to = "/app/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/*"
+  to = "/app/projects/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/resources"
+  to = "/app/resources"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/app/contact"
+  status = 301
+
+[[redirects]]
+  from = "/case-study/*"
+  to = "/app/case-study/:splat"
+  status = 301
+
 [functions]
   directory = "netlify/functions"
