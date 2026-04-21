@@ -14,6 +14,14 @@ export default defineConfig({
         "@": path.resolve(__dirname, "./src"),
       },
     },
+    // The React app is served from /app — root (/) is the static landing page
+    build: {
+      rollupOptions: {
+        input: {
+          app: path.resolve(__dirname, 'app.html'),
+        },
+      },
+    },
     server: {
       port: 5173,
       host: true
