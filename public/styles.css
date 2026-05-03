@@ -957,6 +957,7 @@ input, textarea, select { font-family: inherit; }
 /* Carousel */
 .testimonials-carousel {
   position: relative;
+  overflow: hidden;
 }
 
 .testimonials-track {
@@ -973,9 +974,6 @@ input, textarea, select { font-family: inherit; }
   min-width: calc(33.333% - 14px);
   flex-shrink: 0;
   transition: border-color var(--transition), box-shadow var(--transition);
-  display: flex;
-  flex-direction: column;
-  gap: 0;
 }
 
 .testimonial-card:hover {
@@ -1035,7 +1033,6 @@ input, textarea, select { font-family: inherit; }
   line-height: 1.78;
   font-style: italic;
   margin-bottom: 24px;
-  flex: 1;
   position: relative;
   padding-left: 4px;
 }
