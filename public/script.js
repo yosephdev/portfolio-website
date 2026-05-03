@@ -206,9 +206,13 @@ $$('.skill-group').forEach(g => skillObserver.observe(g));
     if (btn) { const t = btn.querySelector('.btn-text'); if (t) t.textContent = 'Sending…'; btn.disabled = true; }
 
     try {
-      await fetch('/', { method: 'POST',
+      const formData = new URLSearchParams(new FormData(form));
+      formData.set('form-name', form.getAttribute('name') || 'contact');
+      await fetch('/', {
+        method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString() });
+        body: formData.toString(),
+      });
     } catch (_) {}
 
     form.reset();
