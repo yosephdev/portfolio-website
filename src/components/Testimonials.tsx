@@ -58,7 +58,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "Bahlebi Gidey",
+    name: "Bahlebi Tadese",
     role: "Owner",
     company: "MT Skrädderi och Butik",
     quote:
