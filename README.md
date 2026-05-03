@@ -1,321 +1,199 @@
-# Yoseph Berhane Gebremedhin - Full Stack Developer Portfolio 🚀
+# Yoseph Berhane — Full Stack Developer Portfolio
 
-**Product-Focused Full Stack Developer (React, Next.js, Django) – 5+ Years Building Production Web Products**  
-*Remote-first, relocation-friendly, Swedish citizen • 35+ real projects shipped • Revenue-driven approach*
+**Full Stack Developer (React, Next.js, TypeScript, Django) — 5+ Years Shipping Production Web Products**  
+*Remote-first · Swedish citizen · EU work rights · Available immediately*
 
 ![Portfolio Preview](public/images/portfolio-website.png)
-*[Live Portfolio](https://yoseph.dev) • [Professional Profile & Contact](https://yoseph.dev/contact)*
 
-## 🎯 About This Portfolio
+**[Live Portfolio →](https://yoseph.dev)** · **[Contact →](https://yoseph.dev/contact)**
 
-This is my **personal production portfolio** showcasing real-world work as a product-focused full stack developer. It demonstrates:
-- **35+ shipped projects** across e-commerce, SaaS, AI tools, and community platforms
-- **End-to-end product development** from discovery and UX to deployment and iteration
-- **Measurable business impact** with focus on UX, SEO, performance, and revenue-driven results
-- **Production-grade architecture** built for scalability, maintainability, and team collaboration
+---
 
-## 💼 Professional Focus
+## About This Repo
 
-| Area | Expertise |
-|-------|------------|
-| **🛒 E-commerce Platforms** | Stripe/Klarna integration, SEO optimization, conversion-focused |
-| **🚀 SaaS & Tools** | AI marketplaces, subscription models, scalable architectures |
-| **🌍 Community Platforms** | Nonprofit solutions, educational tools, accessibility focus |
-| **⚡ Performance & UX** | 95+ Lighthouse scores, mobile-first, conversion optimization |
+This is the source code for [yoseph.dev](https://yoseph.dev) — a production portfolio and freelance services site. It's a hybrid setup:
 
-## 🏗️ Tech Stack Deep Dive
+- **`public/index.html`** — Static homepage (vanilla HTML/CSS/JS, no build step) served at `/`
+- **`src/`** — React/TypeScript SPA (Vite build) served at `/app/*` via Netlify rewrite rules
+- **`public/netlify.toml`** — All redirect and rewrite rules (copied into `dist/` at build time)
 
-### **Core Framework**
-- **React 18** with Concurrent Features
-- **TypeScript** (Strict mode, custom types)
-- **Vite** (Lightning-fast builds, hot module replacement)
+The static homepage handles the marketing/services content (fast, no JS required), while the React app handles richer pages like `/projects`, `/blog`, `/about`, and `/contact`.
 
-### **Styling & UI**
-- **Tailwind CSS** (Custom config with design tokens)
-- **shadcn/ui** (Accessible, customizable components)
-- **Framer Motion** (Smooth animations)
+---
 
-### **Content & Data**
-- **Markdown/MDX** (Blog posts, project documentation)
-- **Centralized Data Layer** (`src/data/projects.ts` - single source of truth)
-- **Environment Variables** (Secure API key management)
+## Services (WebNord — Freelance Packages)
 
-### **Performance & SEO**
-- **Code Splitting** (Route-based, component-level)
-- **Image Optimization** (WebP, lazy loading, responsive images)
-- **Meta Tags & Structured Data** (JSON-LD, Open Graph)
-- **Sitemap Generation** (Automatic, dynamic)
+I offer three fixed-scope packages through [WebNord](https://yoseph.dev/#packages):
 
-### **DevOps & Deployment**
-- **Netlify** (CI/CD, serverless functions, form handling)
-- **GitHub Actions** (Automated testing, deployment)
-- **Husky** (Git hooks for code quality)
+| Package | Price | Scope |
+|---------|-------|-------|
+| **Starter** | From €299 | 3-page site, mobile-first, deployed within 1 week |
+| **Professional** | From €699 | Full website up to 8 pages, CMS, SEO, analytics |
+| **Custom** | From €1,499 | E-commerce, SaaS, multi-platform builds |
 
-## 🚀 Getting Started in 5 Minutes
+All packages include: responsive design, Netlify deployment, contact form, and 30-day post-launch support.
+
+---
+
+## Featured Projects
+
+| Project | Type | Stack |
+|---------|------|-------|
+| **[Klyrform](https://klyrform.com)** | SaaS — data extraction | Next.js · TypeScript · PostgreSQL · AI APIs |
+| **[Afelu.com](https://afelu.com)** | AI tools marketplace | Next.js · TypeScript · Stripe · PostgreSQL |
+| **[TernaFit](https://ternafit.org)** | Nonprofit (3 platforms) | React · Next.js · TypeScript · PostgreSQL · Netlify |
+| **[Baby's & Me](https://babysme.com)** | E-commerce | Vite · React · TypeScript · shadcn/ui |
+| **[Selam's Handmade](https://selamshandmade.com)** | E-commerce (25% sales lift) | React · Next.js · Stripe |
+| **[Habesha Smak Butik](https://habeshasmak.store)** | Multilingual e-commerce | React · TypeScript · PostgreSQL · Stripe |
+| **[MT Butik](https://mtbutik.se)** | Business website | Vite · React · TypeScript · Tailwind |
+| **Cascadia Transport Services** | Booking platform | React · Next.js · TypeScript |
+| **Super Merra Frisör** | Salon + booking | React · Next.js · TypeScript |
+| **Enjera Restaurant** | Restaurant website | React · Next.js · TypeScript |
+
+27 projects total — see the full list at [yoseph.dev/app/projects](https://yoseph.dev/app/projects).
+
+---
+
+## Tech Stack
+
+### Core
+- **React 18** + **TypeScript** (strict mode)
+- **Next.js 14** for full-stack and SSR projects
+- **Vite** for fast SPA builds (this portfolio)
+
+### Styling & UI
+- **Tailwind CSS** with custom design tokens
+- **shadcn/ui** — accessible, composable components
+- Vanilla CSS for the static homepage (dark-mode-first, no framework)
+
+### Backend & Data
+- **Node.js** / **Django** for API and server logic
+- **PostgreSQL** (primary database for most projects)
+- **Redis** for caching (EcoPaws, Klyrform)
+- **Prisma** ORM
+
+### Payments & Integrations
+- **Stripe** — subscriptions, one-time payments, marketplace splits
+- **Klarna** — buy-now-pay-later for Swedish e-commerce
+- **OpenAI / AI APIs** — Klyrform, Tigray Tutor AI, Afelu
+- **Google Maps API** — LimoFlow, StaySwift
+
+### DevOps & Deployment
+- **Netlify** — CI/CD, serverless functions, form handling, redirects
+- **Vercel** — Next.js projects
+- **Docker** — local dev environments and production containers
+- **GitHub Actions** — automated tests and deployment pipelines
+
+---
+
+## Project Structure
+
+```
+portfolio-website/
+├── public/                    # Static homepage (no build step)
+│   ├── index.html             # Main homepage + services + projects
+│   ├── styles.css             # Dark-mode-first stylesheet
+│   ├── script.js              # Vanilla JS (carousel, theme, form)
+│   ├── netlify.toml           # Routing rules (copied to dist/ at build)
+│   ├── images/                # Project previews + assets
+│   └── downloads/             # Free resources (cheatsheets, etc.)
+├── src/                       # React/TypeScript SPA
+│   ├── App.tsx                # Root with BrowserRouter (basename="/app")
+│   ├── pages/
+│   │   ├── Index.tsx          # React homepage (redirects to static /)
+│   │   ├── Projects.tsx       # Filterable project gallery
+│   │   ├── About.tsx          # Bio, skills, testimonials, GitHub stats
+│   │   ├── Blog.tsx / BlogPost.tsx
+│   │   ├── Contact.tsx        # Contact form (Netlify Forms)
+│   │   └── Resources.tsx
+│   ├── components/
+│   │   ├── Header.tsx / Footer.tsx
+│   │   ├── ProjectCard.tsx    # Used in Projects page
+│   │   ├── Testimonials.tsx   # 9 unique client/instructor testimonials
+│   │   ├── ContactForm.tsx    # Netlify Forms AJAX submission
+│   │   ├── TechnicalSkills.tsx
+│   │   ├── GitHubStats.tsx / GitHubRepos.tsx
+│   │   └── JobSeekingBanner.tsx
+│   ├── data/
+│   │   └── projects.ts        # 27 projects — single source of truth
+│   ├── lib/
+│   │   └── blogData.ts
+│   └── types/
+│       └── project.ts
+├── app.html                   # SPA entry point (served at /app/*)
+├── vite.config.ts
+├── tailwind.config.ts
+└── package.json
+```
+
+---
+
+## Running Locally
 
 ```bash
-# 1. Clone & install
-git clone https://github.com/yosephdev/portfolio-website.git
-cd portfolio-website
+# Install dependencies
 npm install
 
-# 2. Configure environment
-cp .env.example .env
-# Add your keys (Beehiiv, Analytics, etc.)
-
-# 3. Run locally
+# Start Vite dev server (React SPA at http://localhost:5173)
 npm run dev
-# → http://localhost:5173
 
-# For full functionality (newsletter, forms):
+# For full Netlify routing + form handling:
 npm install -g netlify-cli
 netlify dev
-# → http://localhost:8888 (with serverless functions)
-
+# → http://localhost:8888
 ```
 
-📁 Architecture Overview
+The static homepage (`public/index.html`) is served directly from `dist/` by Netlify. During local dev, open it directly from the `public/` folder or via `netlify dev`.
 
-```
-src/
-├── App.tsx                    # Root component with routing
-├── main.tsx                   # Entry point with providers
-├── components/                # Reusable UI components
-│   ├── ui/                    # shadcn/ui components (Button, Card, etc.)
-│   ├── layout/                # Header, Footer, Navigation
-│   ├── sections/              # Homepage sections (Hero, Projects, etc.)
-│   └── shared/                # Utilities (ThemeToggle, SEO, etc.)
-├── content/                   # Markdown content (decoupled from UI)
-│   ├── blog/                  # Blog posts with frontmatter
-│   └── projects/              # Project case studies
-├── data/                      # Centralized data management
-│   ├── projects.ts            # 35+ projects with metadata
-│   ├── skills.ts              # Technologies & proficiencies
-│   └── navigation.ts          # Site structure
-├── hooks/                     # Custom React hooks
-│   ├── useMediaQuery.ts       # Responsive design helpers
-│   └── useTheme.ts            # Dark/light mode management
-├── lib/                       # Third-party integrations
-│   ├── utils/                 # Formatting, validation, helpers
-│   └── api/                   # Beehiiv, Analytics, etc.
-├── pages/                     # Route components
-├── styles/                    # Global styles, Tailwind config
-└── types/                     # TypeScript definitions
-```
-
-🔗 Connected Projects Showcase
-
-This portfolio actively integrates with live production projects:
-
-**E-commerce Platforms**
-- Babys & Me - Swedish baby products marketplace
-- Habesha Smak Butik - Ethiopian food e-commerce
-- Dina Boutique - Fashion e-commerce for Ethiopian market
-
-**SaaS & Tools**
-- Afelu Marketplace - AI tools platform (Next.js, Stripe, PostgreSQL)
-- Klyrform - Data extraction SaaS
-- Tigray Tutor AI - Educational AI platform
-
-**Community & Impact**
-- Ternafit - Tigray awareness platform
-- SJT Website - Advocacy and justice platform
-
-Each project includes: Live demo • GitHub repo • Tech stack • Case study
-
-📝 Content Strategy
-
-Blog System Features
-
-    ✅ Markdown with frontmatter (tags, authors, excerpts)
-
-    ✅ Syntax highlighting (Prism.js)
-
-    ✅ Related posts algorithm
-
-    ✅ Reading time estimation
-
-    ✅ SEO-optimized URLs
-
-Project Documentation
-
-```markdown
 ---
-title: "Project Name"
-description: "Clear value proposition"
-status: "Active" # Active, Archived, WIP
-tech: ["React", "TypeScript", "Node.js"]
-metrics:
-  - "Improved performance by 40%"
-  - "Increased conversions by 25%"
-demo: "https://live-demo.com"
-github: "https://github.com/username/repo"
+
+## Contact Form Setup
+
+Contact forms use **Netlify Forms** (no API keys required):
+
+- Static form: `name="contact"` in `public/index.html` with `data-netlify="true"`
+- React form: `name="contact-app"` in `app.html` (hidden detection form) + AJAX POST in `ContactForm.tsx`
+- Both submit to Netlify's built-in endpoint and appear in the Forms dashboard
+
 ---
+
+## Routing Architecture
+
+All routes are defined in `public/netlify.toml` (which Netlify copies to `dist/`):
+
+```toml
+# React SPA rewrites
+/app       → /app.html (200)
+/app/*     → /app.html (200)
+
+# Friendly short URLs redirect to React app
+/blog      → /app/blog (301)
+/projects  → /app/projects (301)
+/about     → /app/about (301)
+/contact   → /app/contact (301)
+/resources → /app/resources (301)
 ```
 
-🎨 Customization Guide
-1. Branding
+The root `netlify.toml` is intentionally empty for redirects — only `dist/netlify.toml` is read by Netlify at runtime.
 
-```typescript
-// src/config/site.ts
-export const siteConfig = {
-  name: "Your Name",
-  title: "Your Title",
-  description: "Your meta description",
-  url: "https://yourdomain.com",
-  social: {
-    github: "yourusername",
-    linkedin: "yourprofile",
-    twitter: "yourhandle",
-  },
-  themeColors: {
-    light: "#ffffff",
-    dark: "#000000",
-    primary: "#3b82f6", // Your brand color
-  },
-};
+---
+
+## Deployment
+
+The site is deployed on **Netlify**. Every push to `main` triggers a build:
+
+```
+npm run build   →   dist/
 ```
 
-2. Adding Projects
+The `dist/` directory contains both the compiled React app and the static homepage assets. Netlify reads `dist/netlify.toml` for all routing rules.
 
-    Add project data to src/data/projects.ts
+---
 
-    Create markdown file in src/content/projects/
+## License
 
-    Add images to public/images/projects/
+MIT — feel free to fork and adapt for your own portfolio.
 
-    Project automatically appears in gallery
+---
 
-3. Theming
-
-    Modify tailwind.config.ts for colors, fonts, spacing
-
-    Update src/styles/globals.css for custom styles
-
-    Edit src/components/ThemeProvider.tsx for theme logic
-
-📊 Performance Metrics
-
-| Metric | Score | Impact |
-|--------|-------|--------|
-| Lighthouse Performance | 98 | Fast loading, better SEO |
-| Accessibility | 100 | WCAG compliant, screen reader friendly |
-| Best Practices | 100 | Security, modern APIs |
-| SEO | 100 | Structured data, meta tags |
-| Bundle Size | 45kb gzipped | Faster initial load |
-| LCP (Largest Contentful Paint) | 1.2s | Better user experience |
-
-🚀 Deployment Options
-Netlify (Recommended)
-
-```yaml
-# netlify.toml
-[build]
-  command = "npm run build"
-  publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-```
-
-Vercel
-
-```json
-// vercel.json
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite"
-}
-```
-
-Docker
-
-```dockerfile
-FROM node:18-alpine AS builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
-
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-EXPOSE 80
-```
-
-🤝 Contributing & Collaboration
-
-Looking for contributors! This project welcomes:
-
-    🐛 Bug reports and fixes
-
-    💡 Feature suggestions
-
-    📖 Documentation improvements
-
-    🎨 Design/UX enhancements
-
-    🔧 Performance optimizations
-
-Partnership Opportunities:
-
-I'm actively seeking collaborators for:
-
-    Growing existing projects (e-commerce, SaaS platforms)
-
-    Technical co-founder roles
-
-    Open source maintenance
-
-    Freelance partnerships
-
-If you're interested in collaboration, check out [PARTNERSHIP.md](PARTNERSHIP.md) or reach out!
-
-📄 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
-👨‍💻 About the Developer
-
-Yoseph Berhane Gebremedhin
-Full-Stack Developer • Project Builder • Problem Solver
-
-With 5+ years building production web applications, I specialize in:
-
-    Turning ideas into functional, scalable products
-
-    Modern React/TypeScript architectures
-
-    E-commerce and SaaS platform development
-
-    Performance optimization and SEO
-
-Connect:
-
-    🌐 Portfolio
-
-    💼 LinkedIn
-
-    🐙 GitHub
-
-    📧 Email
-
-🌟 Support & Acknowledgments
-
-If this portfolio inspires you or helps your projects:
-
-    ⭐ Star this repo to show support
-
-    🐛 Report issues to help improve
-
-    🔄 Fork & customize for your own use
-
-    💬 Share with other developers
-
-Special thanks to:
-
-The React, TypeScript, and Tailwind CSS communities for incredible tooling.
-All contributors and supporters of open source software.
+*Yoseph Berhane · [yoseph.dev](https://yoseph.dev) · [contact@yoseph.dev](mailto:contact@yoseph.dev)*
