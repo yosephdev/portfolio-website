@@ -13,7 +13,7 @@ export function Footer() {
               Yoseph<span className="text-primary">.dev</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Developer, writer, and creator focused on web development, design patterns, and modern tooling.
+              Full stack developer building e-commerce, SaaS, and community platforms. 25+ projects shipped across Sweden and beyond.
             </p>
           </div>
           <div>

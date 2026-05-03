@@ -9,93 +9,40 @@ import { JobSeekingBanner } from "@/components/JobSeekingBanner";
 import { TechnicalSkillsCompact } from "@/components/TechnicalSkills";
 import { GitHubRepos } from "@/components/GitHubRepos";
 import SEO from "@/components/SEO";
-import { Download, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
+import { projects } from "@/data/projects";
 
-// Sample data
+// Featured projects pulled from the single source of truth
+const featuredProjects = projects.filter((p) => p.featured);
+
+// Latest blog posts (updated May 2026)
 const featuredPosts = [
   {
-    slug: "modern-react-hooks",
-    title: "Understanding Modern React Hooks",
+    slug: "saas-mvp-lessons",
+    title: "What I Learned Shipping Klyrform on Product Hunt",
     excerpt:
-      "A deep dive into React's latest hooks and how they can improve your components.",
-    date: "May 12, 2023",
-    readingTime: "8 min read",
-    tags: ["React", "JavaScript", "Hooks"],
+      "Hard-won lessons from building and launching a data-extraction SaaS — from architecture decisions to the launch day checklist.",
+    date: "April 14, 2026",
+    readingTime: "9 min read",
+    tags: ["SaaS", "Product Hunt", "Next.js"],
   },
   {
-    slug: "typescript-tips",
-    title: "10 TypeScript Tips for Better Code",
+    slug: "netlify-forms-react",
+    title: "Netlify Forms + React Without a Backend",
     excerpt:
-      "Practical TypeScript tips that will help you write more maintainable code.",
-    date: "April 23, 2023",
+      "How to wire up Netlify's built-in form handling from a React SPA — no serverless function required.",
+    date: "March 5, 2026",
     readingTime: "6 min read",
-    tags: ["TypeScript", "Best Practices"],
+    tags: ["Netlify", "React", "Forms"],
   },
   {
-    slug: "tailwind-tricks",
-    title: "Advanced Tailwind CSS Techniques",
+    slug: "nonprofit-platforms-tigray",
+    title: "Building Digital Infrastructure for the Tigrayan Diaspora",
     excerpt:
-      "Take your Tailwind CSS skills to the next level with these advanced techniques.",
-    date: "March 18, 2023",
-    readingTime: "5 min read",
-    tags: ["CSS", "Tailwind", "Frontend"],
-  },
-];
-
-const featuredProjects = [
-  {
-    slug: "klyrform",
-    title: "Klyrform",
-    description:
-      "Production-ready SaaS application that converts unstructured data (PDFs, images, URLs, documents) into clean structured data (JSON, CSV, Markdown).",
-    summary: "Built and launched data extraction SaaS on Product Hunt that converts unstructured documents into clean, structured data for businesses.",
-    role: "Full Stack Developer",
-    impact: [
-      "Launched on Product Hunt with positive reception",
-      "Processes multiple document formats with high accuracy",
-      "Saves businesses hours of manual data entry work"
-    ],
-    tech: ["TypeScript", "Next.js", "Node.js", "PostgreSQL", "AI/ML APIs"],
-    image: "/images/klyrform.png",
-    github: "https://github.com/yosephdev/klyrform",
-    url: "https://klyrform.com",
-    featured: true,
-  },
-  {
-    slug: "ecopaws-harmony",
-    title: "EcoPaws Harmony",
-    description:
-      "Sustainable Pet Products & Digital Guides E-commerce Platform built with Next.js 14, preparing for acquisition on Acquire.com.",
-    summary: "Building sustainable pet products platform with advanced features for acquisition - modern tech stack with Three.js, Redis, and PostgreSQL.",
-    role: "Full Stack Developer & Founder",
-    impact: [
-      "Preparing for acquisition on Acquire.com",
-      "Built with modern Next.js 14 and advanced features",
-      "Sustainable e-commerce with digital product integration"
-    ],
-    tech: ["Next.js 14", "TypeScript", "PostgreSQL", "Redis", "Three.js", "Prisma", "Node.js"],
-    image: "/images/eco-paws.png",
-    github: "https://github.com/yosephdev/ecopaws-harmony",
-    url: "https://ecopaws.vercel.app/",
-    featured: true,
-  },
-  {
-    slug: "afelu-marketplace",
-    title: "Afelu.com",
-    description:
-      "AI tools marketplace connecting creators with users seeking AI-powered solutions.",
-    summary: "Built and launched an AI tools marketplace from scratch, including listings, payments, and admin tools.",
-    role: "Founding Software Developer / Co‑Founder",
-    impact: [
-      "Launched marketplace MVP with complete payment integration",
-      "Built admin dashboard for vendor management",
-      "Implemented search and filtering for AI tools"
-    ],
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-    image: "/images/afelu-marketplace.png",
-    github: "https://github.com/yosephdev/afelu-marketplace",
-    url: "https://afelu.com",
-    featured: true,
+      "The story behind TernaFit's three interconnected platforms — technical choices, trade-offs, and what mission-driven development actually means.",
+    date: "February 18, 2026",
+    readingTime: "7 min read",
+    tags: ["Nonprofit", "Next.js", "Community"],
   },
 ];
 
@@ -191,8 +138,8 @@ const Index = () => {
                 </div>
                 <div className="w-px h-8 bg-border"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">35+</div>
-                  <div className="text-sm">Real Projects</div>
+                  <div className="text-2xl font-bold text-primary">25+</div>
+                  <div className="text-sm">Projects Shipped</div>
                 </div>
                 <div className="w-px h-8 bg-border"></div>
                 <div className="text-center">
@@ -272,45 +219,48 @@ const Index = () => {
           <div className="container">
             <div className="mx-auto mb-10 flex max-w-[980px] flex-col items-start gap-2">
               <h2 className="text-3xl font-bold leading-tight tracking-tight">
-                How I Can Help
+                What I Build
               </h2>
               <p className="text-muted-foreground">
-                Leveraging my experience in full-stack development and a keen
-                interest in AI, I'm here to share knowledge and support others.
+                From landing pages and e-commerce stores to SaaS platforms and
+                community tools — end-to-end development with a focus on
+                shipping things that work.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
-                <h3 className="text-xl font-bold mb-2">
-                  Mentorship & Guidance
-                </h3>
+                <h3 className="text-xl font-bold mb-2">Client Websites</h3>
                 <p className="text-muted-foreground">
-                  Offering personalized guidance for aspiring developers,
-                  helping you navigate career paths, master new technologies,
-                  and overcome coding challenges.
+                  Fast, professional websites for businesses, restaurants,
+                  salons, and service providers. Mobile-first, SEO-ready, and
+                  built to convert visitors into customers.
                 </p>
               </div>
               <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
-                <h3 className="text-xl font-bold mb-2">Technical Consulting</h3>
+                <h3 className="text-xl font-bold mb-2">E-commerce &amp; SaaS</h3>
                 <p className="text-muted-foreground">
-                  Providing insights and solutions for your web development
-                  projects, from architectural design to performance
-                  optimization and AI integration.
+                  Full-featured online stores and web apps with Stripe/Klarna
+                  payments, admin dashboards, and the integrations your
+                  business actually needs.
                 </p>
               </div>
               <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
                 <h3 className="text-xl font-bold mb-2">
-                  Open Source Contributions
+                  Community &amp; Nonprofit Platforms
                 </h3>
                 <p className="text-muted-foreground">
-                  Collaborating on open-source projects, contributing to the
-                  community, and sharing reusable code and tools.
+                  Scalable digital platforms for organisations that need to
+                  reach people — educational tools, knowledge bases, and
+                  community networking sites.
                 </p>
               </div>
             </div>
-            <div className="mt-10 flex justify-center">
+            <div className="mt-10 flex justify-center gap-4">
               <Button asChild>
-                <Link to="/contact">Get in Touch</Link>
+                <Link to="/contact">Start a Project</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/projects">See My Work</Link>
               </Button>
             </div>
           </div>
