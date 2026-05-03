@@ -200,15 +200,17 @@ export const projects: Project[] = [
   },
   {
     slug: "koll",
-    title: "Koll",
+    title: "Koll — Kaloriräknare",
     description:
-      "Collaborative web application for teams to organize, plan, and execute projects together.",
-    summary: "Built team collaboration tool with project management and real-time updates.",
+      "En modern kaloriräknare och näringsapp byggd specifikt för den svenska marknaden, med svenskt användargränssnitt och en omfattande svensk matdatabas.",
+    summary:
+      "Built a Swedish-market nutrition app with a localised food database, calorie tracking, and meal logging — designed around Swedish dietary habits and food culture.",
     role: "Full Stack Developer",
     impact: [
-      "Created collaborative workspace for teams",
-      "Built real-time project updates and notifications",
-      "Implemented task assignment and progress tracking"
+      "Localised food database with thousands of Swedish products",
+      "Swedish-language UI tailored for the local market",
+      "Macro and micronutrient tracking with daily goal setting",
+      "Mobile-first responsive design for on-the-go logging"
     ],
     tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
     image: "/images/Koll-preview.png",
@@ -221,20 +223,22 @@ export const projects: Project[] = [
     slug: "ternafit",
     title: "TernaFit",
     description:
-      "Fitness and wellness platform offering personalized workout plans, nutrition guidance, and progress tracking.",
-    summary: "Developed comprehensive fitness platform with personalized workout and nutrition guidance.",
+      "Swedish-based tech nonprofit building the digital platforms, websites, and training programmes that empower Tigrayan communities and local organisations worldwide.",
+    summary:
+      "Designed and developed three interconnected digital platforms for TernaFit — a nonprofit supporting Tigrayan communities through education, knowledge preservation, and community connection.",
     role: "Full Stack Developer",
     impact: [
-      "Built personalized fitness tracking system",
-      "Implemented nutrition and workout planning features",
-      "Created progress monitoring and goal-setting tools"
+      "connect.ternafit.org — community networking platform for the global Tigrayan diaspora",
+      "tutor.ternafit.org — educational platform delivering training programmes to Tigrayan learners worldwide",
+      "tigray.ternafit.org — the world's most comprehensive knowledge base on Tigray's land, history, culture, and current affairs, serving scholars, journalists, and policymakers",
+      "Supported a nonprofit mission reaching communities across multiple continents"
     ],
-    tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Netlify"],
     image: "/images/ternafit-preview.png",
     github: "",
-    url: "#",
-    category: "Web App",
-    featured: false,
+    url: "https://ternafit.org",
+    category: "Community",
+    featured: true,
   },
 
   // E-COMMERCE PROJECTS
