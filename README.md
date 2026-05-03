@@ -21,9 +21,9 @@ The static homepage handles the marketing/services content (fast, no JS required
 
 ---
 
-## Services (WebNord — Freelance Packages)
+## Freelance Packages
 
-I offer three fixed-scope packages through [WebNord](https://yoseph.dev/#packages):
+I offer three fixed-scope packages at [yoseph.dev/#packages](https://yoseph.dev/#packages):
 
 | Package | Price | Scope |
 |---------|-------|-------|

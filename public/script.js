@@ -120,27 +120,42 @@ $$('.skill-group').forEach(g => skillObserver.observe(g));
 
 /* ─────────────────────────────────────────
    8. TESTIMONIALS CAROUSEL
+   Width is calculated from the container in
+   pixels — no CSS percentage ambiguity.
 ───────────────────────────────────────── */
 (function () {
-  const track = $('#testimonials-track');
-  if (!track) return;
+  const carousel = $('#testimonials-carousel');
+  const track    = $('#testimonials-track');
+  if (!track || !carousel) return;
 
   const dots  = $('#testimonial-dots');
   const cards = $$('.testimonial-card', track);
+  const GAP   = 20;
   let cur = 0, visCount = vis(), timer;
 
   function vis() {
     return window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
   }
+
+  /* Calculate card width from the CONTAINER'S pixel width, not the track */
   function cardW() {
-    return cards[0] ? cards[0].offsetWidth + 20 : 0;
+    const cw = carousel.clientWidth;
+    return (cw - GAP * (visCount - 1)) / visCount;
   }
+
+  function layout() {
+    const w = cardW();
+    cards.forEach(c => { c.style.width = w + 'px'; c.style.minWidth = w + 'px'; });
+  }
+
   function goTo(i) {
-    cur = Math.min(Math.max(i, 0), Math.max(0, cards.length - visCount));
-    track.style.transform = `translateX(-${cur * cardW()}px)`;
+    const max = Math.max(0, cards.length - visCount);
+    cur = Math.min(Math.max(i, 0), max);
+    track.style.transform = `translateX(-${cur * (cardW() + GAP)}px)`;
     $$('.testimonial-dot', dots).forEach((d, idx) => d.classList.toggle('active', idx === cur));
     cards.forEach((c, idx) => c.classList.toggle('active', idx === cur));
   }
+
   function buildDots() {
     if (!dots) return;
     dots.innerHTML = '';
@@ -148,31 +163,42 @@ $$('.skill-group').forEach(g => skillObserver.observe(g));
     for (let i = 0; i < total; i++) {
       const d = document.createElement('button');
       d.className = 'testimonial-dot' + (i === cur ? ' active' : '');
-      d.setAttribute('aria-label', `Testimonial ${i + 1}`);
+      d.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
       d.addEventListener('click', () => { goTo(i); restart(); });
       dots.appendChild(d);
     }
   }
-  function start()   { timer = setInterval(() => goTo(cur < Math.max(0, cards.length - visCount) ? cur + 1 : 0), 5000); }
+
+  function start()   { timer = setInterval(() => goTo(cur < Math.max(0, cards.length - visCount) ? cur + 1 : 0), 5500); }
   function restart() { clearInterval(timer); start(); }
 
   $('#prev-testimonial')?.addEventListener('click', () => { goTo(cur - 1); restart(); });
   $('#next-testimonial')?.addEventListener('click', () => { goTo(cur + 1); restart(); });
 
+  /* Touch/swipe support */
   let tx = 0;
   track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
   track.addEventListener('touchend',   e => {
     const d = tx - e.changedTouches[0].clientX;
-    if (Math.abs(d) > 50) { goTo(d > 0 ? cur + 1 : cur - 1); restart(); }
+    if (Math.abs(d) > 40) { goTo(d > 0 ? cur + 1 : cur - 1); restart(); }
   }, { passive: true });
 
   let rt;
   window.addEventListener('resize', () => {
     clearTimeout(rt);
-    rt = setTimeout(() => { visCount = vis(); cur = 0; buildDots(); goTo(0); }, 200);
+    rt = setTimeout(() => {
+      visCount = vis();
+      layout();
+      cur = Math.min(cur, Math.max(0, cards.length - visCount));
+      buildDots();
+      goTo(cur);
+    }, 150);
   });
 
+  /* Init */
+  layout();
   buildDots();
+  goTo(0);
   start();
 })();
 
